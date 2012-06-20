@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" id="imported-from-openoffice" module-id="imported-from-openoffice" cnxml-version="0.7" class="introduction">
+  <title>8.0 Introduction to Work, Energy, and Energy Resources</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+    <md:repository>http://bread.cnx.rice.edu:9680/content</md:repository>
+    <md:content-url>http://bread.cnx.rice.edu:9680/content/m10021/latest/</md:content-url>
+    <md:content-id>m10021</md:content-id>
+    <md:title>8.0 Introduction to Work, Energy, and Energy Resources</md:title>
+    <md:version>1.5</md:version>
+    <md:created>2011/11/22 17:22:09 US/Central</md:created>
+    <md:revised>2011/12/19 16:04:00.978 US/Central</md:revised>
+    <md:actors>
+      <md:person userid="words">
+        <md:firstname>Words</md:firstname>
+        <md:surname>Numbers</md:surname>
+        <md:fullname>Words Numbers</md:fullname>
+        <md:email>email@example.com</md:email>
+      </md:person>
+    </md:actors>
+    <md:roles>
+      <md:role type="author">words</md:role>
+      <md:role type="maintainer">words</md:role>
+      <md:role type="licensor">words</md:role>
+    </md:roles>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+    <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+    <md:subjectlist>
+      <md:subject>Mathematics and Statistics</md:subject>
+      <md:subject>Science and Technology</md:subject>
+    </md:subjectlist>
+    <md:abstract/>
+    <md:language>en</md:language>
+    <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+  </metadata>
+  <content>
+    <?cnx.eoc class="section-summary" title="Section Summary"?>
+    <?cnx.eoc class="conceptual-questions" title="Conceptual Questions"?>
+    <?cnx.eoc class="problems-exercises" title="Problems & Exercises"?>
+    <figure id="import-auto-id1758685" class="splash">
+      <media id="import-auto-id2011827" alt="A field with four wind turbines and the Sun setting in the background.">
+        <image mime-type="image/png" src="Picture 4.png" width="450"/>
+      </media>
+      <caption>How many forms of energy can you identify in this photograph of a wind farm in Iowa? (credit: Jürgen/Guerito)</caption>
+    </figure>
+    <para id="import-auto-id1105263">
+      <emphasis effect="italics">Energy</emphasis>
+             plays an essential role both in everyday events and in scientific phenomena. You can no doubt name many forms of energy, from that provided by our foods, to the energy we use to run our cars, to the sunlight that warms us on the beach. You can also cite examples of what people call energy that may not be scientific, such as someone having an energetic personality. Not only does energy have many interesting forms, it is involved in almost all phenomena, and is one of the most important concepts of physics. What makes it even more important is that the total amount of energy in the universe is constant. Energy can change forms, but it cannot appear from nothing or disappear without a trace. Energy is thus one of a handful of physical quantities that we say is <emphasis effect="italics">conserved</emphasis>
+            . </para>
+    <para id="import-auto-id2165450">
+      <term id="import-auto-id1993502">Conservation of energy</term>
+             (as physicists like to call the principle that energy can neither be created nor destroyed) is based on experiment. Even as scientists discovered new forms of energy, conservation of energy has always been found to apply. Perhaps the most dramatic example of this was supplied by Einstein when he suggested that mass is equivalent to energy (his famous equation <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>E</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:msup>
+                    <m:mtext>mc</m:mtext>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{E="mc" {rSup} { size 8{2} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+            ).</para>
+    <para id="import-auto-id1802650">From a societal viewpoint, energy is one of the major building blocks of modern civilization. Energy resources are key limiting factors to economic growth. The world use of energy resources, especially oil, continues to grow, with ominous consequences economically, socially, politically, and environmentally. We will briefly examine the world’s energy use patterns at the end of this chapter.</para>
+    <para id="import-auto-id1593970">There is no simple, yet accurate, scientific definition for energy. Energy is characterized by its many forms and the fact that it is conserved. We can loosely define <term id="import-auto-id2491386">energy</term>
+             as the ability to do work, admitting that in some circumstances not all energy is available to do work. Because of the association of energy with work, we begin the chapter with a discussion of work. Work is intimately related to energy and how energy moves from one system to another or changes form.</para>
+    <list id="eip-631" list-type="labeled-item">
+      <title>KEY CONCEPTS</title>
+      <item>
+        <label>8.1</label>
+                 Work: The scientific definition</item>
+      <item>
+        <label>8.2</label>
+                 Kinetic energy and the work-energy theorem</item>
+      <item>
+        <label>8.3</label>
+                 Gravitational potential energy</item>
+      <item>
+        <label>8.4</label>
+                 Conservative forces and potential energy</item>
+      <item>
+        <label>8.5</label>
+                 Non-conservative forces: Open systems</item>
+      <item>
+        <label>8.6</label>
+                 Conservation of energy</item>
+      <item>
+        <label>8.7</label>
+                 Power</item>
+      <item>
+        <label>8.8</label>
+                 Work, energy, and power in humans</item>
+      <item>
+        <label>8.9</label>
+                 World energy use</item>
+    </list>
+    <section class="section-summary">
+      <title>Section Summary</title>
+      <para>This needs to appear with the number [1.0] to the left of it</para>
+    </section>
+  </content>
+  <glossary>
+    <definition id="fs-id1779372">
+      <term id="import-auto-id1911627">energy</term>
+      <meaning id="fs-id2011696">the capacity for doing work</meaning>
+    </definition>
+    <definition id="fs-id1839930">
+      <term id="import-auto-id1885699">conservation of energy</term>
+      <meaning id="fs-id1540927">the principle that energy can neither be created nor destroyed</meaning>
+    </definition>
+  </glossary>
+</document>

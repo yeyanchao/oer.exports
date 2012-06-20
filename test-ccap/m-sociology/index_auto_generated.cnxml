@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" id="imported-from-openoffice" module-id="imported-from-openoffice" cnxml-version="0.7">
+  <title>Types of Groups</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml"
+          mdml-version="0.5">
+  <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+  <md:repository>http://bread.cnx.rice.edu:9090/content</md:repository>
+  <md:content-url>http://bread.cnx.rice.edu:9090/content/m10023/latest</md:content-url>
+  <md:content-id>m10023</md:content-id>
+  <md:title>Types of Groups</md:title>
+  <md:version>1.7</md:version>
+  <md:created>2012/02/07 10:45:55 US/Central</md:created>
+  <md:revised>2012/02/10 15:04:25 US/Central</md:revised>
+  <md:actors>
+    <md:person userid="user1">
+      <md:firstname>firstname1</md:firstname>
+      <md:surname>lastname1</md:surname>
+      <md:fullname>firstname1 lastname1</md:fullname>
+      <md:email>useremail1@localhost.net</md:email>
+    </md:person>
+  </md:actors>
+  <md:roles>
+    <md:role type="author">user1</md:role>
+    <md:role type="maintainer">user1</md:role>
+    <md:role type="licensor">user1</md:role>
+  </md:roles>
+  <md:license url="http://creativecommons.org/licenses/by/3.0/" />
+  <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+  <md:subjectlist>
+    <md:subject>Social Sciences</md:subject>
+  </md:subjectlist>
+  <md:abstract>By the end of this section, students will be able to:
+<list>
+<item>Understand primary and secondary groups as the two sociological groups</item>
+<item>Recognize in-groups and out-groups as subtypes of primary and secondary groups</item>
+<item>Define reference groups</item>
+</list></md:abstract>
+  <md:language>en</md:language>
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+</metadata>
+
+<content>
+
+<section><title>These are sociology "features" and are notes with special classes</title>
+
+<code>
+.sociological-research   { .x-feature(#330033, #ccccff, research); }
+.sociology-real-world    { .x-feature(#006666, #ccffff, real-world); }
+.sociology-big-picture   { .x-feature(#336600, #ccff99, big-picture); }
+.sociology-careers       { .x-feature(#336633, #ccffcc, careers); }
+.sociology-policy-debate { .x-feature(#993333, #ffcccc, policy-debate); }
+</code>
+
+      <note class="sociological-research">
+        <title>This is a feature title</title>
+        <para>Ensure custom "feature" styling
+        sociological-research
+        </para>
+      </note>
+
+      <note class="sociology-real-world">
+        <title>This is a feature title</title>
+        <para>Ensure custom "feature" styling
+        sociology-real-world
+        </para>
+      </note>
+
+      <note class="sociology-big-picture">
+        <title>This is a feature title</title>
+        <para>Ensure custom "feature" styling
+        sociology-big-picture
+        </para>
+      </note>
+
+      <note class="sociology-careers">
+        <title>This is a feature title</title>
+        <para>Ensure custom "feature" styling
+        sociology-careers
+        </para>
+      </note>
+
+      <note class="sociology-policy-debate">
+        <title>This is a feature title</title>
+        <para>Ensure custom "feature" styling
+        sociology-policy-debate
+        </para>
+      </note>
+</section>
+
+  </content>
+  <glossary id="glossary601">
+    <definition id="import-auto-id815396">
+      <term id="import-auto-id832297">aggregate</term>
+      <meaning id="import-auto-id537237">  a collection of people who exist in the same place at the same time, but who don’t interact or share a sense of identity</meaning>
+    </definition>
+    <definition id="import-auto-id1432227">
+      <term id="import-auto-id1468560">category</term>
+      <meaning id="import-auto-id1420499">  people who share similar characteristics but who are not connected in any way</meaning>
+    </definition>
+    <definition id="import-auto-id1306102">
+      <term id="import-auto-id1164173">expressive function</term>
+      <meaning id="import-auto-id1198667">  a group function that serves an emotional need</meaning>
+    </definition>
+  </glossary>
+</document>

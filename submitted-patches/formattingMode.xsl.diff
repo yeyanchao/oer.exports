@@ -1,0 +1,48 @@
+3,4d2
+< <!DOCTYPE math PUBLIC "-//W3C//DTD MathML 2.0//EN"
+<                       "http://www.w3.org/TR/MathML2/dtd/mathml2.dtd">
+220a219,227
+>     
+>     <!-- Assume it's 1 character -->
+>     <xsl:variable name="bestFontName">
+>       <xsl:call-template name="findFontName">
+> 	<xsl:with-param name="name" select="substring($str, $strLen, 1)"/>
+> 	<xsl:with-param name="fonts" select="$fontName"/>
+> 	<xsl:with-param name="variant" select="$fontNameVariant"/>
+>       </xsl:call-template>
+>     </xsl:variable>
+253c260,261
+< 					       func:chooseAttribute(@mathbackground, $mathbackground, 'transparent'))"/>
+---
+> 					       func:chooseAttribute(@mathbackground, $mathbackground, 'transparent'),
+> 					       $bestFontName)"/>
+689d696
+<     
+691c698,706
+<     <xsl:variable name="opEntries" select="document('operator-dictionary.xml')/operators/math:mo[@op = $operator]"/>
+---
+>     <xsl:variable name="opEntries" select="document('operator-dictionary.xml')/math:operators/math:mo[@op = $operator]"/>
+> 
+>     <!-- Assume it's 1 character -->
+>     <xsl:variable name="bestFontName">
+>       <xsl:call-template name="findFontName">
+> 	<xsl:with-param name="name" select="$operator"/>
+> 	<xsl:with-param name="fonts" select="$fontName"/>
+>       </xsl:call-template>
+>     </xsl:variable>
+828a844,845
+>       <!-- Don't horizontally stretch when the op is in a math:mrow -->
+>       <xsl:variable name="inmrow" select="index-of($rowElement, local-name(parent::*)) &gt;= 0"/>
+831c848
+< 	<xsl:when test="$stretchy = true() and $defaultAttributes/math:mo/@stretchHorizontal">
+---
+> 	<xsl:when test="$stretchy = true() and $defaultAttributes/math:mo/@stretchHorizontal and not($inmrow)">
+1222c1239,1240
+< 					    func:chooseAttribute(@mathbackground, $mathbackground, 'transparent'))"/>
+---
+> 					    func:chooseAttribute(@mathbackground, $mathbackground, 'transparent'),
+> 					    $bestFontName)"/>
+1804c1822
+< 	  <xsl:attribute name="t:STYLE" select="func:setStyle($newMathvariant, $newMathcolor, $newMathbackground)"/>
+---
+> 	  <xsl:attribute name="t:STYLE" select="func:setStyle($newMathvariant, $newMathcolor, $newMathbackground, '')"/>

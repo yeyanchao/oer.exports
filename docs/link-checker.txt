@@ -1,0 +1,18 @@
+There is an alpha tool that runs over a module or collection cnxml (well, actually DBK file) and
+prints out all the links to other documents, resources, paras, modules, URLs including broken ones.
+
+To run this, you'll need to run scripts/debug-linkchecker.sh with the path to a dbk file.
+
+Additionally, if yu want it to print out the xpath to the offending c:link tag, you'll have to
+run ./scripts/collection2dbk.sh with an additional last argument 
+(for example "-debug", but as long as it's non-empty, it'll work) 
+to annotate the dbk file with an xpath to the original cnxml.
+
+If you're just interested in a module, you can run scripts/module2dbk.sh with an additional argument.
+
+Then, an XML report spits out.
+If you want to use it from python, you can use xml2json.xsl (found in CNXMLTransform) to convert it to
+something more pythonic (use demjson to make python dictionaries and arrays)
+
+And voila! a link-checking tool!
+ 

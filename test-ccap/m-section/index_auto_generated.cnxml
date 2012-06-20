@@ -1,0 +1,1302 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" id="imported-from-openoffice" module-id="imported-from-openoffice" cnxml-version="0.7">
+  <title>Energy in Waves: Intensity</title>
+<metadata mdml-version="0.5">
+  <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+  <md:repository>http://bread.cnx.rice.edu:9680/content</md:repository>
+  <md:content-url>http://bread.cnx.rice.edu:9680/content/m10167/latest/</md:content-url>
+  <md:content-id>m10167</md:content-id>
+  <md:title>Energy in Waves: Intensity</md:title>
+  <md:version>1.5</md:version>
+  <md:created>2011/12/26 10:54:01 US/Central</md:created>
+  <md:revised>2012/04/02 07:55:40.351 GMT-5</md:revised>
+  <md:actors>
+    <md:person userid="words">
+      <md:firstname>Words</md:firstname>
+      <md:surname>Numbers</md:surname>
+      <md:fullname>Words Numbers</md:fullname>
+      <md:email>rhall@wordsandnumbers.com</md:email>
+    </md:person>
+  </md:actors>
+  <md:roles>
+    <md:role type="author">words</md:role>
+    <md:role type="maintainer">words</md:role>
+    <md:role type="licensor">words</md:role>
+  </md:roles>
+  <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+  <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+  <md:keywordlist>
+    <md:keyword>Interference</md:keyword>
+    <md:keyword>Sound intensity</md:keyword>
+    <md:keyword>Superposition</md:keyword>
+    <md:keyword>Wave intensity</md:keyword>
+  </md:keywordlist>
+  <md:subjectlist>
+    <md:subject>Science and Technology</md:subject>
+  </md:subjectlist>
+  <md:abstract><list>
+<item>Calculate the intensity and the power of rays and waves.</item>
+<item>Examine perfect constructive interference.</item>
+</list></md:abstract>
+  <md:language>en</md:language>
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+</metadata>
+
+<content>
+  
+  <para>This math causes Math2SVG to die:</para>
+<equation xmlns:q="http://cnx.rice.edu/qml/1.0" id="eip-251"><m:math>
+        <m:semantics>
+                <m:mtable>
+                  <m:mtr>
+                    <m:mrow>
+                      <m:mi>W</m:mi>
+                        <m:mrow>
+                          <m:msubsup>
+                            <m:mrow>                          
+                               <m:mtext>Eff</m:mtext>
+                            </m:mrow>
+                              <m:mrow>
+                                <m:mtext>C</m:mtext>
+                              </m:mrow>
+                              <m:mi>S</m:mi>
+                          </m:msubsup>
+                        </m:mrow>
+                      
+                    </m:mrow>
+                  </m:mtr>
+                </m:mtable>
+        </m:semantics>
+      </m:math> 
+    </equation>
+  
+          <figure xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id1471656"><media id="import-auto-id3184787" alt="The destruction caused by an earthquake in Port-au-Prince, Haiti. Some buildings are shown on two sides of a street. Two buildings are completely destroyed. Rescue people are seen around.">
+          <image mime-type="image/png" src="Figure_17_11_01a.jpg" width="375"/>
+        </media>
+        
+      <caption>The destructive effect of an earthquake is palpable evidence of the energy carried in these waves. The Richter scale rating of earthquakes is related to both their amplitude and the energy they carry. (credit: Petty Officer 2nd Class Candice Villarreal, U.S. Navy)</caption></figure><para id="import-auto-id2591664">All waves carry energy. The energy of some waves can be directly observed. Earthquakes can shake whole cities to the ground, performing the work of thousands of wrecking balls.</para>
+    <para id="import-auto-id3012341">Loud sounds pulverize nerve cells in the inner ear, causing permanent hearing loss. Ultrasound is used for deep-heat treatment of muscle strains. A laser beam can burn away a malignancy. Water waves chew up beaches.</para>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id1236514">The amount of energy in a wave is related to its amplitude. Large-amplitude earthquakes produce large ground displacements. Loud sounds have higher pressure amplitudes and come from larger-amplitude source vibrations than soft sounds. Large ocean breakers churn up the shore more than small ones. More quantitatively, a wave is a displacement that is resisted by a restoring force. The larger the displacement <m:math><m:semantics><m:mrow><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math>, the larger the force <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>kx</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F= ital "kx"} {}</m:annotation></m:semantics></m:math> needed to create it. Because work <m:math><m:semantics><m:mrow><m:mrow><m:mi>W</m:mi></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W} {}</m:annotation></m:semantics></m:math> is related to force multiplied by distance, (<m:math><m:semantics><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>Fx</m:mtext></m:mrow></m:mstyle></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "Fx"} {}</m:annotation></m:semantics></m:math>) and energy is put into the wave by the work done to create it, the energy in a wave is related to amplitude. In fact, a wave&#8217;s energy is directly proportional to its amplitude squared because</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" id="eip-942"><m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>W</m:mi><m:mo stretchy="false">&#8733;</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>Fx</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:msup><m:mstyle fontstyle="italic"><m:mtext>kx</m:mtext></m:mstyle><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow></m:mrow><m:mtext>.</m:mtext><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W prop  ital "Fx"= ital "kx" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></equation><para id="import-auto-id3034344">The energy effects of a wave depend on time as well as amplitude. For example, the longer deep-heat ultrasound is applied, the more energy it transfers. Waves can also be concentrated or spread out. Sunlight, for example, can be focused to burn wood. Earthquakes spread out, so they do less damage the farther they get from the source. In both cases, changing the area the waves cover has important effects. All these pertinent factors are included in the definition of <term id="import-auto-id969364">intensity</term> <m:math><m:semantics><m:mrow><m:mrow><m:mi>I</m:mi></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I} {}</m:annotation></m:semantics></m:math> as power per unit area:</para>
+    
+    <equation id="eip-460"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>I</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mi>P</m:mi>
+                    <m:mi>A</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{I= {  {P}  over  {A} } } {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation><para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id3073473">where <m:math><m:semantics><m:mrow><m:mrow><m:mi>P</m:mi> </m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> is the power carried by the wave through area <emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mrow><m:mi>A</m:mi></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math></emphasis>. The definition of intensity is valid for any energy in transit, including that carried by waves. The SI unit for intensity is watts per square meter (<m:math><m:semantics><m:mrow><m:mrow><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>). For example, infrared and visible energy from the Sun impinge on Earth at an intensity of <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mtext>1300</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"1300"`"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> just above the atmosphere. There are other intensity-related units in use, too. The most common is the decibel. For example, a 90 decibel sound level corresponds to an intensity of <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:msup><m:mtext>10</m:mtext><m:mrow><m:mrow><m:mo stretchy="false">&#8722;</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:msup><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10" rSup { size 8{ - 3} } `"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>. (This quantity is not much power per unit area considering that 90 decibels is a relatively high sound level. Decibels will be discussed in some detail in a later chapter.</para><example id="fs-id1420003">
+    <title>Calculating intensity and power: How much energy is in a ray of sunlight?</title>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id3017366">The average intensity of sunlight on Earth&#8217;s surface is about <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>7</m:mn><m:mtext>00</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{7"00"`"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id3082715">(a) Calculate the amount of energy that falls on a solar collector having an area of <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>0</m:mn><m:mtext>.</m:mtext><m:mtext>500</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{0 "." "500"`"m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> in <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>4</m:mn><m:mtext>.</m:mtext><m:mtext>00</m:mtext><m:mi/><m:mspace width="0.25em"/><m:mtext>h</m:mtext></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4 "." "00"`"h"} {}</m:annotation></m:semantics></m:math>.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id1578334">(b) What intensity would such sunlight have if concentrated by a magnifying glass onto an area 200 times smaller than its own?</para><para id="import-auto-id2599719"><emphasis>Strategy a</emphasis></para>
+    <para id="fs-id2437365">Because power is energy per unit time or <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mi>E</m:mi><m:mi>t</m:mi></m:mfrac></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P= {  {E}  over  {t} } } {}</m:annotation></m:semantics></m:math>, the definition of intensity can be written as <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>A</m:mi></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">/</m:mo><m:mi>t</m:mi></m:mrow><m:mi>A</m:mi></m:mfrac></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I= {  {P}  over  {A} } = {  { {E} slash {t} }  over  {A} } } {}</m:annotation></m:semantics></m:math>, and this equation can be solved for E with the given information.</para>
+    <para id="import-auto-id3397936">
+      <emphasis>Solution a</emphasis>
+    </para>
+    <list xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id3063523" list-type="enumerated" number-style="arabic"><item>Begin with the equation that states the definition of intensity:
+    <equation id="import-auto-id2689097"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>I</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mi>P</m:mi>
+                    <m:mi>A</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{I= {  {P}  over  {A} } } {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Replace <m:math>
+    <m:semantics>
+     <m:mrow>
+      <m:mstyle mathsize="12pt">
+       <m:mrow>
+        <m:mrow>
+         <m:mi>
+P
+         </m:mi>
+        </m:mrow>
+       </m:mrow>
+      </m:mstyle>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{P} {}
+     </m:annotation>
+    </m:semantics>
+   </m:math> with its equivalent <m:math>
+    <m:semantics>
+     <m:mrow>
+      <m:mstyle mathsize="12pt">
+       <m:mrow>
+        <m:mrow>
+         <m:mrow>
+          <m:mi>
+E
+          </m:mi>
+          <m:mo stretchy="false">
+/
+          </m:mo>
+          <m:mi>
+t
+          </m:mi>
+         </m:mrow>
+        </m:mrow>
+       </m:mrow>
+      </m:mstyle>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{E/t} {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>:
+    <equation id="import-auto-id2437920"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>I</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>E</m:mi>
+                      <m:mo stretchy="false">/</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mi>A</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{I= {  { {E} slash {t} }  over  {A} } } {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Solve for <m:math>
+    <m:semantics>
+     <m:mrow>
+      <m:mstyle mathsize="12pt">
+       <m:mrow>
+        <m:mrow>
+         <m:mi>
+E
+         </m:mi>
+        </m:mrow>
+       </m:mrow>
+      </m:mstyle>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{P} {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>:
+    <equation id="import-auto-id1997176" fo:font-style="italic"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>E</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mstyle fontstyle="italic">
+                    <m:mrow>
+                      <m:mtext>IAt</m:mtext>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{E= ital "IAt"} {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Substitute known values into the equation:
+    <equation id="import-auto-id3285558"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>E</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfenced open="(" close=")">
+                      <m:mrow>
+                        <m:mtext>700</m:mtext><m:mspace width="0.25em"/>
+                        <m:msup>
+                          <m:mtext> W/m</m:mtext>
+                          
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          
+                        </m:msup>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:mfenced open="(" close=")">
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>500</m:mtext>
+<m:mspace width="0.25em"/>
+                      <m:msup>
+                        <m:mtext> m</m:mtext>
+                        
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mfenced open="[" close="]">
+                    <m:mrow>
+                      <m:mfenced open="(" close=")">
+                        <m:mrow>
+                          <m:mn>4</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>00</m:mtext>
+<m:mspace width="0.25em"/>
+                          <m:mtext> h</m:mtext>
+                        </m:mrow>
+                      </m:mfenced>
+                      <m:mfenced open="(" close=")">
+                        <m:mrow>
+                          <m:mtext>3600</m:mtext><m:mspace width="0.25em"/>
+                          <m:mtext> s/h</m:mtext>
+                        </m:mrow>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{E= left ("700"" W/m" rSup { size 8{2} }  right ) left (0 "." "500"" m" rSup { size 8{2} }  right ) left [ left (4 "." "00"" h" right ) left ("3600"" s/h" right ) right ]} {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Calculate to find <emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mrow><m:mi>E</m:mi></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math></emphasis> and convert units:
+    <equation id="import-auto-id1319463"><m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>.</m:mtext><m:mrow><m:mtext>04</m:mtext><m:mo stretchy="false">&#215;</m:mo><m:msup><m:mtext>10</m:mtext><m:mrow><m:mn>6</m:mn></m:mrow></m:msup></m:mrow><m:mspace width="0.25em"/><m:mtext>J</m:mtext></m:mrow></m:mrow><m:mrow/><m:mo>,</m:mo></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5 "." "04" times "10" rSup { size 8{6} } "J"} {}</m:annotation></m:semantics></m:math></equation></item>
+    </list><para id="import-auto-id1860387"><emphasis>Discussion a</emphasis></para>
+    <para id="fs-id1174050">The energy falling on the solar collector in 4 h in part is enough to be useful&#8212;for example, for heating a significant amount of water.</para>
+    <para id="import-auto-id1157183"><emphasis>Strategy b</emphasis></para>
+    <para id="fs-id3077951">Taking a ratio of new intensity to old intensity and using primes for the new quantities, we will find that it depends on the ratio of the areas. All other quantities will cancel.</para>
+    <para id="import-auto-id3022997">
+      <emphasis>Solution b</emphasis>
+    </para>
+<list xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id2684765" list-type="enumerated" number-style="arabic"><item>Take the ratio of intensities, which yields:
+    <para id="import-auto-id2381592"><m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mrow><m:mfrac><m:msup><m:mi>I</m:mi><m:mrow><m:mi>'</m:mi></m:mrow></m:msup><m:mi>I</m:mi></m:mfrac><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>'</m:mi></m:mrow></m:msup><m:mo stretchy="false">/</m:mo><m:msup><m:mi>A</m:mi><m:mrow><m:mi>'</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">/</m:mo><m:mi>A</m:mi></m:mrow></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mi>A</m:mi><m:msup><m:mi>A</m:mi><m:mrow><m:mi>'</m:mi></m:mrow></m:msup></m:mfrac></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {I rSup { size 8{'} } }  over  {I} } = {  { {P rSup { size 8{'} } } slash {A rSup { size 8{'} } } }  over  { {P} slash {A} } } = {  {A}  over  {A rSup { size 8{'} } } } } {}</m:annotation></m:semantics></m:math> (The powers cancel because <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mi>'</m:mi><m:mo stretchy="false">=</m:mo><m:mi>P</m:mi></m:mrow></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P'=P} {}</m:annotation></m:semantics></m:math>).</para></item>
+    <item> Identify the knowns:
+    <equation id="import-auto-id2692789"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>A</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>200</m:mtext>
+                  </m:mrow>
+                  <m:mi>A</m:mi>
+                  <m:mi>'</m:mi>
+                 <m:msup>
+                  <m:mi>&#8242;</m:mi>
+                  <m:mi>&#8242;</m:mi>
+               </m:msup>
+       <m:mi>&#8242;</m:mi>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>,</m:mo>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{A="200"A'} {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation><equation id="import-auto-id2684269"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:msup>
+                      <m:mi>I</m:mi>
+                      
+                        <m:mrow>
+                          <m:mi>'</m:mi>
+                        </m:mrow>
+                      
+                    </m:msup>
+                    <m:mi>I</m:mi>
+                  </m:mfrac>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mtext>200</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ {  {I rSup { size 8{'} } }  over  {I} } ="200"} {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Substitute known quantities:
+    <equation id="import-auto-id1318204"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mi>'</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>200</m:mtext>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi>I</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>200</m:mtext>
+                  </m:mrow>
+                  <m:mfenced open="(" close=")">
+                    <m:mrow>
+                      <m:mtext>700</m:mtext>
+                      <m:mi/><m:mspace width="0.25em"/>
+                      <m:msup>
+                        <m:mtext>W/m</m:mtext>
+                        
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{I'="200"I="200" left ("700"`"W/m" rSup { size 8{2} }  right )} {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Calculate to find <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mi>I</m:mi><m:mi>'</m:mi></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I'} {}</m:annotation></m:semantics></m:math>:
+    <equation id="import-auto-id2680305"><m:math>
+    <m:semantics>
+     <m:mrow>
+      <m:mstyle mathsize="12pt">
+       <m:mrow>
+        <m:mrow>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mrow>
+             <m:mi>
+I
+             </m:mi>
+            </m:mrow>
+           </m:mrow>
+           <m:mrow>
+            <m:mi>
+'
+            </m:mi>
+           </m:mrow>
+          </m:msup>
+          <m:mo stretchy="false">
+=
+          </m:mo>
+          <m:mn>
+1
+          </m:mn>
+         </m:mrow>
+         <m:mtext>
+.
+         </m:mtext>
+         <m:mrow>
+          <m:mtext>
+40
+          </m:mtext>
+          <m:mo stretchy="false">
+&#215;
+          </m:mo>
+          <m:msup>
+           <m:mtext>
+10
+           </m:mtext>
+           <m:mrow>
+            <m:mstyle mathsize="8pt">
+             <m:mrow>
+              <m:mrow>
+               <m:mn>
+5
+               </m:mn>
+              </m:mrow>
+             </m:mrow>
+            </m:mstyle>
+           </m:mrow>
+          </m:msup>
+         </m:mrow>
+         <m:mi/><m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+W/m
+          </m:mtext>
+          <m:mrow>
+           <m:mstyle mathsize="8pt">
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+           </m:mstyle>
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+      </m:mstyle>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{ { {I}} sup { ' }=1 "." "40" times "10" rSup { size 8{5} } `"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math></equation></item>
+</list><para id="import-auto-id1177616"><emphasis>Discussion b</emphasis></para>
+    <para id="fs-id1607874">Decreasing the area increases the intensity considerably. The intensity of the concentrated sunlight could even start a fire.</para>
+    </example>
+  
+  <example id="fs-id1348631">
+    <title>Determine the combined intensity of two waves: Perfect constructive interference</title>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id2588123">If two identical waves, each having an intensity of <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>00</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." "00"`"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>, interfere perfectly constructively, what is the intensity of the resulting wave?</para><para id="import-auto-id1859324"><emphasis>Strategy</emphasis></para>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id2404667">We know from <link url="http://cnx.org/GroupWorkspaces/wg2293">Superposition and Interference</link> that when two identical waves, which have equal amplitudes <m:math><m:semantics><m:mrow><m:mrow><m:mi>X</m:mi></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X} {}</m:annotation></m:semantics></m:math>, interfere perfectly constructively, the resulting wave has an amplitude of <m:math><m:semantics><m:mrow><m:mrow><m:mn>2</m:mn><m:mi>X</m:mi></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2X} {}</m:annotation></m:semantics></m:math>. Because a wave&#8217;s intensity is proportional to amplitude squared, the intensity of the resulting wave is four times as great as in the individual waves.</para><para id="import-auto-id1994588">
+      <emphasis>Solution</emphasis>
+    </para>
+    <list xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1118590" list-type="enumerated" number-style="arabic"><item id="import-auto-id2445366">Recall that intensity is proportional to amplitude squared.</item>
+    <item id="import-auto-id3161645">Calculate the new amplitude:
+    <equation id="import-auto-id969598"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>I</m:mi>
+                        
+                          <m:mrow>
+                            <m:mi>'</m:mi>
+                          </m:mrow>
+                        
+                      </m:msup>
+                      <m:mo stretchy="false">&#8733;</m:mo>
+                      <m:msup>
+                        <m:mfenced open="(" close=")">
+                          <m:msup>
+                            <m:mi>X</m:mi>
+                            
+                              <m:mrow>
+                                <m:mi>'</m:mi>
+                              </m:mrow>
+                            
+                          </m:msup>
+                        </m:mfenced>
+                        
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msup>
+                      <m:mfenced open="(" close=")">
+                        <m:mrow><m:mn>2</m:mn><m:mi>X</m:mi></m:mrow>
+                      </m:mfenced>
+                      
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:msup>
+<m:mrow>                    <m:mn>4</m:mn><m:mi>X</m:mi></m:mrow>
+                    
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>        
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{I rSup { size 8{'} }  prop  left (X rSup { size 8{'} }  right ) rSup { size 8{2} } = left (2X right ) rSup { size 8{2} } =4X rSup { size 8{2} } } {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Recall that the intensity of the old amplitude was:
+    <equation id="import-auto-id1525319"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>I</m:mi>
+                    
+                      
+                    
+                  </m:msup>
+                  <m:mo stretchy="false">&#8733;</m:mo>
+                  <m:msup>
+                    <m:mi>X</m:mi>
+                    
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>        
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{I rSup { size 8{'} }  prop X rSup { size 8{2} } } {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Take the ratio of new intensity to the old intensity. This gives:
+    <equation id="import-auto-id3181149"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mfrac>
+<m:msup>
+                      <m:mi>I</m:mi>
+                      
+                        <m:mrow>
+                          <m:mi>'</m:mi>
+                        </m:mrow>
+                      
+                    </m:msup>
+                    <m:mi>I</m:mi>
+                    
+                  </m:mfrac>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mn>4</m:mn>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>        
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ {  {I}  over  {I rSup { size 8{'} } } } =4} {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    <item>Calculate to find <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mi>I</m:mi><m:mi>'</m:mi></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I'} {}</m:annotation></m:semantics></m:math>:
+    <equation id="import-auto-id1419064"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                 
+                      <m:mi>'</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mi>I</m:mi>
+                   
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>00</m:mtext>
+                  <m:mi/><m:mspace width="0.25em"/>
+                  <m:msup>
+                    <m:mtext>W/m</m:mtext>
+                    
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            <m:mo>.</m:mo>        
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{I'=4I=4 "." "00"`"W/m" rSup { size 8{2} } } {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </equation></item>
+    </list><para id="import-auto-id1935435"><emphasis>Discussion</emphasis></para>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id2621355">The intensity goes up by a factor of 4 when the amplitude doubles. This answer is a little disquieting. The two individual waves each have intensities of <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>00</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." "00"`"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>, yet their sum has an intensity of <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>4</m:mn><m:mtext>.</m:mtext><m:mtext>00</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4 "." "00"`"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>, which may appear to violate conservation of energy. This violation, of course, cannot happen. What does happen is intriguing. The area over which the intensity is <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>4</m:mn><m:mtext>.</m:mtext><m:mtext>00</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4 "." "00"`"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> is much less than the area covered by the two waves before they interfered. There are other areas where the intensity is zero. The addition of waves is not as simple as our first look in <link url="Superposition and Interference">Superposition and Interference</link> suggested. We actually get a pattern of both constructive interference and destructive interference whenever two waves are added. For example, if we have two stereo speakers putting out <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>00</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." "00"`"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> each, there will be places in the room where the intensity is <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>4</m:mn><m:mtext>.</m:mtext><m:mtext>00</m:mtext><m:mi/><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4 "." "00"`"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>, other places where the intensity is zero, and others in between. <link target-id="import-auto-id1398723"/> shows what this interference might look like. We will pursue interference patterns elsewhere in this text.</para><figure xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id1398723"><media id="import-auto-id1362022" alt="Two speakers are shown at the top of the figure at left and right side. Rarefactions are shown as dotted curves and compression as dark curves. The interference of the sound waves from these two speakers is shown. There are some red spots, showing constructive interference, are shown on the interfering waves. ">
+        <image mime-type="image/jpg" src="Figure_17_11_02a.jpg" width="311"/>
+      </media>
+      
+    <caption>These stereo speakers produce both constructive interference and destructive interference in the room, a property common to the superposition of all types of waves. The shading is proportional to intensity.</caption></figure></example>
+  
+  
+    <exercise id="fs-id2445366" type="check-understanding">
+  <label/>
+      <title>Check Your Understanding</title>
+    <problem id="fs-id3386450"><para id="import-auto-id2594823">Which measurement of a wave is most important when determining the wave's intensity?</para></problem>
+    <solution id="fs-id1916268" print-placement="here"><para id="import-auto-id1118563">Amplitude, because a wave&#8217;s energy is directly proportional to its amplitude squared.</para></solution>
+    
+    </exercise>
+  
+  
+  
+  <section id="fs-id2459087" class="section-summary">
+    <title>Summary</title>
+    <para id="import-auto-id3176628">Intensity is defined to be the power per unit area:</para>
+    <para id="import-auto-id2611636"><m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mi>P</m:mi><m:mi>A</m:mi></m:mfrac></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I= {  {P}  over  {A} } } {}</m:annotation></m:semantics></m:math> and has units of <m:math><m:semantics><m:mrow><m:mrow><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>.</para>
+  </section>
+  
+  <section id="fs-id2406988" class="conceptual-questions"><title>Conceptual Questions</title><exercise id="fs-id1355852" type="conceptual-questions"><problem id="fs-id1931391">
+    <para id="import-auto-id2697452">Two identical waves undergo pure constructive interference. Is the resultant intensity twice that of the individual waves? Explain your answer.</para>
+    </problem></exercise>
+  
+    <exercise id="fs-id2391059" type="conceptual-questions"><problem id="fs-id1389596">
+    <para id="import-auto-id2598176">Circular water waves decrease in amplitude as they move away from where a rock is dropped. Explain why.</para>
+    </problem></exercise>
+  </section>
+  
+    <section id="fs-id2669875" type="problems-exercises" class="problems-exercises">
+      <title>Problems &amp; Exercises</title>
+    <exercise id="fs-id1818055" type="problems-exercises"><problem id="fs-id2422537">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id2677330"><emphasis effect="bold">Medical Application</emphasis> Ultrasound of intensity <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mrow><m:mtext>50</m:mtext><m:mo stretchy="false">&#215;</m:mo><m:msup><m:mtext>10</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." "50" times "10" rSup { size 8{2} } `"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> is produced by the rectangular head of a medical imaging device measuring 3.00 by 5.00 cm. What is its power output?</para>
+      <para>and a Table (for formatting)</para>
+<table summary="Table Description">
+<title>Table Title</title>
+<tgroup cols="3"><thead>
+  <row>
+    <entry>Heading1</entry>
+    <entry>Heading2</entry>
+    <entry>Heading3</entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>(1,1)</entry>
+    <entry>(1,2)</entry>
+    <entry>(1,3)</entry>
+  </row>
+  <row>
+    <entry>(2,1)</entry>
+    <entry>(2,2)</entry>
+    <entry>(2,3)</entry>
+  </row>
+  <row>
+    <entry>(3,1)</entry>
+    <entry>(3,2)</entry>
+    <entry>(3,3)</entry>
+  </row>
+</tbody>
+</tgroup><caption>Table Caption</caption>
+</table>
+      </problem>
+<solution id="fs-id3094879">
+    <para id="fs-id1169612989998">
+0.225 W
+    </para>
+    </solution>
+    </exercise>
+      
+    <exercise id="fs-id1909628" type="problems-exercises"><problem id="fs-id2403876">  
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id2010343">The low-frequency speaker of a stereo set has a surface area of <m:math>
+    <m:semantics>
+     <m:mrow>
+
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+0
+         </m:mn>
+         <m:mtext>
+.
+         </m:mtext>
+         <m:mtext>
+05
+         </m:mtext>
+     <m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+m
+          </m:mtext>
+          <m:mrow>
+
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." "05"`m rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math> and produces 1W of acoustical power. What is the intensity at the speaker? If the speaker projects sound uniformly in all directions, at what distance from the speaker is the intensity <m:math>
+    <m:semantics>
+     <m:mrow>
+
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+0
+         </m:mn>
+         <m:mtext>
+.
+         </m:mtext>
+         <m:mn>
+1
+         </m:mn>
+    <m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+W/m
+          </m:mtext>
+          <m:mrow>
+
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>?</para></problem></exercise>
+      
+    <exercise id="fs-id1900500" type="problems-exercises"><problem id="fs-id1921665">   
+      <para id="import-auto-id2684765">To increase intensity of a wave by a factor of 50, by what factor should the amplitude be increased?</para>
+    </problem>
+<solution id="fs-id3353162">
+    <para id="import-auto-id2054327">7.07</para>
+    </solution>
+    </exercise>
+      
+    <exercise id="fs-id1908042" type="problems-exercises"><problem id="fs-id3098837">  
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id1969714"><emphasis effect="bold">Engineering Application</emphasis> A device called an insolation meter is used to measure the intensity of sunlight has an area of 100 cm<sup>2</sup> and registers 6.50 W. What is the intensity in <m:math>
+    <m:semantics>
+     <m:mrow>
+
+       <m:mrow>
+        <m:mrow>
+         <m:msup>
+          <m:mtext>
+W/m
+          </m:mtext>
+          <m:mrow>
+
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>?</para></problem></exercise>
+      
+    <exercise id="fs-id1060385" type="problems-exercises"><problem id="fs-id1942034">    
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id2617344"><emphasis effect="bold">Astronomy Application</emphasis> Energy from the Sun arrives at the top of the Earth&#8217;s atmosphere with an intensity of 
+<m:math>
+    <m:semantics>
+     <m:mrow>
+
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+1.30
+         </m:mn>
+       
+<m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+ kW/m
+          </m:mtext>
+          <m:mrow>
+
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>
+. How long does it take for <m:math>
+    <m:semantics>
+     <m:mrow>
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+1.8
+         </m:mn>
+     <m:mo stretchy="false">&#215;</m:mo>
+         <m:msup>
+<m:mn>10</m:mn><m:mn>9</m:mn>
+         </m:msup>
+          <m:mtext>
+J
+          </m:mtext>
+
+        </m:mrow>
+       </m:mrow>
+
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math> to arrive on an area of <m:math>
+    <m:semantics>
+     <m:mrow>
+
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+1
+         </m:mn>
+         <m:mtext>
+.
+         </m:mtext>
+         <m:mn>
+00
+         </m:mn>
+       
+<m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+m
+          </m:mtext>
+          <m:mrow>
+
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>?</para></problem>
+<solution id="fs-id1486629">
+    <para id="import-auto-id2598030">16.0 d</para>
+    </solution>
+    </exercise>
+      
+    <exercise id="fs-id2408202" type="problems-exercises"><problem id="fs-id1823777">   
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id1333377">The low-frequency speaker of a stereo set has a surface area of 
+<m:math>
+    <m:semantics>
+     <m:mrow>
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+0
+         </m:mn>
+         <m:mtext>
+.
+         </m:mtext>
+         <m:mn>
+05
+         </m:mn>
+       
+<m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+m
+          </m:mtext>
+          <m:mrow>
+
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>
+ and produces 1W of acoustical power. What is the intensity at the speaker? If the speaker projects sound uniformly in all directions, at what distance from the speaker is the intensity 
+<m:math>
+    <m:semantics>
+     <m:mrow>
+
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+0
+         </m:mn>
+         <m:mtext>
+.
+         </m:mtext>
+         <m:mn>
+1
+         </m:mn>
+       
+<m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+W/m
+          </m:mtext>
+          <m:mrow>
+
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>
+?</para></problem></exercise>
+      
+    <exercise xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id2055167" type="problems-exercises"><problem id="fs-id3398187">   
+      <para id="import-auto-id2599756">Suppose you have a device that extracts energy from ocean breakers in direct proportion to their intensity. If the device produces 10.0 kW of power on a day when the breakers are 1.20 m high, how much will it produce when they are 0.600 m high?</para>
+    </problem>
+<solution id="fs-id3017370">
+    <para id="import-auto-id3245612">2.50 kW</para>
+    </solution>
+    </exercise><exercise id="fs-id3063311" type="problems-exercises"><problem id="fs-id2032385">   
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id3025485"><emphasis effect="bold">Engineering Application</emphasis> (a) A photovoltaic array of (solar cells) is 10.0% efficient in gathering solar energy and converting it to electricity. If the average intensity of sunlight on one day is 
+<m:math>
+    <m:semantics>
+     <m:mrow>
+
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+700
+         </m:mn>   
+<m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+W/m
+          </m:mtext>
+          <m:mrow>
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>
+, what area should your array have to gather energy at the rate of 100 W? (b) What is the maximum cost of the array if it must pay for itself in two years of operation averaging 10.0 hours per day? Assume that it earns money at the rate of 9.00 &#162; per kilowatt-hour.</para></problem></exercise>
+      
+    <exercise id="fs-id2655597" type="problems-exercises"><problem id="fs-id1969919">  
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id1461780">A microphone receiving a pure sound tone feeds an oscilloscope, producing a wave on its screen. If the sound intensity is originally 
+<m:math>
+    <m:semantics>
+     <m:mrow>
+       <m:mrow>
+        <m:mrow>
+         <m:mtext>
+2.00
+         </m:mtext>
+<m:mo stretchy="false">&#215;</m:mo>
+<m:msup>
+<m:mtext>10</m:mtext>
+<m:mtext>-5</m:mtext>
+</m:msup>
+               
+<m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+W/m
+          </m:mtext>
+          <m:mrow>
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>
+
+
+
+, but is turned up until the amplitude increases by 30.0%, what is the new intensity?</para></problem>
+<solution id="fs-id2392110">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id1935840"><m:math>
+        <m:semantics>
+          <m:mrow>
+            
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mtext>.</m:mtext>
+                  <m:mrow>
+                    <m:mtext>38</m:mtext>
+                    <m:mo stretchy="false">&#215;</m:mo>
+                    <m:msup>
+                      <m:mtext>10</m:mtext>
+                      
+                        <m:mrow>
+                          <m:mtext>&#8211;5</m:mtext>
+                        </m:mrow>
+                      
+                    </m:msup>
+                  </m:mrow>
+<m:mspace width="0.25em"/>
+                  <m:msup>
+                    <m:mtext>W/m</m:mtext>
+                    
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            
+       
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{3 "." "38" times "10" rSup { size 8{"-5"} } "W/m" rSup { size 8{2} } } {}</m:annotation>
+        </m:semantics>
+      </m:math> 
+    </para></solution>
+    </exercise>
+    <exercise id="fs-id2626122" type="problems-exercises"><problem id="fs-id2931728">    <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id956458"><emphasis effect="bold">Medical Application</emphasis> (a) What is the intensity in 
+<m:math>
+    <m:semantics>
+     <m:mrow>
+       <m:mrow>
+        <m:mrow>
+
+         <m:msup>
+          <m:mtext>
+W/m
+          </m:mtext>
+          <m:mrow>
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>
+ of a laser beam used to burn away cancerous tissue that, when 90.0% absorbed, puts 500 J of energy into a circular spot 2.00 mm in diameter in 4.00 s? (b) Discuss how this intensity compares to the average intensity of sunlight (about 
+<m:math>
+    <m:semantics>
+     <m:mrow>
+       <m:mrow>
+        <m:mrow>
+         <m:mn>
+1
+         </m:mn>
+<m:mspace width="0.25em"/>
+         <m:msup>
+          <m:mtext>
+ W/m
+          </m:mtext>
+          <m:mrow>
+            <m:mrow>
+             <m:mrow>
+              <m:mn>
+2
+              </m:mn>
+             </m:mrow>
+            </m:mrow>
+          </m:mrow>
+         </m:msup>
+        </m:mrow>
+       </m:mrow>
+      <m:mrow/>
+     </m:mrow>
+     <m:annotation encoding="StarMath 5.0">
+size 12{0 "." 1`"W/m" rSup { size 8{2} } } {}
+     </m:annotation>
+    </m:semantics>
+   </m:math>
+) and the implications that would have if the laser beam entered your eye. Note how your answer depends on the time duration of the exposure.</para></problem></exercise>
+    </section>
+
+  <note id="note1">
+    <title>Note title</title>
+    <para>Note para</para>
+  </note>
+  
+  <list>
+    <item><link target-id="note1"/></item>
+  </list>
+  
+  
+  <section class="section-summary">
+    <exercise>
+      <problem>
+        <para>This problem has an equation that shouldn't be numbered.</para>
+        <equation>1 + 1 = 2</equation>
+      </problem>
+    </exercise>
+  </section>
+  
+  <para>Here are 2 terms with different capitalizations to make sure they combine in the index and show up lower case <term>Thing One</term> and <term>thing one</term>.</para>
+</content>
+  <glossary>
+    <definition id="import-auto-id1864544"><term>intensity</term> <meaning id="fs-id2962596">power per unit area.
+
+With an (unnumbered) equation.
+<equation>1+1=2</equation>
+</meaning></definition>
+  </glossary>
+  </document>

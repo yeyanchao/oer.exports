@@ -1,0 +1,39 @@
+204a205,206
+>       base_hrefs = []
+>       base_nestings = []
+207,209c209,239
+<         if el.start_element? and (el[0] == "imagedata" or el[0] == "graphic")
+<           image_refs << el[1]['fileref'] 
+<         end  
+---
+>         if el.start_element? 
+>           if el[1]['xml:base']
+>             # split off the file name
+>             base_file = el[1]['xml:base']
+>             base_paths = base_file.split("/")
+>             base_paths.pop
+>             if base_paths.length > 0
+>               base_dir = base_paths.join("/") + "/"
+>             else
+>               base_dir = ""
+>             end
+>             base_hrefs.push(base_dir)
+>             base_nestings.push(true) # add a marker to pop base_hrefs
+>           else
+>             base_nestings.push(false)
+>           end
+>           name = el[0].split(":")[-1] # in case the xml has prefixes
+>           if (name == "imagedata" or name == "graphic") and el[1]['fileref'] # Inline SVG is allowed
+>             href = ""
+>             if base_hrefs[-1]
+>               href = base_hrefs[-1]
+>             end
+>             image_refs << href + el[1]['fileref']
+>           end
+>         end
+>         if el.end_element?
+>           if base_nestings[-1]
+>             base_hrefs.pop
+>           end
+>           base_nestings.pop
+>         end

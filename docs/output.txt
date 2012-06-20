@@ -1,0 +1,11 @@
+The output is designed to be automatically parsed.
+Ideally, the id of the original element will be passed through all stages of generation
+so the error can be given back to the author, but for now, an XPath to the offending element is given.
+
+
+The conversion and cleanup passes output useful information.
+Any elements that have not been converted output a "BUG:"
+Any elements that are cleaned up output a "WARNING:"
+Any elements that are invalid XML (usually math) output a "ERROR:"
+
+The MathML to SVG conversion uses XSLT2. If there is a problem with the MathML a stack trace is printed with the cause of the problem.

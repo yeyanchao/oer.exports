@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:cnx="http://cnx.rice.edu/cnxml" xmlns:cnxorg="http://cnx.rice.edu/system-info" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xmlns:cnxml="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:bib="http://bibtexml.sf.net/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:lang="en">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+    <md:repository>http://bread.cnx.rice.edu:9680/content</md:repository>
+    <md:content-url>http://bread.cnx.rice.edu:9680/content/col10010/1.9</md:content-url>
+    <md:content-id>col10010</md:content-id>
+    <md:title>CNX Physics</md:title>
+    <md:version>1.9</md:version>
+    <md:created>2011/11/28 11:54:23.716 US/Central</md:created>
+    <md:revised>2012/01/24 14:00:51.857 US/Central</md:revised>
+    <md:actors>
+      <md:person userid="words">
+        <md:firstname>Words</md:firstname>
+        <md:surname>Numbers</md:surname>
+        <md:fullname>Words Numbers</md:fullname>
+        <md:email>rhall@wordsandnumbers.com</md:email>
+      </md:person>
+    </md:actors>
+    <md:roles>
+      <md:role type="author">words</md:role>
+      <md:role type="maintainer">words</md:role>
+      <md:role type="licensor">words</md:role>
+    </md:roles>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+    <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+    <md:subjectlist>
+      <md:subject>Mathematics and Statistics</md:subject>
+      <md:subject>Science and Technology</md:subject>
+    </md:subjectlist>
+    <md:abstract/>
+    <md:language>en</md:language>
+    <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+  </metadata>
+  <col:parameters>
+    <col:param name="real-imaginary-notation" value="font"/>
+    <col:param name="and-or-notation" value="propositional-logic"/>
+    <col:param name="gradient-notation" value="text"/>
+    <col:param name="mean-notation" value="bar"/>
+    <col:param name="remainder-notation" value="text"/>
+    <col:param name="conjugate-notation" value="bar"/>
+    <col:param name="imaginary-i-notation" value="i"/>
+    <col:param name="scalar-product-notation" value="angle-bracket"/>
+    <col:param name="print-font-size" value="10pt"/>
+    <col:param name="curl-notation" value="text"/>
+    <col:param name="for-all-equation-layout" value="symbolic"/>
+    <col:param name="vector-notation" value="bold"/>
+    <col:param name="print-paper-size" value="8.5x11"/>
+    <col:param name="print-font" value="computer-modern"/>
+    <col:param name="print-style" value="ccap-physics"/>
+    <col:param name="print-paragraph-spacing" value="compact"/>
+  </col:parameters>
+  <col:content>
+    <col:module document="m-preface" version="latest" repository="http://bread.cnx.rice.edu:9680/content" cnxorg:version-at-this-collection-version="1.4">
+      <md:title>Preface Module</md:title>
+    </col:module>
+    <col:subcollection>
+      <md:title>First Chapter</md:title>
+      <col:content>
+        <col:module document="m-introduction" version="latest" repository="http://bread.cnx.rice.edu:9680/content" cnxorg:version-at-this-collection-version="1.4">
+          <md:title>Overriding Title for Introduction</md:title>
+        </col:module>
+        <col:module document="m-biology" version="latest" repository="http://bread.cnx.rice.edu:9680/content" cnxorg:version-at-this-collection-version="1.7">
+        </col:module>
+        <col:module document="m-section" version="latest" repository="http://bread.cnx.rice.edu:9680/content" cnxorg:version-at-this-collection-version="1.7">
+        </col:module>
+        <col:module document="m-sociology" version="latest" repository="http://bread.cnx.rice.edu:9680/content" cnxorg:version-at-this-collection-version="1.7">
+        </col:module>
+        <col:module document="m-mathchars" version="latest" repository="http://bread.cnx.rice.edu:9680/content" cnxorg:version-at-this-collection-version="1.7">
+        </col:module>
+      </col:content>
+    </col:subcollection>
+
+    <col:module document="m-appendix" version="latest" repository="http://bread.cnx.rice.edu:9680/content" cnxorg:version-at-this-collection-version="1.1">
+      <md:title>Appendix A: Atomic Masses</md:title>
+    </col:module>
+  </col:content>
+</col:collection>

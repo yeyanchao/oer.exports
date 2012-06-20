@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" id="imported-from-openoffice" module-id="imported-from-openoffice" cnxml-version="0.7" class="introduction">
+  <title>8.0 Introduction to Work, Energy, and Energy Resources</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+    <md:repository>http://bread.cnx.rice.edu:9680/content</md:repository>
+    <md:content-url>http://bread.cnx.rice.edu:9680/content/m10021/latest/</md:content-url>
+    <md:content-id>m10021</md:content-id>
+    <md:title>Simple Preface Module</md:title>
+    <md:version>1.5</md:version>
+    <md:created>2011/11/22 17:22:09 US/Central</md:created>
+    <md:revised>2011/12/19 16:04:00.978 US/Central</md:revised>
+    <md:actors>
+      <md:person userid="words">
+        <md:firstname>Words</md:firstname>
+        <md:surname>Numbers</md:surname>
+        <md:fullname>Words Numbers</md:fullname>
+        <md:email>email@example.com</md:email>
+      </md:person>
+    </md:actors>
+    <md:roles>
+      <md:role type="author">words</md:role>
+      <md:role type="maintainer">words</md:role>
+      <md:role type="licensor">words</md:role>
+    </md:roles>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+    <md:subjectlist>
+      <md:subject>Mathematics and Statistics</md:subject>
+      <md:subject>Science and Technology</md:subject>
+    </md:subjectlist>
+    <md:abstract/>
+    <md:language>en</md:language>
+  </metadata>
+  <content>
+
+    <para>This is (so far) just a blank module that represents a Preface module</para>
+    <para>Check that the title next to the page number is "Preface Module" instead of "Preface | Preface"</para>
+
+  </content>
+</document>

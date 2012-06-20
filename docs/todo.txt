@@ -1,0 +1,115 @@
+Faulty PDF Conversion:
+ * Make author/title page
+ * Remove duplicate glossary items
+ * Scale images (using Python Imaging Library to get their size)
+ * Add footnotes for links (make sure mp3 links in Music Theory work)
+ * Allow multiple images in a figure
+ * Move solutions to back of book instead of right after the problem
+ * Resize SVG width (change height also to maintain aspect ratio)
+ * Enable footnotes
+ * Change table width in PDFs (need to do string-len counting fancy footwork to set the width)
+ * (low) Make figures have a line above and below the figure and make them less wide so the figure is clear.
+ * (low) Move figure text up with the figure title for clarity
+ * (low) Change "[115]" to "(pg 115)" 
+
+
+For Regression:
+ * Run PDF gen on all modules, logging which fail.
+ * Convert PDF to text.
+ * Compare PDF with LaTeX method (word frequency diff or diff using 1 word per line).
+
+After generating epub files for all the collections, I got the following bugs (need to implement):
+(the 1st column is the number of occurrences and the next column )
+$ grep "^LOG:" epub-convert.txt | grep -v "MathML Not converted" | grep -v "xincluded" | sort | uniq -c | sort -r
+
+5684 LOG: ERROR: Skipped in creating a solution
+5008 LOG: ERROR: Cannot convert this MathML node to SVG (for image generation). Please try to use something else. Name=mpadded
+3926 LOG: ERROR: Could not match mime-type. Assuming JPEG.
+2211 LOG: BUG: Could not match Element item/label
+2064 LOG: BUG: Could not match Element para/emphasis
+1234 LOG: BUG: Could not match Element para/footnote
+1116 LOG: BUG: Could not match Element para/link
+ 979 LOG: BUG: Could not match Element collection/parameters
+ 723 LOG: ERROR: Subfigures are not really supported. Only the 1st subfigure is used
+ 713 LOG: BUG: Could not match Element metadata/derived-from
+ 692 LOG: BUG: Could not match Element item/emphasis
+ 642 LOG: BUG: Inline defined terms and term definitions are not yet numbered.
+ 528 LOG: BUG: Found some Content MathML that seeped through. mml:apply
+ 528 LOG: BUG: Could not match Element actors/organization
+ 496 LOG: BUG: Could not match Element para/space
+ 317 LOG: BUG: Could not match Element metadata/institution
+ 292 LOG: BUG: Could not match Element note/label
+ 288 LOG: BUG: Could not match Element item/link
+ 281 LOG: ERROR: Unknown role editor
+ 267 LOG: BUG: Found some Content MathML that seeped through. ci
+ 263 LOG: BUG: Could not match Element metadata/instructor
+ 260 LOG: BUG: Could not match Element /editorlist
+ 243 LOG: BUG: Could not match Element content/rule
+ 225 LOG: BUG: Could not match Element exercise/item
+ 181 LOG: BUG: Could not match Element metadata/homepage
+ 178 LOG: BUG: Could not match Element metadata/course-code
+ 170 LOG: BUG: Could not match Element section/rule
+ 161 LOG: BUG: Could not match Element entry/emphasis
+ 125 LOG: ERROR: Cannot convert this MathML node to SVG (for image generation). Please try to use something else. Name=mmultiscripts
+ 124 LOG: BUG: Could not match Element /parent-module
+ 116 LOG: BUG: Could not match Element item/footnote
+ 115 LOG: BUG: Could not match Element solution/label
+ 112 LOG: BUG: Could not match Element exercise/label
+ 107 LOG: BUG: Could not match Element entry/link
+ 102 LOG: BUG: Could not match Element problem/label
+  96 LOG: BUG: Could not match Element para/figure
+  95 LOG: BUG: Could not match Element section/figure
+  95 LOG: BUG: Could not match Element para/rule
+  93 LOG: BUG: Could not match Element example/label
+  60 LOG: BUG: Found some Content MathML that seeped through. diff
+  48 LOG: BUG: Could not match Element emphasis/emphasis
+  37 LOG: BUG: Could not match Element para/media
+  36 LOG: BUG: Found some Content MathML that seeped through. mml:cn
+  36 LOG: BUG: Could not match Element link/emphasis
+  28 LOG: BUG: Could not match Element caption/link
+  27 LOG: BUG: Could not match Element definition/seealso
+  27 LOG: BUG: Could not match Element content/figure
+  25 LOG: BUG: Could not match Element quote/footnote
+  25 LOG: BUG: Could not match Element emphasis/footnote
+  24 LOG: BUG: Could not match Element item/space
+  21 LOG: BUG: Could not match Element para/term
+  19 LOG: BUG: Could not match Element sup/footnote
+  17 LOG: BUG: Could not match Element figure/label
+  16 LOG: BUG: Could not match Element quote/emphasis
+  16 LOG: BUG: Could not match Element para/math
+  15 LOG: BUG: Could not match Element sup/emphasis
+  10 LOG: BUG: Found some Content MathML that seeped through. times
+  10 LOG: BUG: Could not match Element entry/space
+   9 LOG: BUG: Could not match Element note/link
+   8 LOG: BUG: Could not match Element example/media
+   8 LOG: BUG: Could not match Element code/space
+   8 LOG: BUG: Could not match Element /translatorlist
+   7 LOG: ERROR: Unknown role translator
+   7 LOG: BUG: Could not match Element item/rule
+   6 LOG: BUG: Found some Content MathML that seeped through. reln
+   6 LOG: BUG: Found some Content MathML that seeped through. divide
+   6 LOG: BUG: Could not match Element subfigure/label
+   5 LOG: BUG: Found some Content MathML that seeped through. or
+   5 LOG: BUG: Could not match Element tgroup/spanspec
+   5 LOG: BUG: Could not match Element term/footnote
+   4 LOG: BUG: Found some Content MathML that seeped through. infinity
+   4 LOG: BUG: Could not match Element subfigure/media
+   4 LOG: BUG: Could not match Element sub/emphasis
+   4 LOG: BUG: Could not match Element note/term
+   4 LOG: BUG: Could not match Element code/emphasis
+   3 LOG: BUG: Found some Content MathML that seeped through. power
+   3 LOG: BUG: Could not match Element title/footnote
+   3 LOG: BUG: Could not match Element emphasis/link
+   2 LOG: BUG: Found some Content MathML that seeped through. imaginary
+   2 LOG: BUG: Could not match Element item/figure
+   2 LOG: BUG: Could not match Element exercise/commentary
+   2 LOG: BUG: Could not match Element example/figure
+   2 LOG: BUG: Could not match Element content/problemset
+   1 LOG: BUG: Found some Content MathML that seeped through. fn
+   1 LOG: BUG: Could not match Element section/media
+   1 LOG: BUG: Could not match Element problem/div
+   1 LOG: BUG: Could not match Element meaning/footnote
+   1 LOG: BUG: Could not match Element example/rule
+   1 LOG: BUG: Could not match Element equation/label
+   1 LOG: BUG: Could not match Element code/media
+   1 LOG: BUG: Could not match Element code/footnote

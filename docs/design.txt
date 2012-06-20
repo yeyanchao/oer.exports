@@ -1,0 +1,26 @@
+
+Here are the stages of conversion:
+(Mostly done by xsltproc, math2svg using Saxon, and XHTML+CSS3 to PDF using Prince)
+
+For each module, the following are done:
+ * Cleanup the cnxml
+ * Cleanup the MathML in the cnxml (remove empty mml:mo, extra mml:munder, etc)
+ * Convert cnxml to Docbook
+ * Convert P-MathML to SVG (using Saxon and XSLT2)
+ * Cleanup the Docbook file (add error text for unconverted MathML, move all exercises to end of module)
+
+Temporary files are created and deleted (if everything passes).
+
+Individual PDFs can be made for each module to make sure there are no other errors.
+  (see the collectiondbk2pdf.py script for how to do that)
+
+
+At this point the entire collection PDF is created:
+ * Resolve the xi:include elements and create a giant Docbook file
+ * Cleanup the giant Docbook file
+   * module titles with the chapter prefix are removed
+   * exercises are moved
+   * glossary definitions are moved
+ * Convert the Docbook file to XHTML (using xsl/dbk2xhtml.xsl and docbook-xsl/xhtml)
+ * Align the Math SVG properly (using xsl/align-math.xsl)
+ * Fork a subprocess and convert the XHTML file to PDF (using Prince or some commandline tool)

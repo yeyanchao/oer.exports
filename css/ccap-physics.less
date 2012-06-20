@@ -1,0 +1,458 @@
+/***************************************************
+ * Styles used when generating a PDF from xhtml+css
+ ***************************************************/
+
+/* Import general page headers/footers, bookmark calculation, etc */
+@import url('ccap-base.less');
+@import url('ccap-numbering.less');
+
+
+@blue: #0061AA;
+@orange: #FAA61A;
+@dark-orange: #A06A19; // backup color: #D89016;
+@cream: #FBF2E2;
+@green: #8FB733;
+@light-green: #F1F6E6;
+
+
+/*************** Hide ALL solutions ***********/
+.solutions {
+  display: none;
+}
+
+
+/********* Chapter Introduction styles *********/
+
+
+
+/********* HTML Element styles *********/
+
+.ccap-a () {
+  color: #d89016; // Web color
+  color: @dark-orange;
+	font-weight: bold;
+}
+
+
+/********* CNXML ELements *********/
+
+.ccap-figure-title () {
+  .ccap-a;
+}
+
+.ccap-note-title () {
+  color: @blue;
+  border-bottom: 1px solid @orange;
+  /* text-transform: uppercase; */
+}
+
+.ccap-section-title () {
+  color: @blue;
+}
+
+.x-block-title () {
+  .ccap-block-title-link;
+  padding: .1em 1em;
+  margin-top: 1em;
+  display: inline;
+}
+.ccap-block-title-link () {
+  color: white;
+}
+
+
+.x-block-body () {
+  background-color: @light-green;
+  padding: .5em 1em;
+}
+
+.ccap-exercise-title () {
+  .x-block-title;
+  background-color: @green;
+}
+
+.ccap-example-title () {
+  .x-block-title;
+  background-color: @blue;
+}
+
+
+
+
+/* Print-specific styles <style media="print"... */
+
+
+/***************** Title page *****************/
+
+
+/* Introduction banner */
+h1.title { //ccap-chapter
+  background-color: @orange;
+}
+
+.book > * > .titlepage .cnx-gentext-t::before,
+h1.title .cnx-gentext-n { //.ccap-chapter-number
+  color: black;
+  padding-right: 1em;
+}
+
+.chapter .introduction > .title span { //.ccap-intro-title
+  border-bottom: 1px solid @orange;
+}
+
+/********************** Generic Elements ********************/
+
+a {
+	.ccap-a;
+}
+
+/**************************** Index **************************/
+
+.indexdiv h3 {
+  font-size: x-small;
+}
+.indexdiv dt {
+  font-size: x-small;
+  font-weight: normal;
+}
+.indexterm {
+  color: black;
+  font-weight: bold;
+}
+
+
+/*********************** Table of Contents ********************/
+
+.book > .toc > .title {
+  border-bottom: 1px solid @orange;
+}
+
+.book > .toc a {
+	color: @blue;
+}
+
+/* TOC Chapter */
+.book > .toc > li > ul a {
+  color: @blue;
+}
+
+
+/****************** Modern-Textbook classes ****************/
+
+/* Numbered sections should have the number in blue */
+h2::before {
+  color: @blue;
+}
+
+/* "Key Concepts" Introduction table */
+.chapter .toc {
+	border: 1px solid @blue;
+}
+.chapter .toc > .title {
+	background-color: @blue;
+}
+
+
+.table table {
+  background-color: @cream;
+}
+.table th {
+  background-color: @green;
+}
+.table caption {
+  color: @dark-orange;
+}
+
+/************************************************
+ * CNXML blockish elements
+ ************************************************/
+.note { //.ccap-note
+	/* page-break-inside: avoid; Per David's request, less whitespace is better. */
+	background-color: @cream;
+}
+.note h3 {
+  margin-top: 0.5em;
+}
+.note > .title {
+  .ccap-note-title;
+}
+.figure > .caption::before,
+.figure > .title {
+  .ccap-figure-title;
+}
+
+
+
+/******************************************************
+ * End of chapter customizations
+ ******************************************************/
+.cnx-eoc .section .title a {
+	color: @blue;
+}
+
+.problems-exercises {
+  .x-column-count(2);
+  page-break-before: always;
+}
+
+/* Allow sections in the 2-column problems-exercises to break */
+.problems-exercises .section {
+  page-break-inside: auto;
+}
+
+
+/*****************************************************
+ * Appendix customizations
+ *****************************************************/
+
+.list-item-spacing {
+	margin-top: 0.2em;
+}
+.cnx-underscore {
+  page-break-after: avoid;
+	border-bottom: 1px solid @orange;
+}
+.cnx-gentext-exercise.cnx-gentext-n {
+	font-weight: bold;
+}
+.example > .title > *,
+.cnx-eoc > .title > *,
+.index > .title > *,
+.glossary > .titlepage > div > div > * {
+  .ccap-example-title;
+	font-size: small;
+	font-weight: bold;
+	page-break-after: avoid;
+}
+.exercise > .title > * {
+  .ccap-exercise-title;
+	font-size: small;
+	font-weight: bold;
+	page-break-after: avoid;
+}
+.exercise > .title a {
+  .ccap-block-title-link;
+}
+
+/* Add the orange bar */
+.example > .title,
+.exercise > .title,
+.cnx-eoc > .title,
+.index > .title,
+.glossary > .titlepage {
+  border-bottom: 1px solid @orange;
+	page-break-after: avoid;
+}
+
+.example > .body,
+.exercise > .body {
+  .x-block-body;
+}
+
+
+.titlepage {
+  page-break-after: avoid;
+}
+
+.titlepage h3 {
+	.ccap-section-title;
+	font-size: small;
+}
+.cnx-vertical-spacing {
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+.normal-para-spacing {
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+.list-block-spacing {
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+.list-item-spacing {
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+.list-block-properties {
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+
+table.cnx-figure-horizontal td {
+  //PHIL
+}
+.section-title-level1-properties {
+	font-size: large;
+	font-weight: bold;
+	padding-top: 6pt;
+}
+.section-title-level2-properties {
+	font-size: medium;
+	font-weight: normal;
+	padding-top: 6pt;
+}
+.section-title-number {
+	color: @blue;
+	font-size: large;
+	font-weight: bold;
+	padding-top: 6pt;
+}
+.cnx-figure-content {
+  text-align: center;
+}
+.cnx-figure-content div {
+  display: inline;
+  text-align: left;
+}
+/* Lists inside an exercise/example should be bold */
+.cnx-gentext-listitem.cnx-gentext-n {
+	font-weight: bold;
+}
+.problems-exercises .cnx-gentext-listitem.cnx-gentext-n {
+  font-weight: normal;
+}
+
+.formal-object-properties {
+	margin-bottom: 0.25em;
+}
+.informal-object-properties {
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+.table-properties {
+	background-color: transparent;
+	margin-top: 0em;
+}
+.cnx-formal-object {
+  margin-top: 1em;
+	/* page-break-inside: avoid; Per David's request, less whitespace is better. */
+}
+.cnx-formal-object-inner {
+	margin-bottom: 0.25em;
+}
+.xref-properties {
+	color: #D89016;
+	font-weight: bold;
+}
+.cnx-note-concept {
+	page-break-inside: avoid;
+	background-color: @cream;
+	border-bottom: 1px solid @blue;
+	border-bottom-color: @blue;
+	border-bottom-style: solid;
+	border-top: 1px solid @blue;
+	border-top-color: @blue;
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding-bottom: 0.25em;
+	padding-left: 1em;
+	padding-top: 0.25em;
+	padding-top: 0.5em;
+}
+.cnx-note-concept-title {
+	color: @blue;
+	font-size: medium;
+}
+.cnx-note-tip {
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+.cnx-note-tip-body {
+	background-color: #EFF2F9;
+	border-top-color: @orange;
+	border-top-style: solid;
+	border-top-width: 1px;
+	color: @blue;
+	margin-bottom: 0em;
+	margin-top: 1px;
+	text-align: center;
+}
+.cnx-note-tip-title {
+	text-align: center;
+}
+.cnx-note-tip-title-inline {
+	background-color: @blue;
+	color: white;
+	font-size: medium;
+	padding-bottom: 0.25em;
+	padding-top: 0.25em;
+}
+.cnx-note-feature {
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+.cnx-note-feature-title {
+}
+.cnx-note-feature-title-inline {
+}
+.cnx-note-feature-body {
+}
+.cnx-note-feature-body-inner {
+	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+}
+.cnx-introduction-chapter {
+	background-color: @orange;
+	font-size: x-large;
+	padding-bottom: 0em;
+	padding-left: 0.1em;
+	padding-top: 0.05em;
+	text-align: left;
+}
+.cnx-introduction-chapter-number {
+}
+.cnx-chapter-title {
+	color: white;
+}
+.cnx-introduction-title {
+}
+.cnx-introduction-title-text {
+	border-bottom: 1px solid @orange;
+	border-bottom-color: @orange;
+	border-bottom-style: solid;
+	font-size: large;
+	font-weight: bold;
+	margin-bottom: 0.75em;
+}
+.cnx-header-title {
+}
+.cnx-header-subtitle {
+}
+.cnx-header-pagenumber {
+	font-size: x-small;
+}
+.cnx-header-separator {
+	color: @orange;
+}
+.cnx-index-title-body {
+	color: @blue;
+	font-size: medium;
+	font-weight: bold;
+	padding-top: 0.25em;
+}
+.cnx-titlepage-title {
+	font-size: 24pt;
+	font-weight: bold;
+	margin-top: 2in;
+	text-align: center;
+}
+.cnx-titlepage-authors {
+	font-size: 12pt;
+	margin-top: 1in;
+	text-align: center;
+}
+.cnx-titlepage-strong {
+	font-weight: bold;
+}
+.table-of-contents-titlepage-recto-style {
+	border-bottom: 1px solid @orange;
+	border-bottom-color: @orange;
+	border-bottom-style: solid;
+	margin-bottom: 0.75em;
+}

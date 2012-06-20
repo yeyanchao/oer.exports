@@ -1,0 +1,226 @@
+/***************************************************
+ * Styles used when generating a PDF from xhtml+css
+ ***************************************************/
+
+@import url('ccap-base.css');
+
+/* Print-specific styles <style media="print"... */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Introduction banner */
+.chapter h1 {
+  color: LightGray;
+  position: relative;
+  top: 2em;
+}
+.chapter h1 > span {
+  font-size: 1em !important;
+}
+/* Used for page headers */
+/* The 1st span contains the chapter number */
+h1 span:first-child {
+  content: "Chapter " content();
+  text-transform: uppercase;
+  font-size: normal;
+  font-family: serif;
+}
+/* The 2nd span contains the chapter title */
+h1 span:last-child {
+  font-size: x-large;
+}
+
+h2 {
+  border-top: 0.3em solid lightgray;
+  font-family: serif;
+  font-size: large;
+}
+
+h3 {
+  color: red;
+  font-size: large;
+  font-family: serif;
+  font-weight: normal;
+  margin-bottom: 0em;
+}
+
+.module > * {
+  margin-left: 120px;
+  margin-right: 0px;
+  margin-inside: 0px;
+  margin-outside: 120px;
+}
+.module > div.titlepage {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-inside: 0px;
+  margin-outside: 0px;
+}
+
+.module > .figure img {
+  max-width: 100px;
+}
+
+.section > .figure img[height] {
+  max-width: none;
+}
+
+
+a {
+  color: black;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px dotted LightGray;
+}
+
+/* TODO: add margin-left to all margin-left */
+.module > .example > .title, /* These 2 are in collabstats but not in ccap-physics */
+.module > .exercise > .title,
+.module > .section > .example > .title,
+.module > .section > .exercise > .title,
+.module > .figure,
+.module * > .figure > .title
+{
+  float: left;
+  float: outside;
+  margin-left: -120px;
+  margin-right: 0px;
+  margin-inside: 0px;
+  margin-outside: -120px; /* TODO: Anytime there is a negative margin, make sure there is a max-width */
+  max-width: 100px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: small;
+}
+.figure {
+  font-size: small;
+}
+.figure .caption {
+  font-size: xx-small;
+}
+.module > .figure {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-inside: 0px;
+  margin-outside: 0px;
+  font-size: small;
+}
+.module > .section > .figure > .title {
+  position: relative;
+  top: -3em;
+  font-size: small;
+}
+.module > .figure .caption {
+  display: none;
+}
+
+/* TODO: Move cnx-figure-horizontal to be a class on the .figure element for better CSS handling (ie exclude it from showing up in the margins) */
+.cnx-figure-horizontal,
+.section > .example > .title .cnx-gentext-t,
+.section > .exercise > .title .cnx-gentext-t {
+  display: none;
+}
+
+.example .title {
+  color: gray;
+}
+
+.figure > .title {
+  color: gray;
+}
+
+.splash img {
+  width: 100% !important;
+}
+.splash > .title,
+.splash > .caption {
+  display: inline;
+  position: relative;
+  top: -4em;
+  color: white;
+}
+
+
+/* TODO: ? rename cnx-example to something like "body-wrap" */
+.cnx-example > .cnx-formal-object-inner {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  padding-top: 0.05em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.25em;
+  background-color: WhiteSmoke;
+}
+
+.note {
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+  padding-top: 0.05em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.note h3 {
+  color: black;
+  font-family: sans-serif;
+}
+
+.table table {
+  background-color: whiteSmoke;
+}
+
+.table table td, .table table th {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+.table table th {
+  background-color: lightgray;
+}
+
+.solution {
+  display: none;
+}
+
+
+/*********************** Table of Contents ********************/
+
+.chapter .toc {
+  display: none;
+}
+
+.toc {
+  font-family: sans-serif;
+}
+
+.toc a {
+  color: gray;
+  text-decoration: none;
+  font-weight: normal;
+  border-bottom: none;
+}
+
+/* TOC Chapter */
+.toc dt div {
+  font-size: large;
+  padding: 0.5em;
+  border-bottom: 1px solid lightgray;
+}
+.toc dl dl {
+  display: none;
+}
+
+
+/* Chapter 3 : Type Systems ........................ 213 */
+.toc a::after {
+  content: leader(' ') target-counter(attr(href), page);
+}
+

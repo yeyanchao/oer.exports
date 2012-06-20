@@ -1,0 +1,103 @@
+81c81
+<       <xsl:attribute name="style" select="concat('font-family: ', string-join($fontName, ', '), '; ', @t:STYLE)"/>
+---
+>       <xsl:attribute name="style" select="@t:STYLE"/>
+86a87,90
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="substring(@t:TEXT,1,1)"/>
+>         </xsl:call-template>
+> 
+148c152
+< 	  <xsl:attribute name="style" select="concat('font-family: ', string-join($fontName, ', '), '; ', @t:STYLE)"/>
+---
+> 	  <xsl:attribute name="style" select="@t:STYLE"/>
+164c168
+< 	  <xsl:attribute name="style" select="concat('font-family: ', string-join($fontName, ', '), '; ', @t:STYLE)"/>
+---
+> 	  <xsl:attribute name="style" select="@t:STYLE"/>
+183c187
+< 	  <xsl:attribute name="style" select="concat('font-family: ', string-join($fontName, ', '), '; ', @t:STYLE)"/>
+---
+> 	  <xsl:attribute name="style" select="@t:STYLE"/>
+230c234
+<       <xsl:attribute name="style" select="concat('font-family: ', string-join($fontName, ', '), '; ', @t:STYLE)"/>
+---
+>       <xsl:attribute name="style" select="@t:STYLE"/>
+959a964,980
+> 
+>   <!-- Determines the base font to use -->
+>   <xsl:template name="setBestFont">
+>     <xsl:param name="char" />
+>     <xsl:param name="fontName" tunnel="yes" />
+>     
+>     <xsl:variable name="bestFontName">
+>       <xsl:call-template name="findFontName">
+>     	<xsl:with-param name="name" select="$char"/>
+>     	<xsl:with-param name="fonts" select="$fontName"/>
+>       </xsl:call-template>
+>     </xsl:variable>
+>     <xsl:if test="normalize-space($bestFontName) != ''">
+>       <xsl:attribute name="font-family" select="$bestFontName"/>
+>     </xsl:if>
+>   </xsl:template>
+>   
+1137a1159,1162
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="$delimPart/*[@vname=$delimiter]/*[$topIndex]"/>
+>         </xsl:call-template>
+> 
+1148a1174,1177
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="$delimPart/*[@vname=$delimiter]/*[$bottomIndex]"/>
+>         </xsl:call-template>
+> 
+1162a1192,1195
+> 	      <xsl:call-template name="setBestFont">
+> 	        <xsl:with-param name="char" select="$delimPart/*[@vname=$delimiter]/*[$middleIndex]"/>
+> 	      </xsl:call-template>
+> 	      
+1227a1261,1264
+> 	  <xsl:call-template name="setBestFont">
+> 	    <xsl:with-param name="char" select="$delimiter"/>
+> 	  </xsl:call-template>
+> 	  
+1250a1288,1291
+> 	  <xsl:call-template name="setBestFont">
+> 	    <xsl:with-param name="char" select="$delimiter"/>
+> 	  </xsl:call-template>
+> 
+1329a1371,1374
+> 	  <xsl:call-template name="setBestFont">
+> 	    <xsl:with-param name="char" select="$extenser"/>
+> 	  </xsl:call-template>
+> 
+1516a1562,1565
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="$delimPart/*[@hname=$delimiter]/*[$rightIndex]"/>
+>         </xsl:call-template>
+> 
+1531a1581,1584
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="$delimPart/*[@hname=$delimiter]/*[$leftIndex]"/>
+>         </xsl:call-template>
+> 
+1549a1603,1606
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="$delimPart/*[@hname=$delimiter]/*[$middleIndex]"/>
+>         </xsl:call-template>
+> 
+1620a1678,1681
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="$delimiter"/>
+>         </xsl:call-template>
+> 
+1641a1703,1706
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="$delimiter"/>
+>         </xsl:call-template>
+> 
+1724a1790,1793
+>         <xsl:call-template name="setBestFont">
+>           <xsl:with-param name="char" select="$extenser"/>
+>         </xsl:call-template>
+> 

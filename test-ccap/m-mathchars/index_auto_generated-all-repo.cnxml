@@ -1,0 +1,831 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" id="imported-from-openoffice" module-id="imported-from-openoffice" cnxml-version="0.7">
+  <title>Energy in Waves: Intensity</title>
+<metadata mdml-version="0.5">
+  <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+  <md:repository>http://bread.cnx.rice.edu:9680/content</md:repository>
+  <md:content-url>http://bread.cnx.rice.edu:9680/content/m10167/latest/</md:content-url>
+  <md:content-id>m10167</md:content-id>
+  <md:title>Math Characters used in our Content</md:title>
+  <md:version>1.5</md:version>
+  <md:created>2011/12/26 10:54:01 US/Central</md:created>
+  <md:revised>2012/04/02 07:55:40.351 GMT-5</md:revised>
+  <md:actors>
+    <md:person userid="words">
+      <md:firstname>Words</md:firstname>
+      <md:surname>Numbers</md:surname>
+      <md:fullname>Words Numbers</md:fullname>
+      <md:email>rhall@wordsandnumbers.com</md:email>
+    </md:person>
+  </md:actors>
+  <md:roles>
+    <md:role type="author">words</md:role>
+    <md:role type="maintainer">words</md:role>
+    <md:role type="licensor">words</md:role>
+  </md:roles>
+  <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+  <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+  <md:keywordlist>
+    <md:keyword>Interference</md:keyword>
+    <md:keyword>Sound intensity</md:keyword>
+    <md:keyword>Superposition</md:keyword>
+    <md:keyword>Wave intensity</md:keyword>
+  </md:keywordlist>
+  <md:subjectlist>
+    <md:subject>Science and Technology</md:subject>
+  </md:subjectlist>
+  <md:abstract><list>
+<item>Calculate the intensity and the power of rays and waves.</item>
+<item>Examine perfect constructive interference.</item>
+</list></md:abstract>
+  <md:language>en</md:language>
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+</metadata>
+
+<content>
+
+
+<emphasis>Math Characters (by frequency)</emphasis>
+<para><span>Char</span><span>Image</span><span>freq</span></para>
+
+<para><emphasis class="char">⎞⌠</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>⎞⌠</m:mi></m:mstyle></m:math></span><span>-1</span></para>
+<para><emphasis class="char">&#x2032;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#x2032;</m:mi></m:mstyle></m:math></span><span>prime</span></para>
+
+<para><emphasis class="char">&#50;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#50;</m:mi></m:mstyle></m:math></span><span>119169</span></para>
+<para><emphasis class="char">&#49;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#49;</m:mi></m:mstyle></m:math></span><span>114931</span></para>
+<para><emphasis class="char">&#61;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#61;</m:mi></m:mstyle></m:math></span><span>108167</span></para>
+<para><emphasis class="char">&#40;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#40;</m:mi></m:mstyle></m:math></span><span>82178</span></para>
+<para><emphasis class="char">&#41;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#41;</m:mi></m:mstyle></m:math></span><span>82130</span></para>
+<para><emphasis class="char">&#48;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#48;</m:mi></m:mstyle></m:math></span><span>76804</span></para>
+<para><emphasis class="char">&#120;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#120;</m:mi></m:mstyle></m:math></span><span>76292</span></para>
+<para><emphasis class="char">&#43;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#43;</m:mi></m:mstyle></m:math></span><span>58585</span></para>
+<para><emphasis class="char">&#110;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#110;</m:mi></m:mstyle></m:math></span><span>57163</span></para>
+<para><emphasis class="char">&#116;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#116;</m:mi></m:mstyle></m:math></span><span>49090</span></para>
+<para><emphasis class="char">&#97;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#97;</m:mi></m:mstyle></m:math></span><span>43515</span></para>
+<para><emphasis class="char">&#45;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#45;</m:mi></m:mstyle></m:math></span><span>41544</span></para>
+<para><emphasis class="char">&#51;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#51;</m:mi></m:mstyle></m:math></span><span>40816</span></para>
+<para><emphasis class="char">&#8722;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8722;</m:mi></m:mstyle></m:math></span><span>38655</span></para>
+<para><emphasis class="char">&#105;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#105;</m:mi></m:mstyle></m:math></span><span>37309</span></para>
+<para><emphasis class="char">&#44;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#44;</m:mi></m:mstyle></m:math></span><span>36155</span></para>
+<para><emphasis class="char">&#115;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#115;</m:mi></m:mstyle></m:math></span><span>35895</span></para>
+<para><emphasis class="char">&#46;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#46;</m:mi></m:mstyle></m:math></span><span>32795</span></para>
+<para><emphasis class="char">&#52;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#52;</m:mi></m:mstyle></m:math></span><span>28101</span></para>
+<para><emphasis class="char">&#101;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#101;</m:mi></m:mstyle></m:math></span><span>27377</span></para>
+<para><emphasis class="char">&#121;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#121;</m:mi></m:mstyle></m:math></span><span>26647</span></para>
+<para><emphasis class="char">&#102;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#102;</m:mi></m:mstyle></m:math></span><span>26579</span></para>
+<para><emphasis class="char">&#53;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#53;</m:mi></m:mstyle></m:math></span><span>25621</span></para>
+<para><emphasis class="char">&#109;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#109;</m:mi></m:mstyle></m:math></span><span>23529</span></para>
+<para><emphasis class="char">&#99;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#99;</m:mi></m:mstyle></m:math></span><span>22680</span></para>
+<para><emphasis class="char">&#111;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#111;</m:mi></m:mstyle></m:math></span><span>21409</span></para>
+<para><emphasis class="char">&#114;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#114;</m:mi></m:mstyle></m:math></span><span>20825</span></para>
+<para><emphasis class="char">&#107;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#107;</m:mi></m:mstyle></m:math></span><span>19926</span></para>
+<para><emphasis class="char">&#100;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#100;</m:mi></m:mstyle></m:math></span><span>19125</span></para>
+<para><emphasis class="char">&#54;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#54;</m:mi></m:mstyle></m:math></span><span>18066</span></para>
+<para><emphasis class="char">&#98;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#98;</m:mi></m:mstyle></m:math></span><span>17751</span></para>
+<para><emphasis class="char">&#88;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#88;</m:mi></m:mstyle></m:math></span><span>15460</span></para>
+<para><emphasis class="char">&#78;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#78;</m:mi></m:mstyle></m:math></span><span>15428</span></para>
+<para><emphasis class="char">&#108;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#108;</m:mi></m:mstyle></m:math></span><span>15186</span></para>
+<para><emphasis class="char">&#65;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#65;</m:mi></m:mstyle></m:math></span><span>13912</span></para>
+<para><emphasis class="char">&#103;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#103;</m:mi></m:mstyle></m:math></span><span>13766</span></para>
+<para><emphasis class="char">&#112;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#112;</m:mi></m:mstyle></m:math></span><span>13626</span></para>
+<para><emphasis class="char">&#56;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#56;</m:mi></m:mstyle></m:math></span><span>13523</span></para>
+<para><emphasis class="char">&#104;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#104;</m:mi></m:mstyle></m:math></span><span>13176</span></para>
+<para><emphasis class="char">&#124;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#124;</m:mi></m:mstyle></m:math></span><span>12814</span></para>
+<para><emphasis class="char">&#122;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#122;</m:mi></m:mstyle></m:math></span><span>12788</span></para>
+<para><emphasis class="char">&#118;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#118;</m:mi></m:mstyle></m:math></span><span>12702</span></para>
+<para><emphasis class="char">&#32;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#32;</m:mi></m:mstyle></m:math></span><span>12387</span></para>
+<para><emphasis class="char">&#117;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#117;</m:mi></m:mstyle></m:math></span><span>12284</span></para>
+<para><emphasis class="char">&#67;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#67;</m:mi></m:mstyle></m:math></span><span>12112</span></para>
+<para><emphasis class="char">&#82;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#82;</m:mi></m:mstyle></m:math></span><span>11612</span></para>
+<para><emphasis class="char">&#80;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#80;</m:mi></m:mstyle></m:math></span><span>11534</span></para>
+<para><emphasis class="char">&#55;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#55;</m:mi></m:mstyle></m:math></span><span>11236</span></para>
+<para><emphasis class="char">&#84;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#84;</m:mi></m:mstyle></m:math></span><span>10648</span></para>
+<para><emphasis class="char">&#8201;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8201;</m:mi></m:mstyle></m:math></span><span>10622</span></para>
+<para><emphasis class="char">&#106;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#106;</m:mi></m:mstyle></m:math></span><span>10460</span></para>
+<para><emphasis class="char">&#57;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#57;</m:mi></m:mstyle></m:math></span><span>9951</span></para>
+<para><emphasis class="char">&#66;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#66;</m:mi></m:mstyle></m:math></span><span>9868</span></para>
+<para><emphasis class="char">&#969;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#969;</m:mi></m:mstyle></m:math></span><span>9789</span></para>
+<para><emphasis class="char">&#72;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#72;</m:mi></m:mstyle></m:math></span><span>9504</span></para>
+<para><emphasis class="char">&#960;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#960;</m:mi></m:mstyle></m:math></span><span>9319</span></para>
+<para><emphasis class="char">&#93;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#93;</m:mi></m:mstyle></m:math></span><span>8516</span></para>
+<para><emphasis class="char">&#91;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#91;</m:mi></m:mstyle></m:math></span><span>8492</span></para>
+<para><emphasis class="char">&#69;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#69;</m:mi></m:mstyle></m:math></span><span>8467</span></para>
+<para><emphasis class="char">&#83;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#83;</m:mi></m:mstyle></m:math></span><span>8036</span></para>
+<para><emphasis class="char">&#47;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#47;</m:mi></m:mstyle></m:math></span><span>7941</span></para>
+<para><emphasis class="char">&#952;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#952;</m:mi></m:mstyle></m:math></span><span>7672</span></para>
+<para><emphasis class="char">&#70;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#70;</m:mi></m:mstyle></m:math></span><span>7613</span></para>
+<para><emphasis class="char">&#77;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#77;</m:mi></m:mstyle></m:math></span><span>7501</span></para>
+<para><emphasis class="char">&#73;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#73;</m:mi></m:mstyle></m:math></span><span>7159</span></para>
+<para><emphasis class="char">&#8734;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8734;</m:mi></m:mstyle></m:math></span><span>7114</span></para>
+<para><emphasis class="char">&#8721;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8721;</m:mi></m:mstyle></m:math></span><span>6873</span></para>
+<para><emphasis class="char">&#86;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#86;</m:mi></m:mstyle></m:math></span><span>6657</span></para>
+<para><emphasis class="char">&#76;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#76;</m:mi></m:mstyle></m:math></span><span>6499</span></para>
+<para><emphasis class="char">&#945;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#945;</m:mi></m:mstyle></m:math></span><span>6019</span></para>
+<para><emphasis class="char">&#68;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#68;</m:mi></m:mstyle></m:math></span><span>5916</span></para>
+<para><emphasis class="char">&#215;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#215;</m:mi></m:mstyle></m:math></span><span>5658</span></para>
+<para><emphasis class="char">&#8594;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8594;</m:mi></m:mstyle></m:math></span><span>5526</span></para>
+<para><emphasis class="char">&#8747;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8747;</m:mi></m:mstyle></m:math></span><span>5519</span></para>
+<para><emphasis class="char">&#8804;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8804;</m:mi></m:mstyle></m:math></span><span>5448</span></para>
+<para><emphasis class="char">&#113;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#113;</m:mi></m:mstyle></m:math></span><span>5354</span></para>
+<para><emphasis class="char">&#123;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#123;</m:mi></m:mstyle></m:math></span><span>5123</span></para>
+<para><emphasis class="char">&#89;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#89;</m:mi></m:mstyle></m:math></span><span>5085</span></para>
+<para><emphasis class="char">&#8658;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8658;</m:mi></m:mstyle></m:math></span><span>4990</span></para>
+<para><emphasis class="char">&#125;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#125;</m:mi></m:mstyle></m:math></span><span>4642</span></para>
+<para><emphasis class="char">&#8706;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8706;</m:mi></m:mstyle></m:math></span><span>4581</span></para>
+<para><emphasis class="char">&#60;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#60;</m:mi></m:mstyle></m:math></span><span>4508</span></para>
+<para><emphasis class="char">&#39;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#39;</m:mi></m:mstyle></m:math></span><span>4440</span></para>
+<para><emphasis class="char">&#79;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#79;</m:mi></m:mstyle></m:math></span><span>4325</span></para>
+<para><emphasis class="char">&#8712;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8712;</m:mi></m:mstyle></m:math></span><span>4224</span></para>
+<para><emphasis class="char">&#75;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#75;</m:mi></m:mstyle></m:math></span><span>4106</span></para>
+<para><emphasis class="char">&#916;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#916;</m:mi></m:mstyle></m:math></span><span>4077</span></para>
+<para><emphasis class="char">&#160;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#160;</m:mi></m:mstyle></m:math></span><span>3936</span></para>
+<para><emphasis class="char">&#955;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#955;</m:mi></m:mstyle></m:math></span><span>3873</span></para>
+<para><emphasis class="char">&#59;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#59;</m:mi></m:mstyle></m:math></span><span>3837</span></para>
+<para><emphasis class="char">&#119;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#119;</m:mi></m:mstyle></m:math></span><span>3763</span></para>
+<para><emphasis class="char">&#8901;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8901;</m:mi></m:mstyle></m:math></span><span>3718</span></para>
+<para><emphasis class="char">&#183;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#183;</m:mi></m:mstyle></m:math></span><span>3695</span></para>
+<para><emphasis class="char">&#62;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#62;</m:mi></m:mstyle></m:math></span><span>3591</span></para>
+<para><emphasis class="char">&#956;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#956;</m:mi></m:mstyle></m:math></span><span>3282</span></para>
+<para><emphasis class="char">&#71;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#71;</m:mi></m:mstyle></m:math></span><span>3249</span></para>
+<para><emphasis class="char">&#94;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#94;</m:mi></m:mstyle></m:math></span><span>3205</span></para>
+<para><emphasis class="char">&#948;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#948;</m:mi></m:mstyle></m:math></span><span>3202</span></para>
+<para><emphasis class="char">&#8739;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8739;</m:mi></m:mstyle></m:math></span><span>3105</span></para>
+<para><emphasis class="char">&#963;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#963;</m:mi></m:mstyle></m:math></span><span>3021</span></para>
+<para><emphasis class="char">&#87;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#87;</m:mi></m:mstyle></m:math></span><span>2897</span></para>
+<para><emphasis class="char">&#90;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#90;</m:mi></m:mstyle></m:math></span><span>2859</span></para>
+<para><emphasis class="char">&#964;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#964;</m:mi></m:mstyle></m:math></span><span>2854</span></para>
+<para><emphasis class="char">&#81;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#81;</m:mi></m:mstyle></m:math></span><span>2834</span></para>
+<para><emphasis class="char">&#175;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#175;</m:mi></m:mstyle></m:math></span><span>2719</span></para>
+<para><emphasis class="char">&#966;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#966;</m:mi></m:mstyle></m:math></span><span>2711</span></para>
+<para><emphasis class="char">&#58;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#58;</m:mi></m:mstyle></m:math></span><span>2508</span></para>
+<para><emphasis class="char">&#8520;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8520;</m:mi></m:mstyle></m:math></span><span>2334</span></para>
+<para><emphasis class="char">&#8290;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8290;</m:mi></m:mstyle></m:math></span><span>2247</span></para>
+<para><emphasis class="char">&#8519;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8519;</m:mi></m:mstyle></m:math></span><span>2238</span></para>
+<para><emphasis class="char">&#85;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#85;</m:mi></m:mstyle></m:math></span><span>2187</span></para>
+<para><emphasis class="char">&#8805;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8805;</m:mi></m:mstyle></m:math></span><span>2168</span></para>
+<para><emphasis class="char">&#42;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#42;</m:mi></m:mstyle></m:math></span><span>2162</span></para>
+<para><emphasis class="char">&#937;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#937;</m:mi></m:mstyle></m:math></span><span>2146</span></para>
+<para><emphasis class="char">&#946;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#946;</m:mi></m:mstyle></m:math></span><span>2095</span></para>
+<para><emphasis class="char">&#8728;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8728;</m:mi></m:mstyle></m:math></span><span>1824</span></para>
+<para><emphasis class="char">&#961;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#961;</m:mi></m:mstyle></m:math></span><span>1723</span></para>
+<para><emphasis class="char">&#981;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#981;</m:mi></m:mstyle></m:math></span><span>1713</span></para>
+<para><emphasis class="char">&#8741;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8741;</m:mi></m:mstyle></m:math></span><span>1624</span></para>
+<para><emphasis class="char">&#38;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#38;</m:mi></m:mstyle></m:math></span><span>1455</span></para>
+<para><emphasis class="char">&#934;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#934;</m:mi></m:mstyle></m:math></span><span>1337</span></para>
+<para><emphasis class="char">&#8943;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8943;</m:mi></m:mstyle></m:math></span><span>1243</span></para>
+<para><emphasis class="char">&#1013;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1013;</m:mi></m:mstyle></m:math></span><span>1199</span></para>
+<para><emphasis class="char">&#74;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#74;</m:mi></m:mstyle></m:math></span><span>1153</span></para>
+<para><emphasis class="char">&#8800;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8800;</m:mi></m:mstyle></m:math></span><span>1107</span></para>
+<para><emphasis class="char">&#95;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#95;</m:mi></m:mstyle></m:math></span><span>1083</span></para>
+<para><emphasis class="char">&#949;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#949;</m:mi></m:mstyle></m:math></span><span>1039</span></para>
+<para><emphasis class="char">&#8518;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8518;</m:mi></m:mstyle></m:math></span><span>1032</span></para>
+<para><emphasis class="char">&#8242;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8242;</m:mi></m:mstyle></m:math></span><span>1027</span></para>
+<para><emphasis class="char">&#247;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#247;</m:mi></m:mstyle></m:math></span><span>1018</span></para>
+<para><emphasis class="char">&#8195;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8195;</m:mi></m:mstyle></m:math></span><span>996</span></para>
+<para><emphasis class="char">&#8230;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8230;</m:mi></m:mstyle></m:math></span><span>977</span></para>
+<para><emphasis class="char">&#947;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#947;</m:mi></m:mstyle></m:math></span><span>961</span></para>
+<para><emphasis class="char">&#951;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#951;</m:mi></m:mstyle></m:math></span><span>957</span></para>
+<para><emphasis class="char">&#177;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#177;</m:mi></m:mstyle></m:math></span><span>955</span></para>
+<para><emphasis class="char">&#968;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#968;</m:mi></m:mstyle></m:math></span><span>952</span></para>
+<para><emphasis class="char">&#8467;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8467;</m:mi></m:mstyle></m:math></span><span>946</span></para>
+<para><emphasis class="char">&#273;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#273;</m:mi></m:mstyle></m:math></span><span>918</span></para>
+<para><emphasis class="char">&#950;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#950;</m:mi></m:mstyle></m:math></span><span>892</span></para>
+<para><emphasis class="char">&#732;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#732;</m:mi></m:mstyle></m:math></span><span>858</span></para>
+<para><emphasis class="char">&#35;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#35;</m:mi></m:mstyle></m:math></span><span>798</span></para>
+<para><emphasis class="char">&#8407;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8407;</m:mi></m:mstyle></m:math></span><span>761</span></para>
+<para><emphasis class="char">&#8942;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8942;</m:mi></m:mstyle></m:math></span><span>729</span></para>
+<para><emphasis class="char">&#8711;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8711;</m:mi></m:mstyle></m:math></span><span>669</span></para>
+<para><emphasis class="char">&#176;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#176;</m:mi></m:mstyle></m:math></span><span>623</span></para>
+<para><emphasis class="char">&#8746;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8746;</m:mi></m:mstyle></m:math></span><span>603</span></para>
+<para><emphasis class="char">&#33;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#33;</m:mi></m:mstyle></m:math></span><span>596</span></para>
+<para><emphasis class="char">&#8776;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8776;</m:mi></m:mstyle></m:math></span><span>541</span></para>
+<para><emphasis class="char">&#8226;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8226;</m:mi></m:mstyle></m:math></span><span>541</span></para>
+<para><emphasis class="char">&#8764;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8764;</m:mi></m:mstyle></m:math></span><span>536</span></para>
+<para><emphasis class="char">&#126;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#126;</m:mi></m:mstyle></m:math></span><span>530</span></para>
+<para><emphasis class="char">&#818;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#818;</m:mi></m:mstyle></m:math></span><span>521</span></para>
+<para><emphasis class="char">&#957;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#957;</m:mi></m:mstyle></m:math></span><span>514</span></para>
+<para><emphasis class="char">&#8743;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8743;</m:mi></m:mstyle></m:math></span><span>507</span></para>
+<para><emphasis class="char">&#63;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#63;</m:mi></m:mstyle></m:math></span><span>501</span></para>
+<para><emphasis class="char">&#8727;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8727;</m:mi></m:mstyle></m:math></span><span>493</span></para>
+<para><emphasis class="char">&#710;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#710;</m:mi></m:mstyle></m:math></span><span>491</span></para>
+<para><emphasis class="char">&#8745;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8745;</m:mi></m:mstyle></m:math></span><span>482</span></para>
+<para><emphasis class="char">&#713;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#713;</m:mi></m:mstyle></m:math></span><span>475</span></para>
+<para><emphasis class="char">&#8289;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8289;</m:mi></m:mstyle></m:math></span><span>465</span></para>
+<para><emphasis class="char">&#8801;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8801;</m:mi></m:mstyle></m:math></span><span>460</span></para>
+<para><emphasis class="char">&#915;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#915;</m:mi></m:mstyle></m:math></span><span>451</span></para>
+<para><emphasis class="char">&#923;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#923;</m:mi></m:mstyle></m:math></span><span>436</span></para>
+<para><emphasis class="char">&#37;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#37;</m:mi></m:mstyle></m:math></span><span>428</span></para>
+<para><emphasis class="char">&#8736;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8736;</m:mi></m:mstyle></m:math></span><span>414</span></para>
+<para><emphasis class="char">&#8211;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8211;</m:mi></m:mstyle></m:math></span><span>394</span></para>
+<para><emphasis class="char">&#9001;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9001;</m:mi></m:mstyle></m:math></span><span>351</span></para>
+<para><emphasis class="char">&#8756;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8756;</m:mi></m:mstyle></m:math></span><span>350</span></para>
+<para><emphasis class="char">&#9002;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9002;</m:mi></m:mstyle></m:math></span><span>349</span></para>
+<para><emphasis class="char">&#958;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#958;</m:mi></m:mstyle></m:math></span><span>334</span></para>
+<para><emphasis class="char">&#8855;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8855;</m:mi></m:mstyle></m:math></span><span>313</span></para>
+<para><emphasis class="char">&#8853;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8853;</m:mi></m:mstyle></m:math></span><span>312</span></para>
+<para><emphasis class="char">&#8730;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8730;</m:mi></m:mstyle></m:math></span><span>310</span></para>
+<para><emphasis class="char">&#172;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#172;</m:mi></m:mstyle></m:math></span><span>307</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xfe38;</span><span></span><span>302</span></para>
+<para><emphasis class="char">&#8719;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8719;</m:mi></m:mstyle></m:math></span><span>298</span></para>
+<para><emphasis class="char">&#931;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#931;</m:mi></m:mstyle></m:math></span><span>292</span></para>
+<para><emphasis class="char">&#8660;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8660;</m:mi></m:mstyle></m:math></span><span>288</span></para>
+<para><emphasis class="char">&#729;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#729;</m:mi></m:mstyle></m:math></span><span>281</span></para>
+<para><emphasis class="char">&#8595;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8595;</m:mi></m:mstyle></m:math></span><span>271</span></para>
+<para><emphasis class="char">&#8704;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8704;</m:mi></m:mstyle></m:math></span><span>264</span></para>
+<para><emphasis class="char">&#9653;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9653;</m:mi></m:mstyle></m:math></span><span>244</span></para>
+<para><emphasis class="char">&#8499;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8499;</m:mi></m:mstyle></m:math></span><span>206</span></para>
+<para><emphasis class="char">&#8869;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8869;</m:mi></m:mstyle></m:math></span><span>199</span></para>
+<para><emphasis class="char">&#936;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#936;</m:mi></m:mstyle></m:math></span><span>192</span></para>
+<para><emphasis class="char">&#8744;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8744;</m:mi></m:mstyle></m:math></span><span>189</span></para>
+<para><emphasis class="char">&#967;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#967;</m:mi></m:mstyle></m:math></span><span>189</span></para>
+<para><emphasis class="char">&#8897;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8897;</m:mi></m:mstyle></m:math></span><span>188</span></para>
+<para><emphasis class="char">&#8497;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8497;</m:mi></m:mstyle></m:math></span><span>187</span></para>
+<para><emphasis class="char">&#920;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#920;</m:mi></m:mstyle></m:math></span><span>187</span></para>
+<para><emphasis class="char">&#226;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#226;</m:mi></m:mstyle></m:math></span><span>186</span></para>
+<para><emphasis class="char">&#8596;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8596;</m:mi></m:mstyle></m:math></span><span>176</span></para>
+<para><emphasis class="char">&#230;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#230;</m:mi></m:mstyle></m:math></span><span>174</span></para>
+<para><emphasis class="char">&#8640;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8640;</m:mi></m:mstyle></m:math></span><span>172</span></para>
+<para><emphasis class="char">&#770;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#770;</m:mi></m:mstyle></m:math></span><span>163</span></para>
+<para><emphasis class="char">&#8750;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8750;</m:mi></m:mstyle></m:math></span><span>160</span></para>
+<para><emphasis class="char">&#8834;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8834;</m:mi></m:mstyle></m:math></span><span>159</span></para>
+<para><emphasis class="char">&#137;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#137;</m:mi></m:mstyle></m:math></span><span>158</span></para>
+<para><emphasis class="char">&#34;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#34;</m:mi></m:mstyle></m:math></span><span>154</span></para>
+<para><emphasis class="char">&#239;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#239;</m:mi></m:mstyle></m:math></span><span>151</span></para>
+<para><emphasis class="char">&#251;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#251;</m:mi></m:mstyle></m:math></span><span>137</span></para>
+<para><emphasis class="char">&#8838;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8838;</m:mi></m:mstyle></m:math></span><span>136</span></para>
+<para><emphasis class="char">&#228;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#228;</m:mi></m:mstyle></m:math></span><span>134</span></para>
+<para><emphasis class="char">&#8707;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8707;</m:mi></m:mstyle></m:math></span><span>130</span></para>
+<para><emphasis class="char">&#8652;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8652;</m:mi></m:mstyle></m:math></span><span>124</span></para>
+<para><emphasis class="char">&#36;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#36;</m:mi></m:mstyle></m:math></span><span>121</span></para>
+<para><emphasis class="char">&#8459;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8459;</m:mi></m:mstyle></m:math></span><span>117</span></para>
+<para><emphasis class="char">&#8945;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8945;</m:mi></m:mstyle></m:math></span><span>115</span></para>
+<para><emphasis class="char">&#9633;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9633;</m:mi></m:mstyle></m:math></span><span>110</span></para>
+<para><emphasis class="char">&#954;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#954;</m:mi></m:mstyle></m:math></span><span>110</span></para>
+<para><emphasis class="char">&#8203;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8203;</m:mi></m:mstyle></m:math></span><span>108</span></para>
+<para><emphasis class="char">&#225;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#225;</m:mi></m:mstyle></m:math></span><span>108</span></para>
+<para><emphasis class="char">&#8713;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8713;</m:mi></m:mstyle></m:math></span><span>91</span></para>
+<para><emphasis class="char">&#236;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#236;</m:mi></m:mstyle></m:math></span><span>89</span></para>
+<para><emphasis class="char">&#229;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#229;</m:mi></m:mstyle></m:math></span><span>88</span></para>
+<para><emphasis class="char">&#227;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#227;</m:mi></m:mstyle></m:math></span><span>88</span></para>
+<para><emphasis class="char">&#8899;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8899;</m:mi></m:mstyle></m:math></span><span>84</span></para>
+<para><emphasis class="char">&#8593;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8593;</m:mi></m:mstyle></m:math></span><span>81</span></para>
+<para><emphasis class="char">&#250;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#250;</m:mi></m:mstyle></m:math></span><span>77</span></para>
+<para><emphasis class="char">&#8221;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8221;</m:mi></m:mstyle></m:math></span><span>72</span></para>
+<para><emphasis class="char">&#246;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#246;</m:mi></m:mstyle></m:math></span><span>71</span></para>
+<para><emphasis class="char">&#8733;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8733;</m:mi></m:mstyle></m:math></span><span>70</span></para>
+<para><emphasis class="char">&#305;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#305;</m:mi></m:mstyle></m:math></span><span>70</span></para>
+<para><emphasis class="char">&#8220;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8220;</m:mi></m:mstyle></m:math></span><span>69</span></para>
+<para><emphasis class="char">&#237;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#237;</m:mi></m:mstyle></m:math></span><span>67</span></para>
+<para><emphasis class="char">&#8866;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8866;</m:mi></m:mstyle></m:math></span><span>66</span></para>
+<para><emphasis class="char">&#184;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#184;</m:mi></m:mstyle></m:math></span><span>66</span></para>
+<para><emphasis class="char">&#8994;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8994;</m:mi></m:mstyle></m:math></span><span>63</span></para>
+<para><emphasis class="char">&#8810;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8810;</m:mi></m:mstyle></m:math></span><span>58</span></para>
+<para><emphasis class="char">&#603;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#603;</m:mi></m:mstyle></m:math></span><span>57</span></para>
+<para><emphasis class="char">&#10234;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10234;</m:mi></m:mstyle></m:math></span><span>56</span></para>
+<para><emphasis class="char">&#8902;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8902;</m:mi></m:mstyle></m:math></span><span>52</span></para>
+<para><emphasis class="char">&#8709;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8709;</m:mi></m:mstyle></m:math></span><span>48</span></para>
+<para><emphasis class="char">&#8465;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8465;</m:mi></m:mstyle></m:math></span><span>47</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xd835</span><span></span><span>46</span></para>
+<para><emphasis class="char">&#8592;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8592;</m:mi></m:mstyle></m:math></span><span>44</span></para>
+<para><emphasis class="char">&#8477;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8477;</m:mi></m:mstyle></m:math></span><span>42</span></para>
+<para><emphasis class="char">&#8217;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8217;</m:mi></m:mstyle></m:math></span><span>42</span></para>
+<para><emphasis class="char">&#928;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#928;</m:mi></m:mstyle></m:math></span><span>42</span></para>
+<para><emphasis class="char">&#165;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#165;</m:mi></m:mstyle></m:math></span><span>41</span></para>
+<para><emphasis class="char">&#10815;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10815;</m:mi></m:mstyle></m:math></span><span>40</span></para>
+<para><emphasis class="char">&#8969;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8969;</m:mi></m:mstyle></m:math></span><span>40</span></para>
+<para><emphasis class="char">&#8968;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8968;</m:mi></m:mstyle></m:math></span><span>40</span></para>
+<para><emphasis class="char">&#8811;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8811;</m:mi></m:mstyle></m:math></span><span>39</span></para>
+<para><emphasis class="char">&#248;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#248;</m:mi></m:mstyle></m:math></span><span>39</span></para>
+<para><emphasis class="char">&#174;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#174;</m:mi></m:mstyle></m:math></span><span>39</span></para>
+<para><emphasis class="char">&#8971;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8971;</m:mi></m:mstyle></m:math></span><span>38</span></para>
+<para><emphasis class="char">&#8970;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8970;</m:mi></m:mstyle></m:math></span><span>38</span></para>
+<para><emphasis class="char">&#965;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#965;</m:mi></m:mstyle></m:math></span><span>37</span></para>
+<para><emphasis class="char">&#224;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#224;</m:mi></m:mstyle></m:math></span><span>37</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef37;</span><span></span><span>35</span></para>
+<para><emphasis class="char">&#8771;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8771;</m:mi></m:mstyle></m:math></span><span>35</span></para>
+<para><emphasis class="char">&#8857;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8857;</m:mi></m:mstyle></m:math></span><span>34</span></para>
+<para><emphasis class="char">&#173;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#173;</m:mi></m:mstyle></m:math></span><span>33</span></para>
+<para><emphasis class="char">&#8868;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8868;</m:mi></m:mstyle></m:math></span><span>32</span></para>
+<para><emphasis class="char">&#8614;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8614;</m:mi></m:mstyle></m:math></span><span>32</span></para>
+<para><emphasis class="char">&#8466;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8466;</m:mi></m:mstyle></m:math></span><span>32</span></para>
+<para><emphasis class="char">&#8194;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8194;</m:mi></m:mstyle></m:math></span><span>32</span></para>
+<para><emphasis class="char">&#168;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#168;</m:mi></m:mstyle></m:math></span><span>31</span></para>
+<para><emphasis class="char">&#8898;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8898;</m:mi></m:mstyle></m:math></span><span>30</span></para>
+<para><emphasis class="char">&#96;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#96;</m:mi></m:mstyle></m:math></span><span>30</span></para>
+<para><emphasis class="char">&#953;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#953;</m:mi></m:mstyle></m:math></span><span>29</span></para>
+<para><emphasis class="char">&#252;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#252;</m:mi></m:mstyle></m:math></span><span>28</span></para>
+<para><emphasis class="char">&#8450;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8450;</m:mi></m:mstyle></m:math></span><span>26</span></para>
+<para><emphasis class="char">&#962;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#962;</m:mi></m:mstyle></m:math></span><span>26</span></para>
+<para><emphasis class="char">&#234;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#234;</m:mi></m:mstyle></m:math></span><span>26</span></para>
+<para><emphasis class="char">&#8788;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8788;</m:mi></m:mstyle></m:math></span><span>24</span></para>
+<para><emphasis class="char">&#8212;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8212;</m:mi></m:mstyle></m:math></span><span>24</span></para>
+<para><emphasis class="char">&#8883;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8883;</m:mi></m:mstyle></m:math></span><span>23</span></para>
+<para><emphasis class="char">&#8882;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8882;</m:mi></m:mstyle></m:math></span><span>23</span></para>
+<para><emphasis class="char">&#249;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#249;</m:mi></m:mstyle></m:math></span><span>23</span></para>
+<para><emphasis class="char">&#8823;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8823;</m:mi></m:mstyle></m:math></span><span>22</span></para>
+<para><emphasis class="char">&#8773;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8773;</m:mi></m:mstyle></m:math></span><span>22</span></para>
+<para><emphasis class="char">&#8725;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8725;</m:mi></m:mstyle></m:math></span><span>22</span></para>
+<para><emphasis class="char">&#8723;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8723;</m:mi></m:mstyle></m:math></span><span>22</span></para>
+<para><emphasis class="char">&#272;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#272;</m:mi></m:mstyle></m:math></span><span>22</span></para>
+<para><emphasis class="char">&#241;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#241;</m:mi></m:mstyle></m:math></span><span>22</span></para>
+<para><emphasis class="char">&#8484;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8484;</m:mi></m:mstyle></m:math></span><span>21</span></para>
+<para><emphasis class="char">&#194;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#194;</m:mi></m:mstyle></m:math></span><span>21</span></para>
+<para><emphasis class="char">&#10233;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10233;</m:mi></m:mstyle></m:math></span><span>20</span></para>
+<para><emphasis class="char">&#10003;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10003;</m:mi></m:mstyle></m:math></span><span>20</span></para>
+<para><emphasis class="char">&#8476;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8476;</m:mi></m:mstyle></m:math></span><span>20</span></para>
+<para><emphasis class="char">&#8224;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8224;</m:mi></m:mstyle></m:math></span><span>20</span></para>
+<para><emphasis class="char">&#8726;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8726;</m:mi></m:mstyle></m:math></span><span>19</span></para>
+<para><emphasis class="char">&#978;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#978;</m:mi></m:mstyle></m:math></span><span>19</span></para>
+<para><emphasis class="char">&#92;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#92;</m:mi></m:mstyle></m:math></span><span>19</span></para>
+<para><emphasis class="char">&#8859;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8859;</m:mi></m:mstyle></m:math></span><span>18</span></para>
+<para><emphasis class="char">&#8486;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8486;</m:mi></m:mstyle></m:math></span><span>18</span></para>
+<para><emphasis class="char">&#209;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#209;</m:mi></m:mstyle></m:math></span><span>18</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xeef0;</span><span></span><span>17</span></para>
+<para><emphasis class="char">&#1072;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1072;</m:mi></m:mstyle></m:math></span><span>17</span></para>
+<para><emphasis class="char">&#988;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#988;</m:mi></m:mstyle></m:math></span><span>17</span></para>
+<para><emphasis class="char">&#982;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#982;</m:mi></m:mstyle></m:math></span><span>17</span></para>
+<para><emphasis class="char">&#244;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#244;</m:mi></m:mstyle></m:math></span><span>17</span></para>
+<para><emphasis class="char">&#235;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#235;</m:mi></m:mstyle></m:math></span><span>17</span></para>
+<para><emphasis class="char">&#9651;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9651;</m:mi></m:mstyle></m:math></span><span>16</span></para>
+<para><emphasis class="char">&#213;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#213;</m:mi></m:mstyle></m:math></span><span>16</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef90;</span><span></span><span>15</span></para>
+<para><emphasis class="char">&#10230;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10230;</m:mi></m:mstyle></m:math></span><span>15</span></para>
+<para><emphasis class="char">&#8817;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8817;</m:mi></m:mstyle></m:math></span><span>14</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef46;</span><span></span><span>13</span></para>
+<para><emphasis class="char">&#315;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#315;</m:mi></m:mstyle></m:math></span><span>13</span></para>
+<para><emphasis class="char">&#169;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#169;</m:mi></m:mstyle></m:math></span><span>13</span></para>
+<para><emphasis class="char">&#8661;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8661;</m:mi></m:mstyle></m:math></span><span>12</span></para>
+<para><emphasis class="char">&#8464;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8464;</m:mi></m:mstyle></m:math></span><span>12</span></para>
+<para><emphasis class="char">&#8248;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8248;</m:mi></m:mstyle></m:math></span><span>12</span></para>
+<para><emphasis class="char">&#914;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#914;</m:mi></m:mstyle></m:math></span><span>12</span></para>
+<para><emphasis class="char">&#253;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#253;</m:mi></m:mstyle></m:math></span><span>12</span></para>
+<para><emphasis class="char">&#243;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#243;</m:mi></m:mstyle></m:math></span><span>12</span></para>
+<para><emphasis class="char">&#163;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#163;</m:mi></m:mstyle></m:math></span><span>12</span></para>
+<para><emphasis class="char">&#9711;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9711;</m:mi></m:mstyle></m:math></span><span>11</span></para>
+<para><emphasis class="char">&#8900;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8900;</m:mi></m:mstyle></m:math></span><span>11</span></para>
+<para><emphasis class="char">&#8796;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8796;</m:mi></m:mstyle></m:math></span><span>11</span></para>
+<para><emphasis class="char">&#935;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#935;</m:mi></m:mstyle></m:math></span><span>11</span></para>
+<para><emphasis class="char">&#933;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#933;</m:mi></m:mstyle></m:math></span><span>10</span></para>
+<para><emphasis class="char">&#238;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#238;</m:mi></m:mstyle></m:math></span><span>10</span></para>
+<para><emphasis class="char">&#231;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#231;</m:mi></m:mstyle></m:math></span><span>10</span></para>
+<para><emphasis class="char">&#208;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#208;</m:mi></m:mstyle></m:math></span><span>10</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xf57b;</span><span></span><span>9</span></para>
+<para><emphasis class="char">&#8818;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8818;</m:mi></m:mstyle></m:math></span><span>9</span></para>
+<para><emphasis class="char">&#8463;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8463;</m:mi></m:mstyle></m:math></span><span>9</span></para>
+<para><emphasis class="char">&#1087;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1087;</m:mi></m:mstyle></m:math></span><span>9</span></para>
+<para><emphasis class="char">&#1080;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1080;</m:mi></m:mstyle></m:math></span><span>9</span></para>
+<para><emphasis class="char">&#1077;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1077;</m:mi></m:mstyle></m:math></span><span>9</span></para>
+<para><emphasis class="char">&#1055;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1055;</m:mi></m:mstyle></m:math></span><span>9</span></para>
+<para><emphasis class="char">&#1051;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1051;</m:mi></m:mstyle></m:math></span><span>9</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xfe00;</span><span></span><span>8</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdc9e;</span><span></span><span>8</span></para>
+<para><emphasis class="char">&#10007;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10007;</m:mi></m:mstyle></m:math></span><span>8</span></para>
+<para><emphasis class="char">&#9734;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9734;</m:mi></m:mstyle></m:math></span><span>8</span></para>
+<para><emphasis class="char">&#8819;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8819;</m:mi></m:mstyle></m:math></span><span>8</span></para>
+<para><emphasis class="char">&#1083;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1083;</m:mi></m:mstyle></m:math></span><span>8</span></para>
+<para><emphasis class="char">&#217;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#217;</m:mi></m:mstyle></m:math></span><span>8</span></para>
+<para><emphasis class="char">&#150;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#150;</m:mi></m:mstyle></m:math></span><span>8</span></para>
+<para><emphasis class="char">&#12297;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#12297;</m:mi></m:mstyle></m:math></span><span>7</span></para>
+<para><emphasis class="char">&#12296;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#12296;</m:mi></m:mstyle></m:math></span><span>7</span></para>
+<para><emphasis class="char">&#8851;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8851;</m:mi></m:mstyle></m:math></span><span>7</span></para>
+<para><emphasis class="char">&#8757;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8757;</m:mi></m:mstyle></m:math></span><span>7</span></para>
+<para><emphasis class="char">&#8751;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8751;</m:mi></m:mstyle></m:math></span><span>7</span></para>
+<para><emphasis class="char">&#8651;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8651;</m:mi></m:mstyle></m:math></span><span>7</span></para>
+<para><emphasis class="char">&#8216;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8216;</m:mi></m:mstyle></m:math></span><span>7</span></para>
+<para><emphasis class="char">&#1088;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1088;</m:mi></m:mstyle></m:math></span><span>7</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xf528;</span><span></span><span>6</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef59;</span><span></span><span>6</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef42;</span><span></span><span>6</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef3b;</span><span></span><span>6</span></para>
+<para><emphasis class="char">&#12315;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#12315;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#12314;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#12314;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#9839;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9839;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#8923;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8923;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#8809;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8809;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#8792;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8792;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#8784;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8784;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#8770;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8770;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#8710;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8710;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#8599;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8599;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#730;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#730;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#416;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#416;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#245;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#245;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#180;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#180;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#179;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#179;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#178;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#178;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#167;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#167;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#164;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#164;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><emphasis class="char">&#133;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#133;</m:mi></m:mstyle></m:math></span><span>6</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef40;</span><span></span><span>5</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef35;</span><span></span><span>5</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdcb3;</span><span></span><span>5</span></para>
+<para><emphasis class="char">&#8842;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8842;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#8835;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8835;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#8656;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8656;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#8472;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8472;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#8202;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8202;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#1086;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1086;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#1076;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1076;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#959;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#959;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#181;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#181;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><emphasis class="char">&#171;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#171;</m:mi></m:mstyle></m:math></span><span>5</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xec07;</span><span></span><span>4</span></para>
+<para><emphasis class="char">&#10877;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10877;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#10247;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10247;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#10231;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10231;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#9675;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9675;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#9661;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9661;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#9141;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9141;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#8748;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8748;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#977;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#977;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#919;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#919;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#728;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#728;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#375;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#375;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#292;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#292;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#203;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#203;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#187;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#187;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#162;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#162;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><emphasis class="char">&#64;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#64;</m:mi></m:mstyle></m:math></span><span>4</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xfb01;</span><span></span><span>3</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xf57a;</span><span></span><span>3</span></para>
+<para><emphasis class="char">&#9827;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9827;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#9824;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9824;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8919;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8919;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8839;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8839;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8807;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8807;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8783;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8783;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8778;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8778;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8755;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8755;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8737;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8737;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8659;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8659;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8492;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8492;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8257;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8257;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#8196;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8196;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#1168;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1168;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#1084;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1084;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#1075;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1075;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#772;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#772;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#284;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#284;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#233;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#233;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#232;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#232;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#214;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#214;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><emphasis class="char">&#189;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#189;</m:mi></m:mstyle></m:math></span><span>3</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xf3a3;</span><span></span><span>2</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xf020;</span><span></span><span>2</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef43;</span><span></span><span>2</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xef02;</span><span></span><span>2</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd3d;</span><span></span><span>2</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd3c;</span><span></span><span>2</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdcb4;</span><span></span><span>2</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdc9c;</span><span></span><span>2</span></para>
+<para><emphasis class="char">&#10980;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10980;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#10878;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10878;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#10876;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10876;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#10653;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10653;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#10645;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10645;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#10511;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10511;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#9830;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9830;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#9662;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9662;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8973;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8973;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8966;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8966;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8927;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8927;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8926;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8926;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8925;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8925;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8924;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8924;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8921;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8921;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8911;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8911;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8910;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8910;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8909;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8909;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8903;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8903;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8892;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8892;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8864;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8864;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8862;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8862;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8836;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8836;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8791;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8791;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8790;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8790;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8789;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8789;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8786;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8786;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8785;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8785;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8782;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8782;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8781;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8781;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8780;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8780;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8765;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8765;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8754;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8754;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8749;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8749;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8720;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8720;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8705;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8705;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8650;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8650;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8643;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8643;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8642;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8642;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8631;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8631;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8630;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8630;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8531;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8531;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8517;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8517;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8496;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8496;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8493;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8493;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8421;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8421;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8245;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8245;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8225;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8225;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8214;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8214;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8208;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8208;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#8197;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8197;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#1092;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1092;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#1079;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1079;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#1014;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1014;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#941;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#941;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#922;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#922;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#711;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#711;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#432;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#432;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#374;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#374;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#221;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#221;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#204;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#204;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#197;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#197;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#147;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#147;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><emphasis class="char">&#138;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#138;</m:mi></m:mstyle></m:math></span><span>2</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xfb04;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xfb03;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xfb02;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xfb00;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xf59c;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xf579;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd57;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd56;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd55;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd54;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd53;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd52;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd3b;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd39;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd38;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd23;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd22;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd20;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd1f;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd1e;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd09;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd08;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd05;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdd04;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdcbb;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdcb9;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdcb8;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdcb7;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdcb6;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdcb5;</span><span></span><span>1</span></para>
+<para><span class="toobig"> </span><span class="toobig">&amp;#xdc9f;</span><span></span><span>1</span></para>
+<para><emphasis class="char">&#10991;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10991;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10989;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10989;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10983;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10983;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10969;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10969;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10962;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10962;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10961;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10961;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10960;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10960;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10959;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10959;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10926;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10926;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10921;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10921;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10919;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10919;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10917;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10917;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10906;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10906;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10905;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10905;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10904;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10904;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10903;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10903;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10898;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10898;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10874;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10874;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10872;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10872;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10871;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10871;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10869;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10869;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10868;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10868;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10867;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10867;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10865;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10865;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10863;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10863;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10861;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10861;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10844;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10844;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10842;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10842;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10840;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10840;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10837;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10837;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10835;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10835;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10832;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10832;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10829;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10829;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10828;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10828;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10827;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10827;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10826;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10826;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10825;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10825;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10824;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10824;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10823;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10823;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10822;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10822;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10821;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10821;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10820;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10820;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10816;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10816;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10799;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10799;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10769;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10769;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10768;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10768;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10765;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10765;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10742;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10742;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10731;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10731;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10725;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10725;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10723;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10723;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10715;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10715;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10697;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10697;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10693;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10693;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10691;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10691;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10690;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10690;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10674;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10674;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10672;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10672;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10670;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10670;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10669;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10669;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10668;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10668;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10667;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10667;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10666;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10666;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10665;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10665;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10664;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10664;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10662;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10662;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10660;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10660;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10616;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10616;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10609;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10609;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10607;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10607;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10568;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10568;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10557;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10557;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10556;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10556;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10552;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10552;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10549;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10549;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10530;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10530;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10512;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10512;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#10509;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#10509;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9837;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9837;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9829;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9829;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9825;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9825;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9792;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9792;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9733;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9733;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9726;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9726;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9725;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9725;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9679;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9679;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9666;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9666;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9663;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9663;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9656;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9656;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9652;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9652;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9642;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9642;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9619;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9619;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9618;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9618;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9617;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9617;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9608;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9608;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9557;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9557;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9488;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9488;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9472;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9472;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9416;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9416;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9251;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9251;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9084;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9084;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#9005;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#9005;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8991;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8991;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8990;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8990;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8976;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8976;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8972;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8972;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8946;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8946;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8935;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8935;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8917;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8917;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8916;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8916;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8915;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8915;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8914;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8914;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8904;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8904;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8896;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8896;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8893;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8893;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8889;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8889;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8872;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8872;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8867;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8867;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8865;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8865;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8861;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8861;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8858;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8858;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8854;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8854;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8852;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8852;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8846;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8846;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8845;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8845;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8812;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8812;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8799;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8799;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8795;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8795;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8787;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8787;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8779;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8779;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8767;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8767;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8763;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8763;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8760;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8760;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8759;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8759;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8753;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8753;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8752;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8752;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8738;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8738;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8735;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8735;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8724;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8724;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8715;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8715;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8693;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8693;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8657;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8657;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8654;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8654;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8641;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8641;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8637;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8637;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8635;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8635;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8634;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8634;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8621;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8621;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8618;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8618;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8617;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8617;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8615;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8615;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8609;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8609;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8597;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8597;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8542;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8542;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8541;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8541;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8538;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8538;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8504;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8504;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8503;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8503;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8502;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8502;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8501;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8501;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8495;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8495;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8491;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8491;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8475;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8475;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8474;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8474;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8471;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8471;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8461;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8461;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8458;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8458;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8412;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8412;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8271;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8271;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#8213;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#8213;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#7923;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#7923;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1119;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1119;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1109;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1109;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1108;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1108;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1107;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1107;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1106;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1106;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1101;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1101;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1098;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1098;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1095;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1095;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1085;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1085;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1082;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1082;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1073;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1073;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1069;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1069;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1066;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1066;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1063;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1063;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1060;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1060;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1044;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1044;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1043;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1043;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1041;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1041;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1040;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1040;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1029;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1029;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1027;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1027;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#1026;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#1026;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#733;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#733;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#501;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#501;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#402;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#402;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#372;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#372;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#331;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#331;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#330;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#330;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#295;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#295;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#294;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#294;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#293;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#293;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#290;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#290;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#289;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#289;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#288;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#288;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#287;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#287;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#286;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#286;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#285;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#285;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#283;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#283;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#282;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#282;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#281;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#281;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#280;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#280;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#279;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#279;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#278;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#278;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#275;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#275;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#274;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#274;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#271;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#271;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#270;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#270;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#269;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#269;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#268;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#268;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#267;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#267;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#266;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#266;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#265;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#265;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#264;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#264;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#262;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#262;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#261;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#261;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#260;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#260;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#257;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#257;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#256;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#256;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#242;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#242;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#240;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#240;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#223;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#223;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#202;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#202;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#201;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#201;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#200;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#200;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#199;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#199;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#198;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#198;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#196;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#196;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#195;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#195;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#193;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#193;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#192;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#192;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#186;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#186;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#170;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#170;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#166;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#166;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+<para><emphasis class="char">&#154;</emphasis><span class="image"><m:math><m:mstyle fontstyle="italic" class="_force-image"><m:mi>&#154;</m:mi></m:mstyle></m:math></span><span>1</span></para>
+
+<para>END</para>
+
+</content>
+  </document>

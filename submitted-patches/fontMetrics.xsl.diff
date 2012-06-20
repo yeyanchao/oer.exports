@@ -1,0 +1,71 @@
+280a281,350
+>   <xsl:template name="findFontName">
+>     <xsl:param name="name"/>
+>     <xsl:param name="fonts"/>
+>     <xsl:param name="variant"/>
+>     <xsl:param name="fontInit" select="$fonts"/>
+> 
+>     <xsl:choose>
+>       <!-- Invisible operators
+> 	   &InvisibleTimes;  	&it;
+> 	   &ApplyFunction; 	&af;
+> 	   &InvisibleComma; 	&ic;
+> 	   &ZeroWidthSpace;
+>       -->
+>       <xsl:when test="$name='&#8290;' or $name='&#8289;' or $name='&#8291;' or $name='&#8203;'">
+> 	<xsl:value-of select="'PHIL-TODO-FIXME'"/>
+>       </xsl:when>
+>       <!-- All other characters -->
+>       <xsl:otherwise>
+> 	<xsl:choose>
+> 	  <!-- There is font to test -->
+> 	  <xsl:when test="$fonts[1]">
+> 	    <xsl:variable name="currentFont" select="func:findFont($fonts[1], $variant)"/>
+> 
+> 	    <!-- Compute width -->
+> 	    <xsl:variable name="width">
+> 	      <xsl:choose>
+> 		<xsl:when test="$currentFont">
+> 		  <xsl:call-template name="findWidthFile">
+> 		    <xsl:with-param name="name" select="$name"/>
+> 		    <xsl:with-param name="fontName" select="$currentFont"/>
+> 		  </xsl:call-template>
+> 		</xsl:when>
+> 		<xsl:otherwise>
+> 		  <xsl:value-of select="$fonts[1]"/>
+> 		</xsl:otherwise>
+> 	      </xsl:choose>
+> 	    </xsl:variable>
+> 
+> 	    <xsl:choose>
+> 	      <xsl:when test="$width &lt; 0">
+> 		<xsl:call-template name="findFontName">
+> 		  <xsl:with-param name="name" select="$name"/>
+> 		  <xsl:with-param name="fonts" select="$fonts[position() &gt; 1]"/>
+> 		  <xsl:with-param name="variant" select="$variant"/>
+> 		  <xsl:with-param name="fontInit" select="$fontInit"/>
+> 		</xsl:call-template>
+> 	      </xsl:when>
+> 	      <xsl:otherwise>
+> 		<xsl:value-of select="$fonts[1]"/>
+> 	      </xsl:otherwise>
+> 	    </xsl:choose>
+> 	  </xsl:when>
+> 	  <!-- No metrics found with variant, remove it -->
+> 	  <xsl:when test="not($fonts[1]) and $variant != ''">
+> 	    <xsl:call-template name="findFontName">
+> 	      <xsl:with-param name="name" select="$name"/>
+> 	      <xsl:with-param name="fonts" select="$fontInit"/>
+> 	      <xsl:with-param name="variant" select="''"/>
+> 	      <xsl:with-param name="fontInit" select="$fontInit"/>
+> 	    </xsl:call-template>
+> 	  </xsl:when>
+> 	  <!-- Default value not found -->
+> 	  <xsl:otherwise>
+> 	    <xsl:value-of select="''"/>
+> 	  </xsl:otherwise>
+> 	</xsl:choose>
+>       </xsl:otherwise>
+>     </xsl:choose>
+>   </xsl:template>
+> 

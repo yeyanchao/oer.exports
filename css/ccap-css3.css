@@ -1,0 +1,52 @@
+/***************************************************
+ * Styles used when generating a PDF from xhtml+css
+ ***************************************************/
+
+/* Hide MathML elements */
+@namespace mml "http://www.w3.org/1998/Math/MathML";
+mml|math { display: none; }
+
+/* Prince BUG: SVG in a table heading doesn't use the correct fonts.
+   Unfortunately, this isn't the place to fix it. search for "th *"
+   in the other .less files
+@namespace svg url('http://www.w3.org/2000/svg');
+svg|g {
+  font-family: Liberation Sans, sans-serif, STIXGeneral, STIXSizeOneSym, STIXSize1;
+}
+*/
+
+
+/* General css3 for print/online (lesscss does not parse these) */
+
+@page {
+  margin: 5em;
+  font-size: xx-small;
+  font-family: Liberation Sans, sans-serif, STIXGeneral, STIXSizeOneSym, STIXSize1;
+
+  @footnotes {
+    border-top: solid black thin;
+    padding-top: 1em;
+  }
+}
+
+@page :left {
+  @top-left-corner {
+    content: counter(page);
+    padding-right: 1em;
+  }
+  @top-left {
+    content: string(cnx-header);
+    text-transform: uppercase;
+  }
+}
+
+@page :right {
+  @top-right-corner {
+    content: counter(page);
+    padding-left: 1em;
+  }
+  @top-right {
+    content: string(cnx-header);
+    text-transform: uppercase;
+  }
+}

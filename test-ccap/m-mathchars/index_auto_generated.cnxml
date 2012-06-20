@@ -1,0 +1,86 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" id="imported-from-openoffice" module-id="imported-from-openoffice" cnxml-version="0.7">
+  <title>Energy in Waves: Intensity</title>
+<metadata mdml-version="0.5">
+  <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+  <md:repository>http://bread.cnx.rice.edu:9680/content</md:repository>
+  <md:content-url>http://bread.cnx.rice.edu:9680/content/m10167/latest/</md:content-url>
+  <md:content-id>m10167</md:content-id>
+  <md:title>Math Characters used in our Content</md:title>
+  <md:version>1.5</md:version>
+  <md:created>2011/12/26 10:54:01 US/Central</md:created>
+  <md:revised>2012/04/02 07:55:40.351 GMT-5</md:revised>
+  <md:actors>
+    <md:person userid="words">
+      <md:firstname>Words</md:firstname>
+      <md:surname>Numbers</md:surname>
+      <md:fullname>Words Numbers</md:fullname>
+      <md:email>rhall@wordsandnumbers.com</md:email>
+    </md:person>
+  </md:actors>
+  <md:roles>
+    <md:role type="author">words</md:role>
+    <md:role type="maintainer">words</md:role>
+    <md:role type="licensor">words</md:role>
+  </md:roles>
+  <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+  <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+  <md:keywordlist>
+    <md:keyword>Interference</md:keyword>
+    <md:keyword>Sound intensity</md:keyword>
+    <md:keyword>Superposition</md:keyword>
+    <md:keyword>Wave intensity</md:keyword>
+  </md:keywordlist>
+  <md:subjectlist>
+    <md:subject>Science and Technology</md:subject>
+  </md:subjectlist>
+  <md:abstract><list>
+<item>Calculate the intensity and the power of rays and waves.</item>
+<item>Examine perfect constructive interference.</item>
+</list></md:abstract>
+  <md:language>en</md:language>
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+</metadata>
+
+<content>
+
+
+<emphasis>Math Characters (by frequency)</emphasis>
+<para><span>Char</span> <span>Image</span> <span>freq</span></para>
+
+
+<para><emphasis class="character">&#8901;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8901;</m:mi></m:math></span> <span class="ent">&amp;#8901;</span> <span class="freq">239</span></para>
+<para><emphasis class="character">&#8594;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8594;</m:mi></m:math></span> <span class="ent">&amp;#8594;</span> <span class="freq">105</span></para>
+<para><emphasis class="character">&#818;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#818;</m:mi></m:math></span> <span class="ent">&amp;#818;</span> <span class="freq">99</span></para>
+<para><emphasis class="character">&#8242;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8242;</m:mi></m:math></span> <span class="ent">&amp;#8242;</span> <span class="freq">87</span></para>
+<para><emphasis class="character">&#8776;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8776;</m:mi></m:math></span> <span class="ent">&amp;#8776;</span> <span class="freq">46</span></para>
+<para><emphasis class="character">&#8739;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8739;</m:mi></m:math></span> <span class="ent">&amp;#8739;</span> <span class="freq">42</span></para>
+<para><emphasis class="character">&#8658;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8658;</m:mi></m:math></span> <span class="ent">&amp;#8658;</span> <span class="freq">42</span></para>
+<para><emphasis class="character">&#8467;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8467;</m:mi></m:math></span> <span class="ent">&amp;#8467;</span> <span class="freq">38</span></para>
+<para><emphasis class="character">&#8869;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8869;</m:mi></m:math></span> <span class="ent">&amp;#8869;</span> <span class="freq">16</span></para>
+<para><emphasis class="character">&#8733;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8733;</m:mi></m:math></span> <span class="ent">&amp;#8733;</span> <span class="freq">14</span></para>
+<para><emphasis class="character">&#8721;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8721;</m:mi></m:math></span> <span class="ent">&amp;#8721;</span> <span class="freq">11</span></para>
+<para><emphasis class="character">&#8805;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8805;</m:mi></m:math></span> <span class="ent">&amp;#8805;</span> <span class="freq">9</span></para>
+<para><emphasis class="character">&#8804;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8804;</m:mi></m:math></span> <span class="ent">&amp;#8804;</span> <span class="freq">8</span></para>
+<para><emphasis class="character">&#8771;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8771;</m:mi></m:math></span> <span class="ent">&amp;#8771;</span> <span class="freq">6</span></para>
+<para><emphasis class="character">&#8741;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8741;</m:mi></m:math></span> <span class="ent">&amp;#8741;</span> <span class="freq">5</span></para>
+<para><emphasis class="character">&#8800;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8800;</m:mi></m:math></span> <span class="ent">&amp;#8800;</span> <span class="freq">3</span></para>
+<para><emphasis class="character">&#8943;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8943;</m:mi></m:math></span> <span class="ent">&amp;#8943;</span> <span class="freq">2</span></para>
+<para><emphasis class="character">&#8801;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8801;</m:mi></m:math></span> <span class="ent">&amp;#8801;</span> <span class="freq">1</span></para>
+<para><emphasis class="character">&#8773;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8773;</m:mi></m:math></span> <span class="ent">&amp;#8773;</span> <span class="freq">1</span></para>
+<para><emphasis class="character">&#8756;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8756;</m:mi></m:math></span> <span class="ent">&amp;#8756;</span> <span class="freq">1</span></para>
+<para><emphasis class="character">&#8723;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#8723;</m:mi></m:math></span> <span class="ent">&amp;#8723;</span> <span class="freq">1</span></para>
+<para><emphasis class="character">&#712;</emphasis> <span class="math-image"><m:math><m:mstyle fontstyle="normal" class="force-image"/><m:mi>&#712;</m:mi></m:math></span> <span class="ent">&amp;#712;</span> <span class="freq">1</span></para>
+
+
+
+<para>END</para>
+
+</content>
+  </document>

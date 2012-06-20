@@ -1,0 +1,16 @@
+961a956
+>     <xsl:param name="font"/>
+970a966,970
+>     <xsl:variable name="bestFontName">
+>     	<xsl:if test="normalize-space($font) != ''">
+>     		<xsl:value-of select="concat('font-family: ', $font, '; ')"/>
+>     	</xsl:if>
+>     </xsl:variable>
+972c972
+<     <xsl:value-of select="concat($bold, $italic, $color, $background)"/>
+---
+>     <xsl:value-of select="concat($bold, $italic, $color, $background, $bestFontName)"/>
+1627c1627
+<       <g stroke="none" fill="#000000" text-rendering="optimizeLegibility" font-family="{string-join($fontName, ', ')}">
+---
+>       <g stroke="none" fill="#000000" text-rendering="optimizeLegibility">

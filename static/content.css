@@ -1,0 +1,695 @@
+/* Based on src/Products.CNXContent/Products/CNXContent/skins/CNXContent/cnx-styles/newlook/content.css */
+
+/* Add the embedded STIX fonts for embedded math symbols */
+
+@font-face {
+  font-family: "STIXGeneral";
+  font-style: normal;
+  font-weight: normal;
+  src:url(STIXGeneral.ttf);
+}
+
+@font-face {
+  font-family: "STIXGeneral";
+  font-style: normal;
+  font-weight: bold;
+  src:url(STIXGeneralBol.ttf);
+}
+
+@font-face {
+  font-family: "STIXGeneral";
+  font-style: italic;
+  font-weight: bold;
+  src:url(STIXGeneralBolIta.ttf);
+}
+
+@font-face {
+  font-family: "STIXGeneral";
+  font-style: italic;
+  font-weight: normal;
+  src:url(STIXGeneralItalic.ttf);
+}
+
+@font-face {
+  font-family: "STIXSymbol";
+  font-style: normal;
+  font-weight: normal;
+  src:url(STIXSiz1Sym.ttf);
+}
+
+@font-face {
+  font-family: "STIXSymbol";
+  font-style: normal;
+  font-weight: bold;
+  src:url(STIXSiz1SymBol.ttf);
+}
+
+
+/* ======== general ============ */
+
+body{
+  font-size: .75em;
+  font-family: STIXGeneral, STIXSymbol, serif;
+}
+
+a{
+  color: #369;
+}
+
+a:visited{
+  color: #647;
+}
+
+dl, dt {
+  margin: 0;
+}
+
+img{
+  border-width: 0;
+}
+
+/* =========== headers and title page =========== */
+
+h3, h4, h5, h6{
+/*
+  font-family: arial, helvetica, sans-serif;
+*/
+  font-size: 1em;
+  margin: .25em 0 0;
+  display: block;
+  text-align: left;
+  line-height: normal;
+}
+
+h1, h2{
+/*
+  font-family: georgia, palatino linotype, serif;
+*/
+  color: #d60;
+  margin: 2em 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.book div{
+  margin: 0 0 .75em;
+}
+
+#copyright_page{
+  margin-top: 4em;
+  font-size: .9em;
+  text-align: left;
+  display: inline-block;
+}
+
+#copyright_page div{
+  text-align: left;
+}
+
+#portal_title{
+  margin-top: 3em;
+  margin-bottom: .25em;
+}
+
+#portal_location{
+  margin-top: .25em;
+}
+
+#title_page_collection_editors{
+  margin-bottom: .5em;
+}
+
+#title_page_url{
+  margin-top: 3em;
+}
+
+#title_page_derivation{
+  font-size: .9em;
+}
+
+/* ============== ToC ============= */
+
+.toc dt{
+  font-weight: bold;
+}
+
+.toc dt{
+  margin-top: .35em;
+}
+
+/* ========== the "befores" (label) ========== */
+
+.label{
+  font-size: .9em;
+  color: #369;
+  text-transform: uppercase;
+  font-weight: bold;
+/*
+  font-family: arial, helvetica, sans-serif;
+*/
+}
+
+p.title{
+  margin: 0;
+}
+
+/* ========== section & section headers ========== */
+
+.section .section{
+  margin: 1.5em 0;
+}
+
+/*
+.section .titlepage{
+  font-family: arial, helvetica, sans-serif;
+}
+*/
+
+.section .titlepage h1, .glossary .titlepage h1{
+  margin: .5em 0 0;
+  font-size: 1.7em;
+  color: #369;
+text-align: left;
+  border: 0 solid #369;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+
+.section .section .titlepage, .section .glossary .titlepage{
+  color: #369;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 0 solid #369;
+  border-bottom-width: 1px;
+  border-right-width: 0;
+}
+
+.section .section .section .titlepage, .section .section .glossary .titlepage{
+  border: 0 solid #369;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  font-size: 1.25em;
+  padding: 0 0 .1em .4em;
+}
+
+.section .section .section .section .titlepage, .section .section .section .glossary .titlepage{
+  border: 0 solid #369;
+  font-size: 1.25em;
+  padding: 0 0 .1em 0;
+}
+
+.example .section .titlepage, .proof .section .titlepage, .problem 
+.section .titlepage, .solution .section .titlepage, .statement .section .titlepage{
+  font-weight: normal; 
+  border: 0 solid #369;
+  border-bottom-width: 1px;
+  padding: 0 0 .1em 0;
+  font-size: 1em;
+  letter-spacing: 0;
+}
+
+/* End-of-chapter section lists should be bold and big (and they're links) */
+.cnx-eoc > .title {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.cnx-eoc > .section > .title {
+  font-size: 1em;
+  font-weight: bold;
+}
+.cnx-eoc > .solution a,
+.cnx-eoc > .section > .title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cnx-eoc .exercise .solution {
+  display: none;
+}
+
+/* ========== list & item ========== */
+
+div.itemizedlist, div.orderedlist{
+  margin: 1em 0;
+}
+
+ul.itemizedlist{
+  margin: 0 0 0 1.1em;
+  padding: 0;
+  list-style-type: disc;
+}
+
+ol.orderedlist{
+  margin: 0 0 0 1.5em;
+  padding: 0;
+  list-style-type: decimal;
+}
+
+.simplelist .simplelist{
+  margin-left: 1em;
+}
+
+.simplelist td{
+  padding: .5em 0 .25em;
+}
+
+/* override for "attributions" section */
+.appendix .simplelist td{
+  padding: .1em;
+}
+
+.simplelist ul.itemizedlist{ margin-left: 2.1em; }
+.simplelist ol.orderedlist{ margin-left: 2.5em; }
+
+.listitem{
+  margin: 0;
+  padding: 0;
+}
+
+.listitem p{
+  margin: 1em 0 0;
+}
+
+/* ========== para ========== */
+
+p{
+  margin: 1em 0;
+}
+
+body{
+  line-height: 1.4em;
+}
+
+/* ========== codeblock & codeline ========== */
+
+.code, .screen{
+  font-family: courier, courier new, monospace;
+  color: #060;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.screen{
+  margin: 0;
+  text-align: left;
+  line-height: normal;
+}
+
+.code blockquote, blockquote .code, .screen blockquote, blockquote .screen{
+  font-style: normal;
+}
+
+/* ======== preformat ======== */
+
+.literallayout{
+  margin: .5em 0;
+}
+
+.literal{ /* display="inline" */
+  font-family: courier, courier new, monospace;
+  font-size: 1.18em;
+}
+
+/* ========== quote ========== */
+
+blockquote{
+  font-style: italic;
+  margin: 1em 1.25em;
+  line-height: normal;
+}
+
+.quote-source{
+  font-style: normal;
+}
+
+.quote-header{
+  margin: 1em 3em -.75em;
+}
+
+/* ========== example ========== */
+
+.example{
+  margin: 1em 0;
+  padding: .75em;
+  border: 1px solid #333;
+  border-top-color: #ccc;
+  border-left-color: #ccc;
+}
+
+.example-break{
+  display: none;
+}
+
+.example > .title, .exercise > .title {
+  font-weight: bold;
+}
+.exercise > .title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.example p{
+  margin: .5em 0;
+}
+
+.definition .example{
+  margin: .5em 3em;
+}
+
+.definition .example, .rule .example{
+  padding: .5em .8em;
+}
+
+.definition .example p, .rule .example p{
+  margin: .5em 0;
+}
+
+.example.labview, .example.musical{
+  margin: 0;
+  text-align: center;
+  border: 0;
+}
+
+/* ========== exercise ========== */
+
+.exercise{
+  margin: 1em 0;
+}
+
+.problem, .commentary, div.solution{
+  margin: .5em 0;
+}
+
+.exercise-break, .problem-break, .solution-break, .commentary-break{
+  display: none;
+}
+
+/* ========== assorted inline elements ========== */
+
+.link {
+  font-weight: bold;
+}
+
+.smallcaps{
+  font-variant: small-caps;
+}
+
+.normal{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-variant: normal;
+}
+
+.normal em{
+  font-style: normal;
+}
+
+.xref{
+  text-transform: capitalize;
+}
+
+.bibtex-reference{
+  vertical-align: .5em;
+  line-height: .1em;
+  font-style: normal;
+}
+
+.foreignphrase .citetitle, .citetitle .foreignphrase, blockquote .foreignphrase, blockquote .citetitle{
+  font-style: normal;
+}
+
+.token { /* simple math */
+  font-family: STIXGeneral,DejaVu Serif,DejaVu Sans,Cambria,Cambria Math,Times,Lucida Sans Unicode,OpenSymbol,Standard Symbols L,serif;
+  white-space: nowrap;
+}
+
+.foreignphrase, .mathml-mi{
+  font-style: italic;
+}
+
+/* ========== term & definition ========== */
+
+.glossterm, .glosslist dt, .glossary dt{
+  font-weight: bold;
+  font-style: normal;
+  display: inline;
+}
+
+.bold .glossterm, .glossterm .bold{
+  font-style: italic;
+}
+
+.glosslist dl, .glossary dl{
+  margin: 1em 0;
+}
+
+.glosslist dd, .glossary dd{
+  margin: .5em 0 .5em 1em;
+}
+
+.glosslist dd p, .glossary dd p{
+  margin: .5em 0;
+}
+
+.glosslist .example, .glossary .example{
+  padding: .5em 1em;
+}
+
+/* ========== equation ========== */
+
+.equation{
+  margin: .5em 1em 1em 0;
+  text-align: center;
+}
+
+.equation .label{
+  float: right;
+  margin-right: -1em;
+}
+
+.equation-title{
+  margin-bottom: .5em;
+  text-align: left;
+}
+
+/* ========== figure, subfigure & caption ========== */
+
+.figure{
+  margin: 1.5em auto;
+  text-align: center;
+  page-break-inside: avoid;
+}
+
+.figure-break{
+  display: none;
+}
+
+.figure-contents{
+  text-align: center;
+  padding: .5em auto .75em;
+}
+
+.figure .caption{
+  margin: .5em auto;
+  font-size: .9em;
+}
+
+.figure .screen, .figure .table{
+  margin: 0;
+}
+
+.figure .title, .table .title{
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+/* this is only necessary due to abuse of docbook's section tag to stuff subfigures into it */
+.figure .titlepage, .figure .titlepage h1{
+  border: 0 !important;
+  padding: 0 !important;
+  color: black !important;
+  font-size: 1em !important;
+}
+
+.figure .figure{
+  margin: .75em 0;
+}
+
+td .mediaobject{
+  display: table-cell;
+}
+
+/* ========== table ========== */
+
+.table-break{
+  display: none;
+}
+
+.table{
+  margin: 1.5em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.table table{
+  border-collapse: collapse;
+  border: 1px solid #666 !important;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table td, .table th{
+  padding: .3em;
+  border: 1px solid #666 !important;
+}
+
+.table caption, .table .caption{
+  margin-top: .5em;
+}
+
+.table .caption, .screen .caption{
+  font-size: .9em;
+}
+
+.screen .caption{
+  text-align: left;
+  border-top: 1px solid #999;
+  margin: .75em auto 0;
+  line-height: normal;
+  padding-top: .5em;
+  font-family: serif;
+}
+
+/* ========== note ========== */
+
+.note, .warning{
+  padding: .75em;
+  margin: .5em 0 .75em !important;
+  border: 1px solid #333;
+  border-top-color: #ccc;
+  border-left-color: #ccc;
+}
+
+/*
+.note .title, .warning .title{
+  display: inline;
+}
+*/
+
+.note-header{
+  display: inline;
+}
+
+/* ========== rule ========== */
+
+.rule{
+  margin: .75em 0;
+}
+
+.statement{
+  margin: .75em 0 .5em 1em !important;
+}
+
+.proof{ 
+  margin: .4em 0 .2em 1em !important;
+}
+
+.statement p, .proof p{
+  margin: .5em 0 1em;
+}
+
+/* this is only necessary due to abuse of docbook's section tag to stuff rules into it */
+.rule .titlepage, .rule .titlepage h1{ 
+  border: 0 !important;
+  padding: 0 !important;
+  color: black !important;
+  font-size: 1em !important;
+  text-transform: capitalize;
+}
+
+/* ========== glossary & bibtexml & foonotes ========== */
+
+.references, .footnotes{
+  margin: 2em 0 1em;
+  border-top: 1px #ccc solid;
+  padding: .5em 0;
+}
+
+.footnotes br, .footnotes hr{
+  display: none;
+}
+
+.module-footnote a{
+  text-decoration: none;
+}
+
+.glossary .titlepage, .references .titlepage, .footnotes .titlepage{
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.glossary{
+  margin: 1em 0 1em;
+}
+
+.glossary dl div, .glossary dl h3, .glossary dl h4, .glossary dl h5, 
+.glossary dl h6, .glossary dl p, .glossary dl dt{
+  display: inline;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0;
+}
+
+/* ===== newline & space ===== */
+
+.newline hr{     
+  height: 0;
+  margin: 1.4em 0 .25em;
+  border: 0 solid black;  
+  border-width: 0 0 1px;
+}
+
+pre.underline{
+  text-decoration: underline;              
+}
+
+pre.space{
+  display: inline;
+}
+
+/* ========== QML ========== */
+
+.feedback{
+  font-weight: bold;
+  margin: 1em 0 1em 2em;
+}
+
+.hint, .feedback{
+  display: none;
+  margin-top: .5em;
+}
+
+.answer{
+  margin-top: .5em;
+}
+
+.hint{
+  font-style: italic;
+}
+
+.qmlitem input{
+  border-width: 0;
+}
+
+.qmlitem .button{
+  margin: .5em 0 0;
+  padding: .05em .5em;
+  background-color: #69c;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #1d3955;
+  border-left-color: #c1d1e0;
+  border-top-color: #c1d1e0;
+}

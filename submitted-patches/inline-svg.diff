@@ -1,0 +1,12 @@
+443,444c443,450
+<     <xsl:when test="imagedata">
+<       <xsl:apply-templates select="imagedata"/>
+---
+>     <xsl:when test="imagedata[not(@fileref)]">
+>       <!-- Fix for inline SVG. RelaxNG and HTML both assume SVG inside imagedata -->
+>       <fo:instream-foreign-object>
+>         <xsl:apply-templates mode="copy-all" select="imagedata[not(@fileref)]/*"/>
+>       </fo:instream-foreign-object>
+>     </xsl:when>
+>     <xsl:when test="imagedata[@fileref]">
+>       <xsl:apply-templates select="imagedata[@fileref]"/>

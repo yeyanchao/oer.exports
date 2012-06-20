@@ -1,0 +1,56 @@
+only converts things it knows about, stuff that falls through gets logged
+run every few days on all modules to get a prioritized TODO list
+
+Collab Stats:
+cnxml -> docbook : 25min
+docbook -> fo : 99min
+fo -> pdf      : 4min
+docbook -> epub : 8min
+
+Music Theory:
+cnxml -> docbook : 8min
+docbook -> fo : 6min
+fo -> pdf     : 1.5min
+
+
+Engineering:
+cnxml -> docbook : 15min
+docbook -> fo    : 15min
+fo -> pdf        : 2.15min
+
+Elem Algebra
+docbook -> fo    : 405min (6.75 hrs)
+fo -> pdf        : 45min
+
+To run:
+unzip complete.zip
+./collection2docbook.sh
+# Customize the collection.dbk
+./docbook2pdf.sh
+
+
+
+Validates against docbook rng
+Prints unmatched links, images that are too big
+
+
+
+Running the xslt:
+
+
+Run the java class.
+declare -x COL_PATH=col10522_1.36_complete
+time xsltproc --xinclude xsl/docbook-cleanup-whole.xsl $COL_PATH/collection.dbk > $COL_PATH/collection-whole.cleaned.dbk
+time xsltproc xsl/docbook2fo.xsl $COL_PATH/collection-whole.cleaned.dbk > $COL_PATH/collection-whole.dbk.fo.xml
+time xsltproc xsl/postprocess-svg.xsl $COL_PATH/collection-whole.dbk.fo.xml > $COL_PATH/collection-whole.dbk.aligned.fo.xml
+
+# From the collection dir (to get the images to attach)
+time ../dita/demo/fo/fop/fop -c ../dita/demo/fo/fop/conf/fop.xconf collection-whole.dbk.aligned.fo.xml collection-whole.dbk.aligned.fo.pdf
+
+
+
+ 
+To search modules for a specific xpath expression use the following:
+COL_PATH=~/Downloads/all-modules; for MODULE in `ls $COL_PATH`; do if [ -d $COL_PATH/$MODULE ]; then bash scripts/module-xpath.sh "c:para[count(c:definition)>1]" $COL_PATH $MODULE "<definition"; fi; done
+COL_PATH=~/Downloads/all-modules; for MODULE in `ls $COL_PATH`; do if [ -d $COL_PATH/$MODULE ]; then bash scripts/module-xpath.sh "c:para[c:newline]" $COL_PATH $MODULE "newline"; fi; done
+m12318

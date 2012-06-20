@@ -1,0 +1,1212 @@
+<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"> 
+  <!--This file is generated automatically.--> 
+  <!--1.  Use mkL10nKeys.py to create an XML file containing the key --> 
+  <!--    values passed to gentext calls over a body of Connexions content:--> 
+  <!--      ./mkL10nKeys.py /path/to/content_render.xsl /path/to/module_export_template/files > keys.xml--> 
+  <!--2.  Use buildl10n.xsl to extract those keys from the Docbook l10n.xml --> 
+  <!--    file that are used in Connexions content:--> 
+  <!--      xsltproc buildl10n.xsl /usr/share/xml/docbook/stylesheet/nwalsh/common/l10n.xml > l10n.xml--> 
+  <!--    Note that the keys.xml file from step 1 must be in the same directory --> 
+  <!--    as the buildl10n.xsl stylesheet.--> 
+  <!--Copyright 2009 Chuck Bearden and Connexions.--> 
+  <l:l10n language="af" english-language-name="Afrikaans"> 
+    <l:gentext key="equation" text="vergelyking"/> 
+    <l:gentext key="Example" text="Voorbeeld"/> 
+    <l:gentext key="example" text="voorbeeld"/> 
+    <l:gentext key="Figure" text="Figuur"/> 
+    <l:gentext key="figure" text="figuur"/> 
+    <l:gentext key="Glossary" text="Woordlys"/> 
+    <l:gentext key="glossary" text="woordlys"/> 
+    <l:gentext key="GlossSeeAlso" text="WoordelysSienOok"/> 
+    <l:gentext key="important" text="belangrik"/> 
+    <l:gentext key="Note" text="Opmerking"/> 
+    <l:gentext key="note" text="opmerking"/> 
+    <l:gentext key="Reference" text="Verwysing"/> 
+    <l:gentext key="section" text="paragraaf"/> 
+    <l:gentext key="Step" text="Stap"/> 
+    <l:gentext key="table" text="tabel"/> 
+    <l:gentext key="Table" text="Tabel"/> 
+    <l:gentext key="tip" text="leidraad"/> 
+    <l:gentext key="warning" text="waarskuwing"/> 
+  </l:l10n> 
+  <l:l10n language="am" english-language-name="Amharic"> 
+    <l:gentext key="equation" text="&#x12A5;&#x12A9;&#x120C;&#x1273;"/> 
+    <l:gentext key="Example" text="&#x1208;&#x121D;&#x1233;&#x120C;"/> 
+    <l:gentext key="example" text="&#x1208;&#x121D;&#x1233;&#x120C;"/> 
+    <l:gentext key="Figure" text="&#x121D;&#x1235;&#x120D;"/> 
+    <l:gentext key="figure" text="&#x121D;&#x1235;&#x120D;"/> 
+    <l:gentext key="Glossary" text="&#x12E8;&#x1243;&#x120B;&#x1276;&#x127D; &#x134D;&#x127A; &#x12DD;&#x122D;&#x12DD;&#x122D;"/> 
+    <l:gentext key="glossary" text="&#x12E8;&#x1243;&#x120B;&#x1276;&#x127D; &#x134D;&#x127A; &#x12DD;&#x122D;&#x12DD;&#x122D;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x2026;&#x1295;&#x121D; &#x12A5;&#x12ED;"/> 
+    <l:gentext key="important" text="&#x12A0;&#x1235;&#x1348;&#x120B;&#x130A;"/> 
+    <l:gentext key="Note" text="&#x121B;&#x1235;&#x1273;&#x12C8;&#x123B;"/> 
+    <l:gentext key="note" text="&#x121B;&#x1235;&#x1273;&#x12C8;&#x123B;"/> 
+    <l:gentext key="Reference" text="&#x121B;&#x1323;&#x1240;&#x123B;"/> 
+    <l:gentext key="section" text="&#x12AD;&#x134D;&#x120D;"/> 
+    <l:gentext key="Step" text="&#x12F0;&#x1228;&#x1303;"/> 
+    <l:gentext key="table" text="&#x1220;&#x1295;&#x1320;&#x1228;&#x12E5;"/> 
+    <l:gentext key="Table" text="&#x1220;&#x1295;&#x1320;&#x1228;&#x12E5;"/> 
+    <l:gentext key="tip" text="&#x134D;&#x1295;&#x132D;"/> 
+    <l:gentext key="warning" text="&#x121B;&#x1235;&#x1320;&#x1295;&#x1240;&#x1242;&#x12EB;"/> 
+  </l:l10n> 
+  <l:l10n language="ar" english-language-name="Arabic"> 
+    <l:gentext key="equation" text="&#x645;&#x639;&#x627;&#x62F;&#x644;&#x629;"/> 
+    <l:gentext key="Example" text="&#x645;&#x62B;&#x627;&#x644;"/> 
+    <l:gentext key="example" text="&#x645;&#x62B;&#x627;&#x644;"/> 
+    <l:gentext key="Figure" text="&#x634;&#x643;&#x644;"/> 
+    <l:gentext key="figure" text="&#x634;&#x643;&#x644;"/> 
+    <l:gentext key="Glossary" text="&#x642;&#x627;&#x645;&#x648;&#x633; &#x627;&#x644;&#x645;&#x641;&#x631;&#x62F;&#x627;&#x62A;"/> 
+    <l:gentext key="glossary" text="&#x642;&#x627;&#x645;&#x648;&#x633; &#x627;&#x644;&#x645;&#x641;&#x631;&#x62F;&#x627;&#x62A;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x627;&#x646;&#x638;&#x631; &#x623;&#x64A;&#x636;&#x627;&#x64B;"/> 
+    <l:gentext key="important" text="&#x647;&#x627;&#x645;"/> 
+    <l:gentext key="Note" text="&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;"/> 
+    <l:gentext key="note" text="&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;"/> 
+    <l:gentext key="Reference" text="&#x645;&#x631;&#x62C;&#x639;"/> 
+    <l:gentext key="section" text="&#x642;&#x633;&#x645;"/> 
+    <l:gentext key="Step" text="&#x62E;&#x637;&#x648;&#x629;"/> 
+    <l:gentext key="table" text="&#x62C;&#x62F;&#x648;&#x644;"/> 
+    <l:gentext key="Table" text="&#x62C;&#x62F;&#x648;&#x644;"/> 
+    <l:gentext key="tip" text="&#x641;&#x643;&#x631;&#x629; &#x645;&#x641;&#x64A;&#x62F;&#x629;"/> 
+    <l:gentext key="warning" text="&#x62A;&#x646;&#x628;&#x64A;&#x647;"/> 
+  </l:l10n> 
+  <l:l10n language="az" english-language-name="Azerbaijani"> 
+    <l:gentext key="equation" text="T&#x259;nlik"/> 
+    <l:gentext key="Example" text="N&#xFC;mun&#x259;"/> 
+    <l:gentext key="example" text="N&#xFC;mun&#x259;"/> 
+    <l:gentext key="Figure" text="Fiqur"/> 
+    <l:gentext key="figure" text="Fiqur"/> 
+    <l:gentext key="Glossary" text="L&#xFC;&#x11F;&#x259;t"/> 
+    <l:gentext key="glossary" text="L&#xFC;&#x11F;&#x259;t"/> 
+    <l:gentext key="GlossSeeAlso" text="El&#x259;c&#x259; D&#x259; Bax"/> 
+    <l:gentext key="important" text="Vacib"/> 
+    <l:gentext key="Note" text="Qeyd"/> 
+    <l:gentext key="note" text="Qeyd"/> 
+    <l:gentext key="Reference" text="Xat&#x131;rlatma"/> 
+    <l:gentext key="section" text="Qisim"/> 
+    <l:gentext key="Step" text="Add&#x131;m"/> 
+    <l:gentext key="table" text="c&#x259;dv&#x259;l"/> 
+    <l:gentext key="Table" text="C&#x259;dv&#x259;l"/> 
+    <l:gentext key="tip" text="m&#x259;sl&#x259;h&#x259;t"/> 
+    <l:gentext key="warning" text="X&#x259;b&#x259;rdarl&#x131;q"/> 
+  </l:l10n> 
+  <l:l10n language="bg" english-language-name="Bulgarian"> 
+    <l:gentext key="equation" text="&#x424;&#x43E;&#x440;&#x43C;&#x443;&#x43B;&#x430;"/> 
+    <l:gentext key="Example" text="&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x440;"/> 
+    <l:gentext key="example" text="&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x440;"/> 
+    <l:gentext key="Figure" text="&#x424;&#x438;&#x433;&#x443;&#x440;&#x430;"/> 
+    <l:gentext key="figure" text="&#x424;&#x438;&#x433;&#x443;&#x440;&#x430;"/> 
+    <l:gentext key="Glossary" text="&#x422;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x43E;&#x43B;&#x43E;&#x433;&#x438;&#x447;&#x435;&#x43D; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;"/> 
+    <l:gentext key="glossary" text="&#x422;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x43E;&#x43B;&#x43E;&#x433;&#x438;&#x447;&#x435;&#x43D; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x432;&#x436;."/> 
+    <l:gentext key="important" text="&#x412;&#x430;&#x436;&#x43D;&#x43E;"/> 
+    <l:gentext key="Note" text="&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;"/> 
+    <l:gentext key="note" text="&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;"/> 
+    <l:gentext key="Reference" text="&#x421;&#x43F;&#x440;&#x430;&#x432;&#x43E;&#x447;&#x43D;&#x438;&#x43A;"/> 
+    <l:gentext key="section" text="&#x420;&#x430;&#x437;&#x434;&#x435;&#x43B;"/> 
+    <l:gentext key="Step" text="&#x421;&#x442;&#x44A;&#x43F;&#x43A;&#x430;"/> 
+    <l:gentext key="table" text="&#x422;&#x430;&#x431;&#x43B;&#x438;&#x446;&#x430;"/> 
+    <l:gentext key="Table" text="&#x422;&#x430;&#x431;&#x43B;&#x438;&#x446;&#x430;"/> 
+    <l:gentext key="tip" text="&#x41F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x43A;&#x430;"/> 
+    <l:gentext key="warning" text="&#x412;&#x43D;&#x438;&#x43C;&#x430;&#x43D;&#x438;&#x435;"/> 
+  </l:l10n> 
+  <l:l10n language="bn" english-language-name="Bangla"> 
+    <l:gentext key="equation" text="&#x9B8;&#x9AE;&#x9C0;&#x995;&#x9B0;&#x9A3;"/> 
+    <l:gentext key="Example" text="&#x989;&#x9A6;&#x9BE;&#x9B9;&#x9B0;&#x9A3;"/> 
+    <l:gentext key="example" text="&#x989;&#x9A6;&#x9BE;&#x9B9;&#x9B0;&#x9A3;"/> 
+    <l:gentext key="Figure" text="&#x99A;&#x9BF;&#x9A4;&#x9CD;&#x9B0;"/> 
+    <l:gentext key="figure" text="&#x99A;&#x9BF;&#x9A4;&#x9CD;&#x9B0;"/> 
+    <l:gentext key="Glossary" text="&#x9A8;&#x9BF;&#x9B0;&#x9CD;&#x998;&#x9A8;&#x9CD;&#x99F;"/> 
+    <l:gentext key="glossary" text="&#x9A8;&#x9BF;&#x9B0;&#x9CD;&#x998;&#x9A8;&#x9CD;&#x99F;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x986;&#x9B0;&#x9CB; &#x9A6;&#x9C7;&#x996;&#x9C1;&#x9A8;"/> 
+    <l:gentext key="important" text="&#x997;&#x9C1;&#x9B0;&#x9C1;&#x9A4;&#x9CD;&#x9AC;&#x9AA;&#x9C2;&#x9B0;&#x9CD;&#x9A3;"/> 
+    <l:gentext key="Note" text="&#x9B2;&#x995;&#x9CD;&#x9B7;&#x9A3;&#x9C0;&#x9DF;"/> 
+    <l:gentext key="note" text="&#x9B2;&#x995;&#x9CD;&#x9B7;&#x9A3;&#x9C0;&#x9DF;"/> 
+    <l:gentext key="Reference" text="&#x997;&#x9CD;&#x9B0;&#x9A8;&#x9CD;&#x9A5;&#x9B8;&#x9C2;&#x9A4;&#x9CD;&#x9B0;"/> 
+    <l:gentext key="section" text="&#x985;&#x9A8;&#x9C1;&#x99A;&#x9CD;&#x99B;&#x9C7;&#x9A6;"/> 
+    <l:gentext key="Step" text="&#x9A7;&#x9BE;&#x9AA;"/> 
+    <l:gentext key="table" text="&#x99B;&#x995;"/> 
+    <l:gentext key="Table" text="&#x99B;&#x995;"/> 
+    <l:gentext key="tip" text="&#x987;&#x999;&#x9CD;&#x997;&#x9BF;&#x9A4;"/> 
+    <l:gentext key="warning" text="&#x9B8;&#x9A4;&#x9B0;&#x9CD;&#x995;&#x9AC;&#x9BE;&#x9A3;&#x9C0;"/> 
+  </l:l10n> 
+  <l:l10n language="bs" english-language-name="Bosnian"> 
+    <l:gentext key="equation" text="Jedna&#x10D;ina"/> 
+    <l:gentext key="Example" text="Primjer"/> 
+    <l:gentext key="example" text="Primjer"/> 
+    <l:gentext key="Figure" text="Slika"/> 
+    <l:gentext key="figure" text="Slika"/> 
+    <l:gentext key="Glossary" text="Glosar"/> 
+    <l:gentext key="glossary" text="Glosar"/> 
+    <l:gentext key="GlossSeeAlso" text="Vidi tako&#x111;e"/> 
+    <l:gentext key="important" text="Va&#x17E;no"/> 
+    <l:gentext key="Note" text="Bilje&#x161;ka"/> 
+    <l:gentext key="note" text="Bilje&#x161;ka"/> 
+    <l:gentext key="Reference" text="Referenca"/> 
+    <l:gentext key="section" text="Odjeljak"/> 
+    <l:gentext key="Step" text="Korak"/> 
+    <l:gentext key="table" text="Tabela"/> 
+    <l:gentext key="Table" text="Tabela"/> 
+    <l:gentext key="tip" text="Savjet"/> 
+    <l:gentext key="warning" text="Upozorenje"/> 
+  </l:l10n> 
+  <l:l10n language="ca" english-language-name="Catalan"> 
+    <l:gentext key="equation" text="Equaci&#xF3;"/> 
+    <l:gentext key="Example" text="Exemple"/> 
+    <l:gentext key="example" text="Exemple"/> 
+    <l:gentext key="Figure" text="Figura"/> 
+    <l:gentext key="figure" text="Figura"/> 
+    <l:gentext key="Glossary" text="Glossari"/> 
+    <l:gentext key="glossary" text="Glossari"/> 
+    <l:gentext key="GlossSeeAlso" text="Veure tamb&#xE9;"/> 
+    <l:gentext key="important" text="Important"/> 
+    <l:gentext key="Note" text="Nota"/> 
+    <l:gentext key="note" text="Nota"/> 
+    <l:gentext key="Reference" text="Refer&#xE8;ncia"/> 
+    <l:gentext key="section" text="Secci&#xF3;"/> 
+    <l:gentext key="Step" text="Pas"/> 
+    <l:gentext key="table" text="Taula"/> 
+    <l:gentext key="Table" text="Taula"/> 
+    <l:gentext key="tip" text="Suggeriment"/> 
+    <l:gentext key="warning" text="Av&#xED;s"/> 
+  </l:l10n> 
+  <l:l10n language="cs" english-language-name="Czech"> 
+    <l:gentext key="equation" text="Rovnice"/> 
+    <l:gentext key="Example" text="P&#x159;&#xED;klad"/> 
+    <l:gentext key="example" text="P&#x159;&#xED;klad"/> 
+    <l:gentext key="Figure" text="Obr&#xE1;zek"/> 
+    <l:gentext key="figure" text="Obr&#xE1;zek"/> 
+    <l:gentext key="Glossary" text="Slovn&#xED;k"/> 
+    <l:gentext key="glossary" text="Slovn&#xED;k"/> 
+    <l:gentext key="GlossSeeAlso" text="Viz t&#xE9;&#x17E;"/> 
+    <l:gentext key="important" text="D&#x16F;le&#x17E;it&#xE9;"/> 
+    <l:gentext key="Note" text="Pozn&#xE1;mka"/> 
+    <l:gentext key="note" text="Pozn&#xE1;mka"/> 
+    <l:gentext key="Reference" text="Odkaz"/> 
+    <l:gentext key="section" text="Odd&#xED;l"/> 
+    <l:gentext key="Step" text="Krok"/> 
+    <l:gentext key="table" text="Tabulka"/> 
+    <l:gentext key="Table" text="Tabulka"/> 
+    <l:gentext key="tip" text="Tip"/> 
+    <l:gentext key="warning" text="Varov&#xE1;n&#xED;"/> 
+  </l:l10n> 
+  <l:l10n language="cy" english-language-name="Welsh"> 
+    <l:gentext key="equation" text="Hafaliad"/> 
+    <l:gentext key="Example" text="Enghraifft"/> 
+    <l:gentext key="example" text="Enghraifft"/> 
+    <l:gentext key="Figure" text="Ffigur"/> 
+    <l:gentext key="figure" text="Ffigur"/> 
+    <l:gentext key="Glossary" text="Geirfa"/> 
+    <l:gentext key="glossary" text="Geirfa"/> 
+    <l:gentext key="GlossSeeAlso" text="Gweler Hefyd"/> 
+    <l:gentext key="important" text="Pwysig"/> 
+    <l:gentext key="Note" text="Nodyn"/> 
+    <l:gentext key="note" text="Nodyn"/> 
+    <l:gentext key="Reference" text="Cyfeiriad"/> 
+    <l:gentext key="section" text="Adran"/> 
+    <l:gentext key="Step" text="Cam"/> 
+    <l:gentext key="table" text="Tabl"/> 
+    <l:gentext key="Table" text="Tabl"/> 
+    <l:gentext key="tip" text="Cynghoryn"/> 
+    <l:gentext key="warning" text="Rhybudd"/> 
+  </l:l10n> 
+  <l:l10n language="da" english-language-name="Danish"> 
+    <l:gentext key="equation" text="ligning"/> 
+    <l:gentext key="Example" text="Eksempel"/> 
+    <l:gentext key="example" text="eksempel"/> 
+    <l:gentext key="Figure" text="Figur"/> 
+    <l:gentext key="figure" text="figur"/> 
+    <l:gentext key="Glossary" text="Ordliste"/> 
+    <l:gentext key="glossary" text="ordliste"/> 
+    <l:gentext key="GlossSeeAlso" text="Se ogs&#xE5;"/> 
+    <l:gentext key="important" text="vigtigt"/> 
+    <l:gentext key="Note" text="Bem&#xE6;rk"/> 
+    <l:gentext key="note" text="bem&#xE6;rk"/> 
+    <l:gentext key="Reference" text="Henvisning"/> 
+    <l:gentext key="section" text="afsnit"/> 
+    <l:gentext key="Step" text="Trin"/> 
+    <l:gentext key="table" text="tabel"/> 
+    <l:gentext key="Table" text="Tabel"/> 
+    <l:gentext key="tip" text="vink"/> 
+    <l:gentext key="warning" text="advarsel"/> 
+  </l:l10n> 
+  <l:l10n language="de" english-language-name="German"> 
+    <l:gentext key="equation" text="Gleichung"/> 
+    <l:gentext key="Example" text="Beispiel"/> 
+    <l:gentext key="example" text="Beispiel"/> 
+    <l:gentext key="Figure" text="Abbildung"/> 
+    <l:gentext key="figure" text="Abbildung"/> 
+    <l:gentext key="Glossary" text="Glossar"/> 
+    <l:gentext key="glossary" text="Glossar"/> 
+    <l:gentext key="GlossSeeAlso" text="Siehe auch"/> 
+    <l:gentext key="important" text="Wichtig"/> 
+    <l:gentext key="Note" text="Anmerkung"/> 
+    <l:gentext key="note" text="Anmerkung"/> 
+    <l:gentext key="Reference" text="Verweis"/> 
+    <l:gentext key="section" text="Abschnitt"/> 
+    <l:gentext key="Step" text="Schritt"/> 
+    <l:gentext key="table" text="Tabelle"/> 
+    <l:gentext key="Table" text="Tabelle"/> 
+    <l:gentext key="tip" text="Tipp"/> 
+    <l:gentext key="warning" text="Warnung"/> 
+  </l:l10n> 
+  <l:l10n language="el" english-language-name="Greek"> 
+    <l:gentext key="equation" text="&#x395;&#x3BE;&#x3AF;&#x3C3;&#x3C9;&#x3C3;&#x3B7;"/> 
+    <l:gentext key="Example" text="&#x3A0;&#x3B1;&#x3C1;&#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B3;&#x3BC;&#x3B1;"/> 
+    <l:gentext key="example" text="&#x3A0;&#x3B1;&#x3C1;&#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B3;&#x3BC;&#x3B1;"/> 
+    <l:gentext key="Figure" text="&#x3A3;&#x3C7;&#x3AE;&#x3BC;&#x3B1;"/> 
+    <l:gentext key="figure" text="&#x3A3;&#x3C7;&#x3AE;&#x3BC;&#x3B1;"/> 
+    <l:gentext key="Glossary" text="&#x393;&#x3BB;&#x3C9;&#x3C3;&#x3C3;&#x3AC;&#x3C1;&#x3B9;&#x3BF;"/> 
+    <l:gentext key="glossary" text="&#x393;&#x3BB;&#x3C9;&#x3C3;&#x3C3;&#x3AC;&#x3C1;&#x3B9;&#x3BF;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x394;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x395;&#x3C0;&#x3AF;&#x3C3;&#x3B7;&#x3C2;"/> 
+    <l:gentext key="important" text="&#x3A3;&#x3B7;&#x3BC;&#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3CC;"/> 
+    <l:gentext key="Note" text="&#x3A3;&#x3B7;&#x3BC;&#x3B5;&#x3AF;&#x3C9;&#x3C3;&#x3B7;"/> 
+    <l:gentext key="note" text="&#x3A3;&#x3B7;&#x3BC;&#x3B5;&#x3AF;&#x3C9;&#x3C3;&#x3B7;"/> 
+    <l:gentext key="Reference" text="&#x391;&#x3BD;&#x3B1;&#x3C6;&#x3BF;&#x3C1;&#x3AC;"/> 
+    <l:gentext key="section" text="&#x3C4;&#x3BC;&#x3AE;&#x3BC;&#x3B1;"/> 
+    <l:gentext key="Step" text="&#x3A6;&#x3AC;&#x3C3;&#x3B7;"/> 
+    <l:gentext key="table" text="&#x3A0;&#x3AF;&#x3BD;&#x3B1;&#x3BA;&#x3B1;&#x3C2;"/> 
+    <l:gentext key="Table" text="&#x3A0;&#x3AF;&#x3BD;&#x3B1;&#x3BA;&#x3B1;&#x3C2;"/> 
+    <l:gentext key="tip" text="&#x3A5;&#x3C0;&#x3CC;&#x3B4;&#x3B5;&#x3B9;&#x3BE;&#x3B7;"/> 
+    <l:gentext key="warning" text="&#x3A0;&#x3C1;&#x3BF;&#x3B5;&#x3B9;&#x3B4;&#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3B7;&#x3C3;&#x3B7;"/> 
+  </l:l10n> 
+  <l:l10n language="en" english-language-name="English"> 
+    <l:gentext key="equation" text="Equation"/> 
+    <l:gentext key="Example" text="Example"/> 
+    <l:gentext key="example" text="Example"/> 
+    <l:gentext key="Figure" text="Figure"/> 
+    <l:gentext key="figure" text="Figure"/> 
+    <l:gentext key="Glossary" text="Glossary"/> 
+    <l:gentext key="glossary" text="Glossary"/> 
+    <l:gentext key="GlossSeeAlso" text="See Also"/> 
+    <l:gentext key="important" text="Important"/> 
+    <l:gentext key="Note" text="Note"/> 
+    <l:gentext key="note" text="Note"/> 
+    <l:gentext key="Reference" text="Reference"/> 
+    <l:gentext key="section" text="Section"/> 
+    <l:gentext key="Step" text="Step"/> 
+    <l:gentext key="table" text="Table"/> 
+    <l:gentext key="Table" text="Table"/> 
+    <l:gentext key="tip" text="Tip"/> 
+    <l:gentext key="warning" text="Warning"/> 
+  </l:l10n> 
+  <l:l10n language="eo" english-language-name="Esperanto"> 
+    <l:gentext key="equation" text="Ekvacio"/> 
+    <l:gentext key="Example" text="Ekzemplo"/> 
+    <l:gentext key="example" text="Ekzemplo"/> 
+    <l:gentext key="Figure" text="Figuro"/> 
+    <l:gentext key="figure" text="Figuro"/> 
+    <l:gentext key="Glossary" text="Glosaro"/> 
+    <l:gentext key="glossary" text="Glosaro"/> 
+    <l:gentext key="GlossSeeAlso" text="Vidu anka&#x16D;"/> 
+    <l:gentext key="important" text="Grava"/> 
+    <l:gentext key="Note" text="Rimarko"/> 
+    <l:gentext key="note" text="Rimarko"/> 
+    <l:gentext key="Reference" text="Referenco"/> 
+    <l:gentext key="section" text="Sekcio"/> 
+    <l:gentext key="Step" text="&#x15C;tupo"/> 
+    <l:gentext key="table" text="Tabelo"/> 
+    <l:gentext key="Table" text="Tabelo"/> 
+    <l:gentext key="tip" text="Sugesto"/> 
+    <l:gentext key="warning" text="Averto"/> 
+  </l:l10n> 
+  <l:l10n language="es" english-language-name="Spanish"> 
+    <l:gentext key="equation" text="ecuaci&#xF3;n"/> 
+    <l:gentext key="Example" text="Ejemplo"/> 
+    <l:gentext key="example" text="ejemplo"/> 
+    <l:gentext key="Figure" text="Figura"/> 
+    <l:gentext key="figure" text="figura"/> 
+    <l:gentext key="Glossary" text="Glosario"/> 
+    <l:gentext key="glossary" text="glosario"/> 
+    <l:gentext key="GlossSeeAlso" text="Ver tambi&#xE9;n"/> 
+    <l:gentext key="important" text="importante"/> 
+    <l:gentext key="Note" text="Nota"/> 
+    <l:gentext key="note" text="nota"/> 
+    <l:gentext key="Reference" text="Referencia"/> 
+    <l:gentext key="section" text="secci&#xF3;n"/> 
+    <l:gentext key="Step" text="Paso"/> 
+    <l:gentext key="table" text="tabla"/> 
+    <l:gentext key="Table" text="Tabla"/> 
+    <l:gentext key="tip" text="sugerencia"/> 
+    <l:gentext key="warning" text="aviso"/> 
+  </l:l10n> 
+  <l:l10n language="et" english-language-name="Estonian"> 
+    <l:gentext key="equation" text="Valem"/> 
+    <l:gentext key="Example" text="N&#xE4;ide"/> 
+    <l:gentext key="example" text="N&#xE4;ide"/> 
+    <l:gentext key="Figure" text="Joonis"/> 
+    <l:gentext key="figure" text="Joonis"/> 
+    <l:gentext key="Glossary" text="S&#xF5;nastik"/> 
+    <l:gentext key="glossary" text="S&#xF5;nastik"/> 
+    <l:gentext key="GlossSeeAlso" text="Vt. ka"/> 
+    <l:gentext key="important" text="Oluline"/> 
+    <l:gentext key="Note" text="M&#xE4;rkus"/> 
+    <l:gentext key="note" text="M&#xE4;rkus"/> 
+    <l:gentext key="Reference" text="Viide"/> 
+    <l:gentext key="section" text="l&#xF5;ik"/> 
+    <l:gentext key="Step" text="Samm"/> 
+    <l:gentext key="table" text="Tabel"/> 
+    <l:gentext key="Table" text="Tabel"/> 
+    <l:gentext key="tip" text="Vihje"/> 
+    <l:gentext key="warning" text="Hoiatus"/> 
+  </l:l10n> 
+  <l:l10n language="eu" english-language-name="Basque"> 
+    <l:gentext key="equation" text="Ekuazioa"/> 
+    <l:gentext key="Example" text="Adibidea"/> 
+    <l:gentext key="example" text="Adibidea"/> 
+    <l:gentext key="Figure" text="Irudia"/> 
+    <l:gentext key="figure" text="Irudia"/> 
+    <l:gentext key="Glossary" text="Glosarioa"/> 
+    <l:gentext key="glossary" text="Glosarioa"/> 
+    <l:gentext key="GlossSeeAlso" text="Ikus baita ere"/> 
+    <l:gentext key="important" text="Garrantzitsua"/> 
+    <l:gentext key="Note" text="Oharra"/> 
+    <l:gentext key="note" text="Oharra"/> 
+    <l:gentext key="Reference" text="Erreferentzia"/> 
+    <l:gentext key="section" text="Atala"/> 
+    <l:gentext key="Step" text="Urratsa"/> 
+    <l:gentext key="table" text="Taula"/> 
+    <l:gentext key="Table" text="Taula"/> 
+    <l:gentext key="tip" text="Iradokizuna"/> 
+    <l:gentext key="warning" text="Abisua"/> 
+  </l:l10n> 
+  <l:l10n language="fa" english-language-name="Farsi"> 
+    <l:gentext key="equation" text="&#x645;&#x639;&#x627;&#x62F;&#x644;&#x647;"/> 
+    <l:gentext key="Example" text="&#x645;&#x62B;&#x627;&#x644;"/> 
+    <l:gentext key="example" text="&#x645;&#x62B;&#x627;&#x644;"/> 
+    <l:gentext key="Figure" text="&#x634;&#x643;&#x644;"/> 
+    <l:gentext key="figure" text="&#x634;&#x643;&#x644;"/> 
+    <l:gentext key="Glossary" text="&#x648;&#x627;&#x698;&#x647;&#x200C;&#x646;&#x627;&#x645;&#x647;"/> 
+    <l:gentext key="glossary" text="&#x648;&#x627;&#x698;&#x647;&#x200C;&#x646;&#x627;&#x645;&#x647;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x647;&#x645;&#x686;&#x646;&#x6CC;&#x646; &#x628;&#x628;&#x6CC;&#x646;&#x62F;"/> 
+    <l:gentext key="important" text="&#x645;&#x647;&#x645;"/> 
+    <l:gentext key="Note" text="&#x64A;&#x627;&#x62F;&#x627;&#x634;&#x62A;"/> 
+    <l:gentext key="note" text="&#x64A;&#x627;&#x62F;&#x627;&#x634;&#x62A;"/> 
+    <l:gentext key="Reference" text="&#x627;&#x631;&#x62C;&#x627;&#x639;"/> 
+    <l:gentext key="section" text="&#x642;&#x633;&#x645;&#x62A;"/> 
+    <l:gentext key="Step" text="&#x6AF;&#x627;&#x645;"/> 
+    <l:gentext key="table" text="&#x62C;&#x62F;&#x648;&#x644;"/> 
+    <l:gentext key="Table" text="&#x62C;&#x62F;&#x648;&#x644;"/> 
+    <l:gentext key="tip" text="&#x646;&#x6A9;&#x62A;&#x647;"/> 
+    <l:gentext key="warning" text="&#x647;&#x634;&#x62F;&#x627;&#x631;"/> 
+  </l:l10n> 
+  <l:l10n language="fi" english-language-name="Finnish"> 
+    <l:gentext key="equation" text="Kaava"/> 
+    <l:gentext key="Example" text="Esimerkki"/> 
+    <l:gentext key="example" text="esimerkki"/> 
+    <l:gentext key="Figure" text="Kuva"/> 
+    <l:gentext key="figure" text="kuva"/> 
+    <l:gentext key="Glossary" text="Sanasto"/> 
+    <l:gentext key="glossary" text="sanasto"/> 
+    <l:gentext key="GlossSeeAlso" text="Katso my&#xF6;s"/> 
+    <l:gentext key="important" text="t&#xE4;rke&#xE4;&#xE4;"/> 
+    <l:gentext key="Note" text="Huomaa"/> 
+    <l:gentext key="note" text="Huomaa"/> 
+    <l:gentext key="Reference" text="L&#xE4;hdeluettelo"/> 
+    <l:gentext key="section" text="kohta"/> 
+    <l:gentext key="Step" text="Step"/> 
+    <l:gentext key="table" text="Taulu"/> 
+    <l:gentext key="Table" text="Taulu"/> 
+    <l:gentext key="tip" text="Vihje"/> 
+    <l:gentext key="warning" text="Varoitus"/> 
+  </l:l10n> 
+  <l:l10n language="fr" english-language-name="French"> 
+    <l:gentext key="equation" text="&#xC9;quation"/> 
+    <l:gentext key="Example" text="Exemple"/> 
+    <l:gentext key="example" text="Exemple"/> 
+    <l:gentext key="Figure" text="Figure"/> 
+    <l:gentext key="figure" text="Figure"/> 
+    <l:gentext key="Glossary" text="Glossaire"/> 
+    <l:gentext key="glossary" text="Glossaire"/> 
+    <l:gentext key="GlossSeeAlso" text="Voir aussi"/> 
+    <l:gentext key="important" text="Important"/> 
+    <l:gentext key="Note" text="Note"/> 
+    <l:gentext key="note" text="Note"/> 
+    <l:gentext key="Reference" text="R&#xE9;f&#xE9;rence"/> 
+    <l:gentext key="section" text="section"/> 
+    <l:gentext key="Step" text="&#xC9;tape"/> 
+    <l:gentext key="table" text="Tableau"/> 
+    <l:gentext key="Table" text="Tableau"/> 
+    <l:gentext key="tip" text="ASTUCE"/> 
+    <l:gentext key="warning" text="AVERTISSEMENT"/> 
+  </l:l10n> 
+  <l:l10n language="ga" english-language-name="Irish"> 
+    <l:gentext key="equation" text="Cothrom&#xF3;id"/> 
+    <l:gentext key="Example" text="Sampla"/> 
+    <l:gentext key="example" text="Sampla"/> 
+    <l:gentext key="Figure" text="L&#xE9;ar&#xE1;id"/> 
+    <l:gentext key="figure" text="L&#xE9;ar&#xE1;id"/> 
+    <l:gentext key="Glossary" text="Gluais"/> 
+    <l:gentext key="glossary" text="Gluais"/> 
+    <l:gentext key="GlossSeeAlso" text="F&#xE9;ach Freisin"/> 
+    <l:gentext key="important" text="T&#xE1;bhachtach"/> 
+    <l:gentext key="Note" text="N&#xF3;ta"/> 
+    <l:gentext key="note" text="N&#xF3;ta"/> 
+    <l:gentext key="Reference" text="Tagairt"/> 
+    <l:gentext key="section" text="Rann&#xE1;n"/> 
+    <l:gentext key="Step" text="C&#xE9;im"/> 
+    <l:gentext key="table" text="T&#xE1;bla"/> 
+    <l:gentext key="Table" text="T&#xE1;bla"/> 
+    <l:gentext key="tip" text="Leid"/> 
+    <l:gentext key="warning" text="Rabhadh"/> 
+  </l:l10n> 
+  <l:l10n language="gu" english-language-name="Gujarati"> 
+    <l:gentext key="equation" text="&#xAB8;&#xAAE;&#xAC0;&#xA95;&#xAB0;&#xAA3;"/> 
+    <l:gentext key="Example" text="&#xA89;&#xAA6;&#xABE;&#xAB9;&#xAB0;&#xAA3;"/> 
+    <l:gentext key="example" text="&#xA89;&#xAA6;&#xABE;&#xAB9;&#xAB0;&#xAA3;"/> 
+    <l:gentext key="Figure" text="&#xA86;&#xA95;&#xAC3;&#xAA4;&#xABF;"/> 
+    <l:gentext key="figure" text="&#xA86;&#xA95;&#xAC3;&#xAA4;&#xABF;"/> 
+    <l:gentext key="Glossary" text="&#xAB6;&#xAAC;&#xACD;&#xAA6;&#xABE;&#xAB5;&#xAB2;&#xAC0;"/> 
+    <l:gentext key="glossary" text="&#xAB6;&#xAAC;&#xACD;&#xAA6;&#xABE;&#xAB5;&#xAB2;&#xAC0;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#xA86;&#xAAA;&#xAA3;&#xA9C;&#xAC1;&#xA93;"/> 
+    <l:gentext key="important" text="&#xAAE;&#xAB9;&#xAA4;&#xACD;&#xAB5;&#xAA8;&#xAC1;&#xA82;"/> 
+    <l:gentext key="Note" text="&#xAA8;&#xACB;&#xA82;&#xAA7;"/> 
+    <l:gentext key="note" text="&#xAA8;&#xACB;&#xA82;&#xAA7;"/> 
+    <l:gentext key="Reference" text="&#xAB8;&#xA82;&#xAA6;&#xAB0;&#xACD;&#xAAD;"/> 
+    <l:gentext key="section" text="&#xAB5;&#xABF;&#xAAD;&#xABE;&#xA97;"/> 
+    <l:gentext key="Step" text="&#xAAA;&#xA97;&#xAB2;&#xAC1;&#xA82;"/> 
+    <l:gentext key="table" text="&#xA95;&#xACB;&#xAB7;&#xACD;&#xA9F;&#xA95;"/> 
+    <l:gentext key="Table" text="&#xA95;&#xACB;&#xAB7;&#xACD;&#xA9F;&#xA95;"/> 
+    <l:gentext key="tip" text="&#xAAE;&#xAA6;&#xAA6;"/> 
+    <l:gentext key="warning" text="&#xA9A;&#xAC7;&#xAA4;&#xAB5;&#xAA3;&#xAC0;"/> 
+  </l:l10n> 
+  <l:l10n language="he" english-language-name="Hebrew"> 
+    <l:gentext key="equation" text="&#x5DE;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5D4;"/> 
+    <l:gentext key="Example" text="&#x5D3;&#x5D5;&#x5D2;&#x5DE;&#x5D4;"/> 
+    <l:gentext key="example" text="&#x5D3;&#x5D5;&#x5D2;&#x5DE;&#x5D4;"/> 
+    <l:gentext key="Figure" text="&#x5D0;&#x5D9;&#x5D5;&#x5E8;"/> 
+    <l:gentext key="figure" text="&#x5D0;&#x5D9;&#x5D5;&#x5E8;"/> 
+    <l:gentext key="Glossary" text="&#x5DE;&#x5D9;&#x5DC;&#x5D5;&#x5DF; &#x5DE;&#x5D5;&#x5E0;&#x5D7;&#x5D9;&#x5DD;"/> 
+    <l:gentext key="glossary" text="&#x5DE;&#x5D9;&#x5DC;&#x5D5;&#x5DF; &#x5DE;&#x5D5;&#x5E0;&#x5D7;&#x5D9;&#x5DD;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x5E8;&#x5D0;&#x5D4; &#x5D2;&#x5DD;"/> 
+    <l:gentext key="important" text="&#x5D7;&#x5E9;&#x5D5;&#x5D1;"/> 
+    <l:gentext key="Note" text="&#x5E9;&#x5D9;&#x5DD; &#x5DC;&#x5D1;"/> 
+    <l:gentext key="note" text="&#x5E9;&#x5D9;&#x5DD; &#x5DC;&#x5D1;"/> 
+    <l:gentext key="Reference" text="&#x5DE;&#x5E8;&#x5D0;&#x5D4; &#x5DE;&#x5E7;&#x5D5;&#x5DD;"/> 
+    <l:gentext key="section" text="&#x5E1;&#x5E2;&#x5D9;&#x5E3;"/> 
+    <l:gentext key="Step" text="&#x5E6;&#x5E2;&#x5D3;"/> 
+    <l:gentext key="table" text="&#x5D8;&#x5D1;&#x5DC;&#x5D4;"/> 
+    <l:gentext key="Table" text="&#x5D8;&#x5D1;&#x5DC;&#x5D4;"/> 
+    <l:gentext key="tip" text="&#x5E2;&#x5E6;&#x5D4;"/> 
+    <l:gentext key="warning" text="&#x5D0;&#x5D6;&#x5D4;&#x5E8;&#x5D4;"/> 
+  </l:l10n> 
+  <l:l10n language="hi" english-language-name="Hindi"> 
+    <l:gentext key="equation" text="&#x938;&#x92E;&#x940;&#x915;&#x930;&#x923;"/> 
+    <l:gentext key="Example" text="&#x909;&#x926;&#x93E;&#x939;&#x930;&#x923;"/> 
+    <l:gentext key="example" text="&#x909;&#x926;&#x93E;&#x939;&#x930;&#x923;"/> 
+    <l:gentext key="Figure" text="&#x91A;&#x93F;&#x924;&#x94D;&#x930;"/> 
+    <l:gentext key="figure" text="&#x91A;&#x93F;&#x924;&#x94D;&#x930;"/> 
+    <l:gentext key="Glossary" text="&#x936;&#x92C;&#x94D;&#x926;&#x915;&#x94B;&#x937;"/> 
+    <l:gentext key="glossary" text="&#x936;&#x92C;&#x94D;&#x926;&#x915;&#x94B;&#x937;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x907;&#x938;&#x947;&#x92D;&#x940;&#x926;&#x947;&#x916;&#x947;&#x902;"/> 
+    <l:gentext key="important" text="&#x92E;&#x939;&#x924;&#x94D;&#x935;&#x92A;&#x942;&#x930;&#x94D;&#x923;"/> 
+    <l:gentext key="Note" text="&#x928;&#x94B;&#x91F;"/> 
+    <l:gentext key="note" text="&#x928;&#x94B;&#x91F;"/> 
+    <l:gentext key="Reference" text="&#x938;&#x902;&#x926;&#x930;&#x94D;&#x92D;"/> 
+    <l:gentext key="section" text="&#x916;&#x902;&#x921;"/> 
+    <l:gentext key="Step" text="&#x91A;&#x930;&#x923;"/> 
+    <l:gentext key="table" text="&#x924;&#x93E;&#x932;&#x93F;&#x915;&#x93E;"/> 
+    <l:gentext key="Table" text="&#x924;&#x93E;&#x932;&#x93F;&#x915;&#x93E;"/> 
+    <l:gentext key="tip" text="&#x938;&#x902;&#x915;&#x947;&#x924;"/> 
+    <l:gentext key="warning" text="&#x91A;&#x947;&#x924;&#x93E;&#x935;&#x928;&#x940;"/> 
+  </l:l10n> 
+  <l:l10n language="hr" english-language-name="Croatian"> 
+    <l:gentext key="equation" text="Jednad&#x17E;ba"/> 
+    <l:gentext key="Example" text="Primjer"/> 
+    <l:gentext key="example" text="Primjer"/> 
+    <l:gentext key="Figure" text="Slika"/> 
+    <l:gentext key="figure" text="Slika"/> 
+    <l:gentext key="Glossary" text="Rje&#x10D;nik"/> 
+    <l:gentext key="glossary" text="Rje&#x10D;nik"/> 
+    <l:gentext key="GlossSeeAlso" text="Vidi i"/> 
+    <l:gentext key="important" text="Va&#x17E;no"/> 
+    <l:gentext key="Note" text="Bilje&#x161;ka"/> 
+    <l:gentext key="note" text="Bilje&#x161;ka"/> 
+    <l:gentext key="Reference" text="Referenca"/> 
+    <l:gentext key="section" text="Odjeljak"/> 
+    <l:gentext key="Step" text="Korak"/> 
+    <l:gentext key="table" text="Tablica"/> 
+    <l:gentext key="Table" text="Tablica"/> 
+    <l:gentext key="tip" text="Savjet"/> 
+    <l:gentext key="warning" text="Upozorenje"/> 
+  </l:l10n> 
+  <l:l10n language="hu" english-language-name="Hungarian"> 
+    <l:gentext key="equation" text="egyenlet"/> 
+    <l:gentext key="Example" text="P&#xE9;lda"/> 
+    <l:gentext key="example" text="p&#xE9;lda"/> 
+    <l:gentext key="Figure" text="&#xC1;bra"/> 
+    <l:gentext key="figure" text="&#xE1;bra"/> 
+    <l:gentext key="Glossary" text="Sz&#xF3;jegyz&#xE9;k"/> 
+    <l:gentext key="glossary" text="sz&#xF3;jegyz&#xE9;k"/> 
+    <l:gentext key="GlossSeeAlso" text="L&#xE1;sd m&#xE9;g"/> 
+    <l:gentext key="important" text="fontos"/> 
+    <l:gentext key="Note" text="Megjegyz&#xE9;s"/> 
+    <l:gentext key="note" text="megjegyz&#xE9;s"/> 
+    <l:gentext key="Reference" text="Referencia"/> 
+    <l:gentext key="section" text="szakasz"/> 
+    <l:gentext key="Step" text="L&#xE9;p&#xE9;s"/> 
+    <l:gentext key="table" text="t&#xE1;bl&#xE1;zat"/> 
+    <l:gentext key="Table" text="T&#xE1;bl&#xE1;zat"/> 
+    <l:gentext key="tip" text="tipp"/> 
+    <l:gentext key="warning" text="figyelem"/> 
+  </l:l10n> 
+  <l:l10n language="id" english-language-name="Indonesian"> 
+    <l:gentext key="equation" text="Persamaan"/> 
+    <l:gentext key="Example" text="Teladan"/> 
+    <l:gentext key="example" text="Teladan"/> 
+    <l:gentext key="Figure" text="Gambar"/> 
+    <l:gentext key="figure" text="Gambar"/> 
+    <l:gentext key="Glossary" text="Daftar Istilah"/> 
+    <l:gentext key="glossary" text="Daftar Istilah"/> 
+    <l:gentext key="GlossSeeAlso" text="Lihat Juga"/> 
+    <l:gentext key="important" text="Penting"/> 
+    <l:gentext key="Note" text="Catatan"/> 
+    <l:gentext key="note" text="Catatan"/> 
+    <l:gentext key="Reference" text="Referensi"/> 
+    <l:gentext key="section" text="bagian"/> 
+    <l:gentext key="Step" text="Tahap"/> 
+    <l:gentext key="table" text="Tabel"/> 
+    <l:gentext key="Table" text="Tabel"/> 
+    <l:gentext key="tip" text="Tip"/> 
+    <l:gentext key="warning" text="Awas"/> 
+  </l:l10n> 
+  <l:l10n language="it" english-language-name="Italian"> 
+    <l:gentext key="equation" text="Equazione"/> 
+    <l:gentext key="Example" text="Esempio"/> 
+    <l:gentext key="example" text="Esempio"/> 
+    <l:gentext key="Figure" text="Figura"/> 
+    <l:gentext key="figure" text="Figura"/> 
+    <l:gentext key="Glossary" text="Glossario"/> 
+    <l:gentext key="glossary" text="Glossario"/> 
+    <l:gentext key="GlossSeeAlso" text="Vedi Anche"/> 
+    <l:gentext key="important" text="Importante"/> 
+    <l:gentext key="Note" text="Nota"/> 
+    <l:gentext key="note" text="Nota"/> 
+    <l:gentext key="Reference" text="Riferimento"/> 
+    <l:gentext key="section" text="Sezione"/> 
+    <l:gentext key="Step" text="Passo"/> 
+    <l:gentext key="table" text="Tabella"/> 
+    <l:gentext key="Table" text="Tabella"/> 
+    <l:gentext key="tip" text="Suggerimento"/> 
+    <l:gentext key="warning" text="avvertimento"/> 
+  </l:l10n> 
+  <l:l10n language="ja" english-language-name="Japanese"> 
+    <l:gentext key="equation" text="&#x5F0F;"/> 
+    <l:gentext key="Example" text="&#x4F8B;"/> 
+    <l:gentext key="example" text="&#x4F8B;"/> 
+    <l:gentext key="Figure" text="&#x56F3;"/> 
+    <l:gentext key="figure" text="&#x56F3;"/> 
+    <l:gentext key="Glossary" text="&#x7528;&#x8A9E;&#x96C6;"/> 
+    <l:gentext key="glossary" text="&#x7528;&#x8A9E;&#x96C6;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x53C2;&#x7167;"/> 
+    <l:gentext key="important" text="&#x91CD;&#x8981;&#x9805;&#x76EE;"/> 
+    <l:gentext key="Note" text="&#x6CE8;&#x610F;"/> 
+    <l:gentext key="note" text="&#x6CE8;&#x610F;"/> 
+    <l:gentext key="Reference" text="&#x53C2;&#x7167;"/> 
+    <l:gentext key="section" text="&#x9805;"/> 
+    <l:gentext key="Step" text="&#x30B9;&#x30C6;&#x30C3;&#x30D7;"/> 
+    <l:gentext key="table" text="&#x8868;"/> 
+    <l:gentext key="Table" text="&#x8868;"/> 
+    <l:gentext key="tip" text="&#x30C6;&#x30A3;&#x30C3;&#x30D7;"/> 
+    <l:gentext key="warning" text="&#x8B66;&#x544A;"/> 
+  </l:l10n> 
+  <l:l10n language="kn" english-language-name="Kannada"> 
+    <l:gentext key="equation" text="&#xCB8;&#xCAE;&#xCC0;&#xC95;&#xCB0;&#xCA3;"/> 
+    <l:gentext key="Example" text="&#xC89;&#xCA6;&#xCBE;&#xCB9;&#xCB0;&#xCA3;&#xCC6;"/> 
+    <l:gentext key="example" text="&#xC89;&#xCA6;&#xCBE;&#xCB9;&#xCB0;&#xCA3;&#xCC6;"/> 
+    <l:gentext key="Figure" text="&#xC9A;&#xCBF;&#xCA4;&#xCCD;&#xCB0;"/> 
+    <l:gentext key="figure" text="&#xC9A;&#xCBF;&#xCA4;&#xCCD;&#xCB0;"/> 
+    <l:gentext key="Glossary" text="&#xCAA;&#xCBE;&#xCB0;&#xCBF;&#xCAD;&#xCBE;&#xCB7;&#xCBF;&#xC95;&#xC95;&#xCCB;&#xCB6;"/> 
+    <l:gentext key="glossary" text="&#xCAA;&#xCBE;&#xCB0;&#xCBF;&#xCAD;&#xCBE;&#xCB7;&#xCBF;&#xC95;&#xC95;&#xCCB;&#xCB6;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#xC87;&#xCA6;&#xCA8;&#xCCD;&#xCA8;&#xCC2; &#xCB8;&#xCB9; &#xCA8;&#xCCB;&#xCA1;&#xCBF;"/> 
+    <l:gentext key="important" text="&#xCAE;&#xCB9;&#xCA4;&#xCCD;&#xCB5;"/> 
+    <l:gentext key="Note" text="&#xCB8;&#xCC2;&#xC9A;&#xCA8;&#xCC6;"/> 
+    <l:gentext key="note" text="&#xCB8;&#xCC2;&#xC9A;&#xCA8;&#xCC6;"/> 
+    <l:gentext key="Reference" text="&#xC89;&#xCB2;&#xCCD;&#xCB2;&#xCC7;&#xC96;"/> 
+    <l:gentext key="section" text="&#xCB5;&#xCBF;&#xCAD;&#xCBE;&#xC97;"/> 
+    <l:gentext key="Step" text="&#xCB9;&#xC82;&#xCA4;"/> 
+    <l:gentext key="table" text="&#xC95;&#xCCB;&#xCB7;&#xCCD;&#xC9F;&#xC95;"/> 
+    <l:gentext key="Table" text="&#xC95;&#xCCB;&#xCB7;&#xCCD;&#xC9F;&#xC95;"/> 
+    <l:gentext key="tip" text="&#xC95;&#xCBF;&#xCB5;&#xCBF;&#xCAE;&#xCBE;&#xCA4;&#xCC1;"/> 
+    <l:gentext key="warning" text="&#xC8E;&#xC9A;&#xCCD;&#xC9A;&#xCB0;&#xCBF;&#xC95;&#xCC6;"/> 
+  </l:l10n> 
+  <l:l10n language="ko" english-language-name="Korean"> 
+    <l:gentext key="equation" text="&#xC218;&#xC2DD;"/> 
+    <l:gentext key="Example" text="&#xC608;"/> 
+    <l:gentext key="example" text="&#xC608;"/> 
+    <l:gentext key="Figure" text="&#xADF8;&#xB9BC;"/> 
+    <l:gentext key="figure" text="&#xADF8;&#xB9BC;"/> 
+    <l:gentext key="Glossary" text="&#xC6A9;&#xC5B4;&#xD574;&#xC124;"/> 
+    <l:gentext key="glossary" text="&#xC6A9;&#xC5B4;&#xD574;&#xC124;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#xB2E4;&#xB978; &#xC0B4;&#xD3B4;&#xBCFC; &#xB0B4;&#xC6A9;"/> 
+    <l:gentext key="important" text="&#xC911;&#xC694;"/> 
+    <l:gentext key="Note" text="&#xCC38;&#xACE0;"/> 
+    <l:gentext key="note" text="&#xCC38;&#xACE0;"/> 
+    <l:gentext key="Reference" text="&#xCC38;&#xACE0;&#xBB38;&#xD5CC;"/> 
+    <l:gentext key="section" text="&#xC808;"/> 
+    <l:gentext key="Step" text="&#xB2E8;&#xACC4;"/> 
+    <l:gentext key="table" text="&#xD45C;"/> 
+    <l:gentext key="Table" text="&#xD45C;"/> 
+    <l:gentext key="tip" text="&#xC791;&#xC740; &#xC815;&#xBCF4;"/> 
+    <l:gentext key="warning" text="&#xC8FC;&#xC758;"/> 
+  </l:l10n> 
+  <l:l10n language="la" english-language-name="Latin"> 
+    <l:gentext key="equation" text="equatio"/> 
+    <l:gentext key="Example" text="Exemplum"/> 
+    <l:gentext key="example" text="exemplum"/> 
+    <l:gentext key="Figure" text="Descriptio"/> 
+    <l:gentext key="figure" text="descriptio"/> 
+    <l:gentext key="Glossary" text="Glossarium"/> 
+    <l:gentext key="glossary" text="glossarium"/> 
+    <l:gentext key="GlossSeeAlso" text="Cfr. autem"/> 
+    <l:gentext key="important" text="grave"/> 
+    <l:gentext key="Note" text="Nota"/> 
+    <l:gentext key="note" text="nota"/> 
+    <l:gentext key="Reference" text="Mentio"/> 
+    <l:gentext key="section" text="Sectio"/> 
+    <l:gentext key="Step" text="Peractio"/> 
+    <l:gentext key="table" text="tabula"/> 
+    <l:gentext key="Table" text="Tabula"/> 
+    <l:gentext key="tip" text="consilium"/> 
+    <l:gentext key="warning" text="monitus"/> 
+  </l:l10n> 
+  <l:l10n language="lt" english-language-name="Lithuanian"> 
+    <l:gentext key="equation" text="Lygtis"/> 
+    <l:gentext key="Example" text="Pavyzdys"/> 
+    <l:gentext key="example" text="Pavyzdys"/> 
+    <l:gentext key="Figure" text="Pav."/> 
+    <l:gentext key="figure" text="Pav."/> 
+    <l:gentext key="Glossary" text="Termin&#x173; &#x17E;odynas"/> 
+    <l:gentext key="glossary" text="Termin&#x173; &#x17E;odynas"/> 
+    <l:gentext key="GlossSeeAlso" text="Taip pat &#x17E;r."/> 
+    <l:gentext key="important" text="Svarbu"/> 
+    <l:gentext key="Note" text="Pastaba"/> 
+    <l:gentext key="note" text="Pastaba"/> 
+    <l:gentext key="Reference" text="Nuoroda"/> 
+    <l:gentext key="section" text="Skyrius"/> 
+    <l:gentext key="Step" text="&#x17D;ingsnis"/> 
+    <l:gentext key="table" text="Lentel&#x117;"/> 
+    <l:gentext key="Table" text="Lentel&#x117;"/> 
+    <l:gentext key="tip" text="Patarimas"/> 
+    <l:gentext key="warning" text="&#x12E;sp&#x117;jimas"/> 
+  </l:l10n> 
+  <l:l10n language="mn" english-language-name="Mongolian"> 
+    <l:gentext key="equation" text="&#x442;&#x44D;&#x433;&#x448;&#x438;&#x442;&#x433;&#x44D;&#x43B;"/> 
+    <l:gentext key="Example" text="&#x416;&#x438;&#x448;&#x44D;&#x44D;"/> 
+    <l:gentext key="example" text="&#x436;&#x438;&#x448;&#x44D;&#x44D;"/> 
+    <l:gentext key="Figure" text="&#x417;&#x443;&#x440;&#x430;&#x433;"/> 
+    <l:gentext key="figure" text="&#x437;&#x443;&#x440;&#x430;&#x433;"/> 
+    <l:gentext key="Glossary" text="&#x41D;&#x44D;&#x440; &#x442;&#x43E;&#x43C;&#x44A;&#x451;&#x43E;"/> 
+    <l:gentext key="glossary" text="&#x43D;&#x44D;&#x440; &#x442;&#x43E;&#x43C;&#x44A;&#x451;&#x43E;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x411;&#x430;&#x441; &#x445;&#x430;&#x440;&#x43D;&#x430; &#x443;&#x443;"/> 
+    <l:gentext key="important" text="&#x447;&#x443;&#x445;&#x430;&#x43B;"/> 
+    <l:gentext key="Note" text="&#x422;&#x44D;&#x43C;&#x434;&#x44D;&#x433;&#x43B;&#x44D;&#x43B;"/> 
+    <l:gentext key="note" text="&#x442;&#x44D;&#x43C;&#x434;&#x44D;&#x433;&#x43B;&#x44D;&#x43B;"/> 
+    <l:gentext key="Reference" text="&#x410;&#x448;&#x438;&#x433;&#x43B;&#x430;&#x441;&#x430;&#x43D; &#x43D;&#x43E;&#x43C;"/> 
+    <l:gentext key="section" text="&#x425;&#x44D;&#x441;&#x44D;&#x433;"/> 
+    <l:gentext key="Step" text="&#x410;&#x43B;&#x445;&#x430;&#x43C;"/> 
+    <l:gentext key="table" text="&#x445;&#x4AF;&#x441;&#x43D;&#x44D;&#x433;&#x442;"/> 
+    <l:gentext key="Table" text="&#x425;&#x4AF;&#x441;&#x43D;&#x44D;&#x433;&#x442;"/> 
+    <l:gentext key="tip" text="&#x437;&#x4E9;&#x432;&#x43B;&#x4E9;&#x433;&#x4E9;&#x4E9;"/> 
+    <l:gentext key="warning" text="&#x441;&#x430;&#x43D;&#x443;&#x443;&#x43B;&#x433;&#x430;"/> 
+  </l:l10n> 
+  <l:l10n language="nl" english-language-name="Dutch"> 
+    <l:gentext key="equation" text="Vergelijking"/> 
+    <l:gentext key="Example" text="Voorbeeld"/> 
+    <l:gentext key="example" text="Voorbeeld"/> 
+    <l:gentext key="Figure" text="Figuur"/> 
+    <l:gentext key="figure" text="Figuur"/> 
+    <l:gentext key="Glossary" text="Woordenlijst"/> 
+    <l:gentext key="glossary" text="Woordenlijst"/> 
+    <l:gentext key="GlossSeeAlso" text="Zie ook"/> 
+    <l:gentext key="important" text="Belangrijk"/> 
+    <l:gentext key="Note" text="Opmerking"/> 
+    <l:gentext key="note" text="Opmerking"/> 
+    <l:gentext key="Reference" text="Referentie"/> 
+    <l:gentext key="section" text="paragraaf"/> 
+    <l:gentext key="Step" text="Stap"/> 
+    <l:gentext key="table" text="Tabel"/> 
+    <l:gentext key="Table" text="Tabel"/> 
+    <l:gentext key="tip" text="Tip"/> 
+    <l:gentext key="warning" text="Waarschuwing"/> 
+  </l:l10n> 
+  <l:l10n language="nn" english-language-name="Nynorsk"> 
+    <l:gentext key="equation" text="formel"/> 
+    <l:gentext key="Example" text="D&#xF8;me"/> 
+    <l:gentext key="example" text="d&#xF8;me"/> 
+    <l:gentext key="Figure" text="Figur"/> 
+    <l:gentext key="figure" text="figur"/> 
+    <l:gentext key="Glossary" text="Ordliste"/> 
+    <l:gentext key="glossary" text="ordliste"/> 
+    <l:gentext key="GlossSeeAlso" text="Sj&#xE5; &#xF2;g"/> 
+    <l:gentext key="important" text="viktig"/> 
+    <l:gentext key="Note" text="Notat"/> 
+    <l:gentext key="note" text="NOTAT"/> 
+    <l:gentext key="Reference" text="Referanse"/> 
+    <l:gentext key="section" text="del"/> 
+    <l:gentext key="Step" text="Steg"/> 
+    <l:gentext key="table" text="tabell"/> 
+    <l:gentext key="Table" text="Tabell"/> 
+    <l:gentext key="tip" text="tips"/> 
+    <l:gentext key="warning" text="&#xE5;tvaring"/> 
+  </l:l10n> 
+  <l:l10n language="no" english-language-name="Norwegian"> 
+    <l:gentext key="equation" text="Formel"/> 
+    <l:gentext key="Example" text="Eksempel"/> 
+    <l:gentext key="example" text="Eksempel"/> 
+    <l:gentext key="Figure" text="Figur"/> 
+    <l:gentext key="figure" text="Figur"/> 
+    <l:gentext key="Glossary" text="Ordliste"/> 
+    <l:gentext key="glossary" text="Ordliste"/> 
+    <l:gentext key="GlossSeeAlso" text="Se Ogs&#xE5;"/> 
+    <l:gentext key="important" text="Viktig"/> 
+    <l:gentext key="Note" text="Notat"/> 
+    <l:gentext key="note" text="Notat"/> 
+    <l:gentext key="Reference" text="Referanse"/> 
+    <l:gentext key="section" text="seksjon"/> 
+    <l:gentext key="Step" text="Steg"/> 
+    <l:gentext key="table" text="Tabell"/> 
+    <l:gentext key="Table" text="Tabell"/> 
+    <l:gentext key="tip" text="Tips"/> 
+    <l:gentext key="warning" text="Advarsel"/> 
+  </l:l10n> 
+  <l:l10n language="or" english-language-name="Oriya"> 
+    <l:gentext key="equation" text="&#xB38;&#xB2E;&#xB40;&#xB15;&#xB30;&#xB23;"/> 
+    <l:gentext key="Example" text="&#xB09;&#xB26;&#xB3E;&#xB39;&#xB30;&#xB23;"/> 
+    <l:gentext key="example" text="&#xB09;&#xB26;&#xB3E;&#xB39;&#xB30;&#xB23;"/> 
+    <l:gentext key="Figure" text="&#xB1A;&#xB3F;&#xB24;&#xB4D;&#xB30;"/> 
+    <l:gentext key="figure" text="&#xB1A;&#xB3F;&#xB24;&#xB4D;&#xB30;"/> 
+    <l:gentext key="Glossary" text="&#xB36;&#xB2C;&#xB4D;&#xB26;&#xB15;&#xB4B;&#xB37;"/> 
+    <l:gentext key="glossary" text="&#xB36;&#xB2C;&#xB4D;&#xB26;&#xB15;&#xB4B;&#xB37;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#xB0F;&#xB39;&#xB3E; &#xB2D;&#xB3F; &#xB26;&#xB47;&#xB16;&#xB28;&#xB4D;&#xB24;&#xB41;"/> 
+    <l:gentext key="important" text="&#xB17;&#xB41;&#xB30;&#xB41;&#xB24;&#xB4D;&#xB2C;&#xB2A;&#xB42;&#xB30;&#xB4D;&#xB23;&#xB4D;&#xB23;"/> 
+    <l:gentext key="Note" text="&#xB1F;&#xB40;&#xB15;&#xB3E;"/> 
+    <l:gentext key="note" text="&#xB1F;&#xB40;&#xB15;&#xB3E;"/> 
+    <l:gentext key="Reference" text="&#xB38;&#xB28;&#xB4D;&#xB26;&#xB30;&#xB4D;&#xB2D;"/> 
+    <l:gentext key="section" text="&#xB05;&#xB02;&#xB36;"/> 
+    <l:gentext key="Step" text="&#xB2A;&#xB26;&#xB15;&#xB4D;&#xB37;&#xB47;&#xB2A;"/> 
+    <l:gentext key="table" text="&#xB38;&#xB3E;&#xB30;&#xB23;&#xB40;"/> 
+    <l:gentext key="Table" text="&#xB38;&#xB3E;&#xB30;&#xB23;&#xB40;"/> 
+    <l:gentext key="tip" text="&#xB38;&#xB02;&#xB15;&#xB47;&#xB24;"/> 
+    <l:gentext key="warning" text="&#xB1A;&#xB47;&#xB24;&#xB3E;&#xB2C;&#xB28;&#xB40;"/> 
+  </l:l10n> 
+  <l:l10n language="pa" english-language-name="Punjabi"> 
+    <l:gentext key="equation" text="&#xA38;&#xA2E;&#xA40;&#xA15;&#xA30;&#xA28;"/> 
+    <l:gentext key="Example" text="&#xA09;&#xA26;&#xA3E;&#xA39;&#xA30;&#xA28;"/> 
+    <l:gentext key="example" text="&#xA09;&#xA26;&#xA3E;&#xA39;&#xA30;&#xA28;"/> 
+    <l:gentext key="Figure" text="&#xA1A;&#xA3F;&#xA71;&#xA24;&#xA30;"/> 
+    <l:gentext key="figure" text="&#xA1A;&#xA3F;&#xA71;&#xA24;&#xA30;"/> 
+    <l:gentext key="Glossary" text="&#xA36;&#xA2C;&#xA26;&#xA3E;&#xA35;&#xA32;&#xA40;"/> 
+    <l:gentext key="glossary" text="&#xA36;&#xA2C;&#xA26;&#xA3E;&#xA35;&#xA32;&#xA40;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#xA07;&#xA39;&#xA35;&#xA40;&#xA35;&#xA47;&#xA16;&#xA4B;"/> 
+    <l:gentext key="important" text="&#xA16;&#xA3E;&#xA38;"/> 
+    <l:gentext key="Note" text="&#xA38;&#xA42;&#xA1A;&#xA28;&#xA3E;"/> 
+    <l:gentext key="note" text="&#xA38;&#xA42;&#xA1A;&#xA28;&#xA3E;"/> 
+    <l:gentext key="Reference" text="&#xA39;&#xA35;&#xA3E;&#xA32;&#xA3E;"/> 
+    <l:gentext key="section" text="&#xA39;&#xA3F;&#xA71;&#xA38;&#xA3E;"/> 
+    <l:gentext key="Step" text="&#xA2A;&#xA5A;"/> 
+    <l:gentext key="table" text="&#xA38;&#xA3E;&#xA30;&#xA23;&#xA40;"/> 
+    <l:gentext key="Table" text="&#xA38;&#xA3E;&#xA30;&#xA23;&#xA40;"/> 
+    <l:gentext key="tip" text="&#xA38;&#xA70;&#xA15;&#xA47;&#xA24;"/> 
+    <l:gentext key="warning" text="&#xA38;&#xA3E;&#xA35;&#xA27;&#xA3E;&#xA28;"/> 
+  </l:l10n> 
+  <l:l10n language="pl" english-language-name="Polish"> 
+    <l:gentext key="equation" text="R&#xF3;wnanie"/> 
+    <l:gentext key="Example" text="Przyk&#x142;ad"/> 
+    <l:gentext key="example" text="Przyk&#x142;ad"/> 
+    <l:gentext key="Figure" text="Rysunek"/> 
+    <l:gentext key="figure" text="Rysunek"/> 
+    <l:gentext key="Glossary" text="Glossary"/> 
+    <l:gentext key="glossary" text="Glossary"/> 
+    <l:gentext key="GlossSeeAlso" text="Patrz te&#x17C;"/> 
+    <l:gentext key="important" text="WA&#x17B;NE"/> 
+    <l:gentext key="Note" text="Notatka"/> 
+    <l:gentext key="note" text="Notatka"/> 
+    <l:gentext key="Reference" text="Materia&#x142;y &#x17A;r&#xF3;d&#x142;owe"/> 
+    <l:gentext key="section" text="sekcja"/> 
+    <l:gentext key="Step" text="krok"/> 
+    <l:gentext key="table" text="Tabela"/> 
+    <l:gentext key="Table" text="Tabela"/> 
+    <l:gentext key="tip" text="Podpowied&#x17A;"/> 
+    <l:gentext key="warning" text="Ostrze&#x17C;enie"/> 
+  </l:l10n> 
+  <l:l10n language="pt" english-language-name="Portuguese"> 
+    <l:gentext key="equation" text="Equa&#xE7;&#xE3;o"/> 
+    <l:gentext key="Example" text="Exemplo"/> 
+    <l:gentext key="example" text="Exemplo"/> 
+    <l:gentext key="Figure" text="Figura"/> 
+    <l:gentext key="figure" text="Figura"/> 
+    <l:gentext key="Glossary" text="Gloss&#xE1;rio"/> 
+    <l:gentext key="glossary" text="Gloss&#xE1;rio"/> 
+    <l:gentext key="GlossSeeAlso" text="Ver Tamb&#xE9;m"/> 
+    <l:gentext key="important" text="Importante"/> 
+    <l:gentext key="Note" text="Nota"/> 
+    <l:gentext key="note" text="Nota"/> 
+    <l:gentext key="Reference" text="Refer&#xEA;ncia"/> 
+    <l:gentext key="section" text="sec&#xE7;&#xE3;o"/> 
+    <l:gentext key="Step" text="Passo"/> 
+    <l:gentext key="table" text="Tabela"/> 
+    <l:gentext key="Table" text="Tabela"/> 
+    <l:gentext key="tip" text="Dica"/> 
+    <l:gentext key="warning" text="Aten&#xE7;&#xE3;o"/> 
+  </l:l10n> 
+  <l:l10n language="pt_br" english-language-name="Portuguese (Brazil)"> 
+    <l:gentext key="equation" text="Equa&#xE7;&#xE3;o"/> 
+    <l:gentext key="Example" text="Exemplo"/> 
+    <l:gentext key="example" text="Exemplo"/> 
+    <l:gentext key="Figure" text="Figura"/> 
+    <l:gentext key="figure" text="Figura"/> 
+    <l:gentext key="Glossary" text="Gloss&#xE1;rio"/> 
+    <l:gentext key="glossary" text="Gloss&#xE1;rio"/> 
+    <l:gentext key="GlossSeeAlso" text="Ver Tamb&#xE9;m"/> 
+    <l:gentext key="important" text="Importante"/> 
+    <l:gentext key="Note" text="Nota"/> 
+    <l:gentext key="note" text="Nota"/> 
+    <l:gentext key="Reference" text="Refer&#xEA;ncia"/> 
+    <l:gentext key="section" text="se&#xE7;&#xE3;o"/> 
+    <l:gentext key="Step" text="Passo"/> 
+    <l:gentext key="table" text="Tabela"/> 
+    <l:gentext key="Table" text="Tabela"/> 
+    <l:gentext key="tip" text="Dica"/> 
+    <l:gentext key="warning" text="Aten&#xE7;&#xE3;o"/> 
+  </l:l10n> 
+  <l:l10n language="ro" english-language-name="Romanian"> 
+    <l:gentext key="equation" text="ecua&#x21B;ia"/> 
+    <l:gentext key="Example" text="Exemplu"/> 
+    <l:gentext key="example" text="Exemplu"/> 
+    <l:gentext key="Figure" text="Fig."/> 
+    <l:gentext key="figure" text="Fig."/> 
+    <l:gentext key="Glossary" text="Glosar"/> 
+    <l:gentext key="glossary" text="Glosar"/> 
+    <l:gentext key="GlossSeeAlso" text="Vezi &#x219;i"/> 
+    <l:gentext key="important" text="Important"/> 
+    <l:gentext key="Note" text="Not&#x103;"/> 
+    <l:gentext key="note" text="Not&#x103;"/> 
+    <l:gentext key="Reference" text="Referin&#x21B;&#x103;"/> 
+    <l:gentext key="section" text="sec."/> 
+    <l:gentext key="Step" text="Opera&#x21B;ie"/> 
+    <l:gentext key="table" text="Tabel"/> 
+    <l:gentext key="Table" text="Tabel"/> 
+    <l:gentext key="tip" text="Indica&#x21B;ie"/> 
+    <l:gentext key="warning" text="Avertisment"/> 
+  </l:l10n> 
+  <l:l10n language="ru" english-language-name="Russian"> 
+    <l:gentext key="equation" text="&#x424;&#x43E;&#x440;&#x43C;&#x443;&#x43B;&#x430;"/> 
+    <l:gentext key="Example" text="&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x440;"/> 
+    <l:gentext key="example" text="&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x440;"/> 
+    <l:gentext key="Figure" text="&#x420;&#x438;&#x441;&#x443;&#x43D;&#x43E;&#x43A;"/> 
+    <l:gentext key="figure" text="&#x420;&#x438;&#x441;&#x443;&#x43D;&#x43E;&#x43A;"/> 
+    <l:gentext key="Glossary" text="&#x413;&#x43B;&#x43E;&#x441;&#x441;&#x430;&#x440;&#x438;&#x439;"/> 
+    <l:gentext key="glossary" text="&#x413;&#x43B;&#x43E;&#x441;&#x441;&#x430;&#x440;&#x438;&#x439;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x421;&#x43C;. &#x442;&#x430;&#x43A;&#x436;&#x435;"/> 
+    <l:gentext key="important" text="&#x412;&#x430;&#x436;&#x43D;&#x43E;"/> 
+    <l:gentext key="Note" text="&#x417;&#x430;&#x43C;&#x435;&#x447;&#x430;&#x43D;&#x438;&#x435;"/> 
+    <l:gentext key="note" text="&#x417;&#x430;&#x43C;&#x435;&#x447;&#x430;&#x43D;&#x438;&#x435;"/> 
+    <l:gentext key="Reference" text="&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;"/> 
+    <l:gentext key="section" text="&#x440;&#x430;&#x437;&#x434;&#x435;&#x43B;"/> 
+    <l:gentext key="Step" text="&#x428;&#x430;&#x433;"/> 
+    <l:gentext key="table" text="&#x422;&#x430;&#x431;&#x43B;&#x438;&#x446;&#x430;"/> 
+    <l:gentext key="Table" text="&#x422;&#x430;&#x431;&#x43B;&#x438;&#x446;&#x430;"/> 
+    <l:gentext key="tip" text="&#x41F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x43A;&#x430;"/> 
+    <l:gentext key="warning" text="&#x412;&#x43D;&#x438;&#x43C;&#x430;&#x43D;&#x438;&#x435;"/> 
+  </l:l10n> 
+  <l:l10n language="sk" english-language-name="Slovak"> 
+    <l:gentext key="equation" text="Rovnica"/> 
+    <l:gentext key="Example" text="Pr&#xED;klad"/> 
+    <l:gentext key="example" text="Pr&#xED;klad"/> 
+    <l:gentext key="Figure" text="Obr&#xE1;zok"/> 
+    <l:gentext key="figure" text="Obr&#xE1;zok"/> 
+    <l:gentext key="Glossary" text="Slovn&#xED;k"/> 
+    <l:gentext key="glossary" text="Slovn&#xED;k"/> 
+    <l:gentext key="GlossSeeAlso" text="Pozri tie&#x17E;"/> 
+    <l:gentext key="important" text="D&#xF4;le&#x17E;it&#xE9;"/> 
+    <l:gentext key="Note" text="Pozn&#xE1;mka"/> 
+    <l:gentext key="note" text="Pozn&#xE1;mka"/> 
+    <l:gentext key="Reference" text="Odkaz"/> 
+    <l:gentext key="section" text="oddiel"/> 
+    <l:gentext key="Step" text="Krok"/> 
+    <l:gentext key="table" text="Tabu&#x13E;ka"/> 
+    <l:gentext key="Table" text="Tabu&#x13E;ka"/> 
+    <l:gentext key="tip" text="Tip"/> 
+    <l:gentext key="warning" text="Varovanie"/> 
+  </l:l10n> 
+  <l:l10n language="sl" english-language-name="Slovenian"> 
+    <l:gentext key="equation" text="Ena&#x10D;ba"/> 
+    <l:gentext key="Example" text="Primer"/> 
+    <l:gentext key="example" text="Primer"/> 
+    <l:gentext key="Figure" text="Slika"/> 
+    <l:gentext key="figure" text="Slika"/> 
+    <l:gentext key="Glossary" text="Slovar&#x10D;ek"/> 
+    <l:gentext key="glossary" text="Slovar&#x10D;ek"/> 
+    <l:gentext key="GlossSeeAlso" text="glej tudi"/> 
+    <l:gentext key="important" text="Pomembno"/> 
+    <l:gentext key="Note" text="Opomba"/> 
+    <l:gentext key="note" text="Opomba"/> 
+    <l:gentext key="Reference" text="Sklic"/> 
+    <l:gentext key="section" text="razdelek"/> 
+    <l:gentext key="Step" text="Korak"/> 
+    <l:gentext key="table" text="Tabela"/> 
+    <l:gentext key="Table" text="Tabela"/> 
+    <l:gentext key="tip" text="Namig"/> 
+    <l:gentext key="warning" text="Pozor"/> 
+  </l:l10n> 
+  <l:l10n language="sq" english-language-name="Albanian"> 
+    <l:gentext key="equation" text="Ekuacion"/> 
+    <l:gentext key="Example" text="Shembull"/> 
+    <l:gentext key="example" text="Shembull"/> 
+    <l:gentext key="Figure" text="Figura"/> 
+    <l:gentext key="figure" text="Figura"/> 
+    <l:gentext key="Glossary" text="Fjalori"/> 
+    <l:gentext key="glossary" text="Fjalori"/> 
+    <l:gentext key="GlossSeeAlso" text="Shiko Edhe"/> 
+    <l:gentext key="important" text="Me r&#xEB;nd&#xEB;si"/> 
+    <l:gentext key="Note" text="Sh&#xEB;nim"/> 
+    <l:gentext key="note" text="Sh&#xEB;nim"/> 
+    <l:gentext key="Reference" text="Riferim"/> 
+    <l:gentext key="section" text="Seksioni"/> 
+    <l:gentext key="Step" text="Hapi"/> 
+    <l:gentext key="table" text="Tabela"/> 
+    <l:gentext key="Table" text="Tabela"/> 
+    <l:gentext key="tip" text="Propozim"/> 
+    <l:gentext key="warning" text="Paralajm&#xEB;rim"/> 
+  </l:l10n> 
+  <l:l10n language="sr" english-language-name="Serbian in Cyrillic script"> 
+    <l:gentext key="equation" text="&#x458;&#x435;&#x434;&#x43D;&#x430;&#x447;&#x438;&#x43D;&#x430;"/> 
+    <l:gentext key="Example" text="&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x440;"/> 
+    <l:gentext key="example" text="&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;"/> 
+    <l:gentext key="Figure" text="&#x421;&#x43B;&#x438;&#x43A;&#x430;"/> 
+    <l:gentext key="figure" text="&#x441;&#x43B;&#x438;&#x43A;&#x430;"/> 
+    <l:gentext key="Glossary" text="&#x420;&#x435;&#x447;&#x43D;&#x438;&#x43A;"/> 
+    <l:gentext key="glossary" text="&#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x412;&#x438;&#x434;&#x438; &#x442;&#x430;&#x43A;&#x43E;&#x452;&#x435;"/> 
+    <l:gentext key="important" text="&#x432;&#x430;&#x436;&#x43D;&#x43E;"/> 
+    <l:gentext key="Note" text="&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x434;&#x431;&#x430;"/> 
+    <l:gentext key="note" text="&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x434;&#x431;&#x430;"/> 
+    <l:gentext key="Reference" text="&#x420;&#x435;&#x444;&#x435;&#x440;&#x435;&#x43D;&#x446;&#x430;"/> 
+    <l:gentext key="section" text="&#x43E;&#x434;&#x435;&#x459;&#x430;&#x43A;"/> 
+    <l:gentext key="Step" text="&#x41A;&#x43E;&#x440;&#x430;&#x43A;"/> 
+    <l:gentext key="table" text="&#x442;&#x430;&#x431;&#x435;&#x43B;&#x430;"/> 
+    <l:gentext key="Table" text="&#x422;&#x430;&#x431;&#x435;&#x43B;&#x430;"/> 
+    <l:gentext key="tip" text="&#x441;&#x430;&#x432;&#x435;&#x442;"/> 
+    <l:gentext key="warning" text="&#x443;&#x43F;&#x43E;&#x437;&#x43E;&#x440;&#x435;&#x45A;&#x435;"/> 
+  </l:l10n> 
+  <l:l10n language="sr_latn" english-language-name="Serbian in Latin script"> 
+    <l:gentext key="equation" text="jedna&#x10D;ina"/> 
+    <l:gentext key="Example" text="Primer"/> 
+    <l:gentext key="example" text="primer"/> 
+    <l:gentext key="Figure" text="Slika"/> 
+    <l:gentext key="figure" text="slika"/> 
+    <l:gentext key="Glossary" text="Re&#x10D;nik"/> 
+    <l:gentext key="glossary" text="re&#x10D;nik"/> 
+    <l:gentext key="GlossSeeAlso" text="Vidi tako&#x111;e"/> 
+    <l:gentext key="important" text="va&#x17E;no"/> 
+    <l:gentext key="Note" text="Primedba"/> 
+    <l:gentext key="note" text="primedba"/> 
+    <l:gentext key="Reference" text="Referenca"/> 
+    <l:gentext key="section" text="odeljak"/> 
+    <l:gentext key="Step" text="Korak"/> 
+    <l:gentext key="table" text="tabela"/> 
+    <l:gentext key="Table" text="Tabela"/> 
+    <l:gentext key="tip" text="savet"/> 
+    <l:gentext key="warning" text="upozorenje"/> 
+  </l:l10n> 
+  <l:l10n language="sv" english-language-name="Swedish"> 
+    <l:gentext key="equation" text="Ekvation"/> 
+    <l:gentext key="Example" text="Exempel"/> 
+    <l:gentext key="example" text="Exempel"/> 
+    <l:gentext key="Figure" text="Figur"/> 
+    <l:gentext key="figure" text="Figur"/> 
+    <l:gentext key="Glossary" text="Gloslista"/> 
+    <l:gentext key="glossary" text="Gloslista"/> 
+    <l:gentext key="GlossSeeAlso" text="Se &#xC4;ven"/> 
+    <l:gentext key="important" text="Viktigt"/> 
+    <l:gentext key="Note" text="Notera"/> 
+    <l:gentext key="note" text="Notera"/> 
+    <l:gentext key="Reference" text="Referens"/> 
+    <l:gentext key="section" text="avsnitt"/> 
+    <l:gentext key="Step" text="Steg"/> 
+    <l:gentext key="table" text="Tabell"/> 
+    <l:gentext key="Table" text="Tabell"/> 
+    <l:gentext key="tip" text="Tips"/> 
+    <l:gentext key="warning" text="Varning"/> 
+  </l:l10n> 
+  <l:l10n language="ta" english-language-name="Tamil"> 
+    <l:gentext key="equation" text="&#xB9A;&#xBAE;&#xBA9;&#xBCD;&#xBAA;&#xBBE;&#xB9F;&#xBC1;"/> 
+    <l:gentext key="Example" text="&#xB89;&#xBA4;&#xBBE;&#xBB0;&#xBA3;&#xBAE;&#xBCD;"/> 
+    <l:gentext key="example" text="&#xB89;&#xBA4;&#xBBE;&#xBB0;&#xBA3;&#xBAE;&#xBCD;"/> 
+    <l:gentext key="Figure" text="&#xBAA;&#xB9F;&#xBAE;&#xBCD;"/> 
+    <l:gentext key="figure" text="&#xBAA;&#xB9F;&#xBAE;&#xBCD;"/> 
+    <l:gentext key="Glossary" text="&#xB85;&#xB95;&#xBB0;&#xBBE;&#xBA4;&#xBBF;"/> 
+    <l:gentext key="glossary" text="&#xB85;&#xB95;&#xBB0;&#xBBE;&#xBA4;&#xBBF;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#xB87;&#xBA4;&#xBC8;&#xBAF;&#xBC1;&#xBAE;&#xBCD;&#xBAA;&#xBBE;&#xBB0;&#xBCD;&#xB95;&#xBCD;&#xB95;&#xBB5;&#xBC1;&#xBAE;&#xBCD;"/> 
+    <l:gentext key="important" text="&#xBAE;&#xBC1;&#xB95;&#xBCD;&#xB95;&#xBBF;&#xBAF;&#xBAE;&#xBCD;"/> 
+    <l:gentext key="Note" text="&#xB95;&#xBC1;&#xBB1;&#xBBF;&#xBAA;&#xBCD;&#xBAA;&#xBC1;"/> 
+    <l:gentext key="note" text="&#xB95;&#xBC1;&#xBB1;&#xBBF;&#xBAA;&#xBCD;&#xBAA;&#xBC1;"/> 
+    <l:gentext key="Reference" text="&#xB95;&#xBC1;&#xBB1;&#xBBF;&#xBAA;&#xBCD;&#xBAA;&#xBC1;&#xB95;&#xBB3;&#xBCD;"/> 
+    <l:gentext key="section" text="&#xBAA;&#xB95;&#xBC1;&#xBA4;&#xBBF;"/> 
+    <l:gentext key="Step" text="&#xBAA;&#xB9F;&#xBBF;&#xB95;&#xBB3;&#xBCD;"/> 
+    <l:gentext key="table" text="&#xB85;&#xB9F;&#xBCD;&#xB9F;&#xBB5;&#xBA3;&#xBC8;"/> 
+    <l:gentext key="Table" text="&#xB85;&#xB9F;&#xBCD;&#xB9F;&#xBB5;&#xBA3;&#xBC8;"/> 
+    <l:gentext key="tip" text="&#xB95;&#xBC1;&#xBB1;&#xBBF;&#xBAA;&#xBCD;&#xBAA;&#xBC1;"/> 
+    <l:gentext key="warning" text="&#xB8E;&#xB9A;&#xBCD;&#xB9A;&#xBB0;&#xBBF;&#xB95;&#xBCD;&#xB95;&#xBC8;"/> 
+  </l:l10n> 
+  <l:l10n language="th" english-language-name="Thai"> 
+    <l:gentext key="equation" text="&#xE2A;&#xE21;&#xE01;&#xE32;&#xE23;"/> 
+    <l:gentext key="Example" text="&#xE15;&#xE31;&#xE27;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;"/> 
+    <l:gentext key="example" text="&#xE15;&#xE31;&#xE27;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;"/> 
+    <l:gentext key="Figure" text="&#xE23;&#xE39;&#xE1B;"/> 
+    <l:gentext key="figure" text="&#xE23;&#xE39;&#xE1B;"/> 
+    <l:gentext key="Glossary" text="&#xE2D;&#xE20;&#xE34;&#xE18;&#xE32;&#xE19;&#xE28;&#xE31;&#xE1E;&#xE17;&#xE4C;"/> 
+    <l:gentext key="glossary" text="&#xE2D;&#xE20;&#xE34;&#xE18;&#xE32;&#xE19;&#xE28;&#xE31;&#xE1E;&#xE17;&#xE4C;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#xE14;&#xE39;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21;&#xE40;&#xE15;&#xE34;&#xE21;"/> 
+    <l:gentext key="important" text="&#xE02;&#xE49;&#xE2D;&#xE04;&#xE27;&#xE23;&#xE08;&#xE33;"/> 
+    <l:gentext key="Note" text="&#xE2B;&#xE21;&#xE32;&#xE22;&#xE40;&#xE2B;&#xE15;&#xE38;"/> 
+    <l:gentext key="note" text="&#xE2B;&#xE21;&#xE32;&#xE22;&#xE40;&#xE2B;&#xE15;&#xE38;"/> 
+    <l:gentext key="Reference" text="&#xE2B;&#xE19;&#xE31;&#xE07;&#xE2A;&#xE37;&#xE2D;&#xE2D;&#xE49;&#xE32;&#xE07;&#xE2D;&#xE34;&#xE07;"/> 
+    <l:gentext key="section" text="&#xE15;&#xE2D;&#xE19;&#xE17;&#xE35;&#xE48;"/> 
+    <l:gentext key="Step" text="&#xE25;&#xE33;&#xE14;&#xE31;&#xE1A;"/> 
+    <l:gentext key="table" text="&#xE15;&#xE32;&#xE23;&#xE32;&#xE07;"/> 
+    <l:gentext key="Table" text="&#xE15;&#xE32;&#xE23;&#xE32;&#xE07;"/> 
+    <l:gentext key="tip" text="&#xE04;&#xE33;&#xE41;&#xE19;&#xE30;&#xE19;&#xE33;"/> 
+    <l:gentext key="warning" text="&#xE04;&#xE33;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;"/> 
+  </l:l10n> 
+  <l:l10n language="tl" english-language-name="Tagalog"> 
+    <l:gentext key="equation" text="Equation"/> 
+    <l:gentext key="Example" text="Halimbawa"/> 
+    <l:gentext key="example" text="Halimbawa"/> 
+    <l:gentext key="Figure" text="Pigyur"/> 
+    <l:gentext key="figure" text="Pigyur"/> 
+    <l:gentext key="Glossary" text="Talahuguhanan"/> 
+    <l:gentext key="glossary" text="Talahuguhanan"/> 
+    <l:gentext key="GlossSeeAlso" text="Tingnan Din Ang"/> 
+    <l:gentext key="important" text="Mahalaga"/> 
+    <l:gentext key="Note" text="Tala"/> 
+    <l:gentext key="note" text="Tala"/> 
+    <l:gentext key="Reference" text="Reperens"/> 
+    <l:gentext key="section" text="Bahagi"/> 
+    <l:gentext key="Step" text="Hakbang"/> 
+    <l:gentext key="table" text="Talaan"/> 
+    <l:gentext key="Table" text="Talaan"/> 
+    <l:gentext key="tip" text="Tip"/> 
+    <l:gentext key="warning" text="Babala"/> 
+  </l:l10n> 
+  <l:l10n language="tr" english-language-name="Turkish"> 
+    <l:gentext key="equation" text="Denklem"/> 
+    <l:gentext key="Example" text="&#xD6;rnek"/> 
+    <l:gentext key="example" text="&#xD6;rnek"/> 
+    <l:gentext key="Figure" text="&#x15E;ekil"/> 
+    <l:gentext key="figure" text="&#x15E;ekil"/> 
+    <l:gentext key="Glossary" text="S&#xF6;zl&#xFC;k"/> 
+    <l:gentext key="glossary" text="S&#xF6;zl&#xFC;k"/> 
+    <l:gentext key="GlossSeeAlso" text="Bkz."/> 
+    <l:gentext key="important" text="&#xD6;nemli"/> 
+    <l:gentext key="Note" text="Not"/> 
+    <l:gentext key="note" text="Not"/> 
+    <l:gentext key="Reference" text="Referans"/> 
+    <l:gentext key="section" text="K&#x131;s&#x131;m"/> 
+    <l:gentext key="Step" text="Ad&#x131;m"/> 
+    <l:gentext key="table" text="Tablo"/> 
+    <l:gentext key="Table" text="Tablo"/> 
+    <l:gentext key="tip" text="&#x130;pucu"/> 
+    <l:gentext key="warning" text="Uyar&#x131;"/> 
+  </l:l10n> 
+  <l:l10n language="uk" english-language-name="Ukrainian"> 
+    <l:gentext key="equation" text="&#x424;&#x43E;&#x440;&#x43C;&#x443;&#x43B;&#x430;"/> 
+    <l:gentext key="Example" text="&#x41F;&#x440;&#x438;&#x43A;&#x43B;&#x430;&#x434;"/> 
+    <l:gentext key="example" text="&#x43F;&#x440;&#x438;&#x43A;&#x43B;&#x430;&#x434;"/> 
+    <l:gentext key="Figure" text="&#x420;&#x438;&#x441;&#x443;&#x43D;&#x43E;&#x43A;"/> 
+    <l:gentext key="figure" text="&#x420;&#x438;&#x441;&#x443;&#x43D;&#x43E;&#x43A;"/> 
+    <l:gentext key="Glossary" text="&#x413;&#x43B;&#x43E;&#x441;&#x430;&#x440;&#x456;&#x439;"/> 
+    <l:gentext key="glossary" text="&#x433;&#x43B;&#x43E;&#x441;&#x430;&#x440;&#x456;&#x439;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x414;&#x438;&#x432;. &#x442;&#x430;&#x43A;&#x43E;&#x436;"/> 
+    <l:gentext key="important" text="&#x432;&#x430;&#x436;&#x43B;&#x438;&#x432;&#x43E;"/> 
+    <l:gentext key="Note" text="&#x41F;&#x440;&#x438;&#x43C;&#x456;&#x442;&#x43A;&#x430;"/> 
+    <l:gentext key="note" text="&#x43F;&#x440;&#x438;&#x43C;&#x456;&#x442;&#x43A;&#x430;"/> 
+    <l:gentext key="Reference" text="&#x41F;&#x43E;&#x441;&#x438;&#x43B;&#x430;&#x43D;&#x43D;&#x44F;"/> 
+    <l:gentext key="section" text="&#x43F;&#x430;&#x440;&#x430;&#x433;&#x440;&#x430;&#x444;"/> 
+    <l:gentext key="Step" text="&#x41A;&#x440;&#x43E;&#x43A;"/> 
+    <l:gentext key="table" text="&#x442;&#x430;&#x431;&#x43B;&#x438;&#x446;&#x44F;"/> 
+    <l:gentext key="Table" text="&#x422;&#x430;&#x431;&#x43B;&#x438;&#x446;&#x44F;"/> 
+    <l:gentext key="tip" text="&#x43F;&#x456;&#x434;&#x43A;&#x430;&#x437;&#x43A;&#x430;"/> 
+    <l:gentext key="warning" text="&#x437;&#x430;&#x441;&#x442;&#x435;&#x440;&#x435;&#x436;&#x435;&#x43D;&#x43D;&#x44F;"/> 
+  </l:l10n> 
+  <l:l10n language="vi" english-language-name="Vietnamese"> 
+    <l:gentext key="equation" text="Ph&#x1B0;&#x1A1;ng tr&#xEC;nh"/> 
+    <l:gentext key="Example" text="V&#xED; d&#x1EE5;"/> 
+    <l:gentext key="example" text="V&#xED; d&#x1EE5;"/> 
+    <l:gentext key="Figure" text="H&#xEC;nh"/> 
+    <l:gentext key="figure" text="H&#xEC;nh"/> 
+    <l:gentext key="Glossary" text="Thu&#x1EAD;t ng&#x1EEF;"/> 
+    <l:gentext key="glossary" text="Thu&#x1EAD;t ng&#x1EEF;"/> 
+    <l:gentext key="GlossSeeAlso" text="Xem th&#xEA;m"/> 
+    <l:gentext key="important" text="Quan tr&#x1ECD;ng"/> 
+    <l:gentext key="Note" text="Ghi ch&#xFA;"/> 
+    <l:gentext key="note" text="Ghi ch&#xFA;"/> 
+    <l:gentext key="Reference" text="Tham kh&#x1EA3;o"/> 
+    <l:gentext key="section" text="Ph&#x1EA7;n"/> 
+    <l:gentext key="Step" text="B&#x1B0;&#x1EDB;c"/> 
+    <l:gentext key="table" text="B&#x1EA3;ng"/> 
+    <l:gentext key="Table" text="B&#x1EA3;ng"/> 
+    <l:gentext key="tip" text="M&#x1EB9;o"/> 
+    <l:gentext key="warning" text="C&#x1EA3;nh b&#xE1;o"/> 
+  </l:l10n> 
+  <l:l10n language="xh" english-language-name="Xhosa"> 
+    <l:gentext key="equation" text="Ulinganiselo"/> 
+    <l:gentext key="Example" text="Umzekelo"/> 
+    <l:gentext key="example" text="Umzekelo"/> 
+    <l:gentext key="Figure" text="Ulungu"/> 
+    <l:gentext key="figure" text="Ulungu"/> 
+    <l:gentext key="Glossary" text="Inkcazelo yamagama"/> 
+    <l:gentext key="glossary" text="Inkcazelo yamagama"/> 
+    <l:gentext key="GlossSeeAlso" text="Bona Kwakhona"/> 
+    <l:gentext key="important" text="Ibalulekile"/> 
+    <l:gentext key="Note" text="Qaphela"/> 
+    <l:gentext key="note" text="Qaphela"/> 
+    <l:gentext key="Reference" text="Uthelekiso"/> 
+    <l:gentext key="section" text="Icandelo"/> 
+    <l:gentext key="Step" text="Inqwanqwa"/> 
+    <l:gentext key="table" text="Indlela Yokwenza Imigca"/> 
+    <l:gentext key="Table" text="Indlela Yokwenza Imigca"/> 
+    <l:gentext key="tip" text="Incam"/> 
+    <l:gentext key="warning" text="Isilumkiso"/> 
+  </l:l10n> 
+  <l:l10n language="zh_cn" english-language-name="Chinese Simplified"> 
+    <l:gentext key="equation" text="&#x516C;&#x5F0F;"/> 
+    <l:gentext key="Example" text="&#x4F8B;"/> 
+    <l:gentext key="example" text="&#x4F8B;"/> 
+    <l:gentext key="Figure" text="&#x56FE;"/> 
+    <l:gentext key="figure" text="&#x56FE;"/> 
+    <l:gentext key="Glossary" text="&#x672F;&#x8BED;&#x8868;"/> 
+    <l:gentext key="glossary" text="&#x672F;&#x8BED;&#x8868;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x53C2;&#x89C1;"/> 
+    <l:gentext key="important" text="&#x91CD;&#x8981;"/> 
+    <l:gentext key="Note" text="&#x6CE8;&#x610F;"/> 
+    <l:gentext key="note" text="&#x6CE8;&#x610F;"/> 
+    <l:gentext key="Reference" text="&#x53C2;&#x8003;"/> 
+    <l:gentext key="section" text="&#x8282;"/> 
+    <l:gentext key="Step" text="&#x6B65;&#x9AA4;"/> 
+    <l:gentext key="table" text="&#x8868;"/> 
+    <l:gentext key="Table" text="&#x8868;"/> 
+    <l:gentext key="tip" text="&#x63D0;&#x793A;"/> 
+    <l:gentext key="warning" text="&#x8B66;&#x544A;"/> 
+  </l:l10n> 
+  <l:l10n language="zh_tw" english-language-name="Chinese (Taiwan)"> 
+    <l:gentext key="equation" text="&#x65B9;&#x7A0B;&#x5F0F;"/> 
+    <l:gentext key="Example" text="&#x7BC4;&#x4F8B;"/> 
+    <l:gentext key="example" text="&#x7BC4;&#x4F8B;"/> 
+    <l:gentext key="Figure" text="&#x5716;&#x5F62;"/> 
+    <l:gentext key="figure" text="&#x5716;&#x5F62;"/> 
+    <l:gentext key="Glossary" text="&#x5C0F;&#x8FAD;&#x5F59;"/> 
+    <l:gentext key="glossary" text="&#x5C0F;&#x8FAD;&#x5F59;"/> 
+    <l:gentext key="GlossSeeAlso" text="&#x53E6;&#x53C3;&#x898B;"/> 
+    <l:gentext key="important" text="&#x91CD;&#x8981;"/> 
+    <l:gentext key="Note" text="&#x6CE8;"/> 
+    <l:gentext key="note" text="&#x6CE8;"/> 
+    <l:gentext key="Reference" text="&#x53C3;&#x8003;"/> 
+    <l:gentext key="section" text="&#x7BC0;"/> 
+    <l:gentext key="Step" text="&#x6B65;&#x9A5F;"/> 
+    <l:gentext key="table" text="&#x8868;&#x683C;"/> 
+    <l:gentext key="Table" text="&#x8868;&#x683C;"/> 
+    <l:gentext key="tip" text="&#x63D0;&#x793A;"/> 
+    <l:gentext key="warning" text="&#x8B66;&#x544A;"/> 
+  </l:l10n> 
+</l:i18n> 
