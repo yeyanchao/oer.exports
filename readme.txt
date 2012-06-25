@@ -34,3 +34,7 @@ $ ./scripts/module2epub.sh "Connexions" test-ccap test-ccap.epub col12345 xsl/db
 # To generate a PDF:
 - Install PrinceXML or wkhtmltopdf
 $ python collectiondbk2pdf.py -p ${path-to-wkhtml2pdf-or-princexml} -d test-ccap -s ccap-physics result.pdf
+
+#To generate a MOBI:
+export kindle="path/to/kindle"
+python clooectiondbk2mobi.py 
