@@ -22,3 +22,9 @@ To generate a PDF:
 To generate an EPUB:
 
     ./scripts/module2epub.sh "Connexions" test-ccap test-ccap.epub col12345 xsl/dbk2epub.xsl static/content.css
+
+To generate a MOBI:
+
+- Install kindlegen
+# python collectiondbk2mobi.py -k /home/yc/bin/kindlegen/kindlegen -d test-ccap -s ccap-physics result.mobi #for example
+$ python collectiondbk2mobi.py -k {path-to-kindlegen} -d test-ccap -s ccap-physics result.mobi
