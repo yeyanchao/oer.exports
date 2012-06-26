@@ -25,6 +25,6 @@ To generate an EPUB:
 
 To generate a MOBI:
 
-- Install kindlegen
-# python collectiondbk2mobi.py -k /home/yc/bin/kindlegen/kindlegen -d test-ccap -s ccap-physics result.mobi #for example
-$ python collectiondbk2mobi.py -k {path-to-kindlegen} -d test-ccap -s ccap-physics result.mobi
+    - Install kindlegen
+    # python collectiondbk2mobi.py -k /home/yc/bin/kindlegen/kindlegen -d test-ccap -s ccap-physics result.mobi #for example
+    $ python collectiondbk2mobi.py -k {path-to-kindlegen} -d test-ccap -s ccap-physics result.mobi
