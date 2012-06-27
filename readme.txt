@@ -39,5 +39,4 @@ $ python collectiondbk2pdf.py -p ${path-to-wkhtml2pdf-or-princexml} -d test-ccap
 
 #To generate a MOBI:
 - Install kindlegen
-# python collectiondbk2mobi.py -k /home/yc/bin/kindlegen/kindlegen -d test-ccap -s ccap-physics result.mobi #for example
-$ python collectiondbk2mobi.py -k {path-to-kindlegen} -d test-ccap -s ccap-physics result.mobi
+$ ./scripts/module2mobi.sh test-ccap mobi-name ccap-physics.css

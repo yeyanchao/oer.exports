@@ -1,5 +1,4 @@
-# python collectiondbk2pdf.py -v -s ccap-physics -d ./test-ccap result.pdf
-# python collectiondbk2mobi.py -k /home/yc/bin/kindlegen/kindlegen -d test-ccap -s ccap-physics result.mobi
+# python collectiondbk2mobi.py -d test-ccap -o  result.html
 
 import sys
 import os
@@ -18,7 +17,8 @@ import collection2dbk
 import util
 
 import commands
-DEFAULT_KINDLEGEN_PATHS = ['/usr/bin/kindlegen','/usr/local/bin/kindlegen']
+
+DEFAULT_KINDLEGEN_PATHS = ['/usr/bin/kindlegen','/usr/local/bin/kindlegen','/home/yc/bin/kindlegen/kindlegen']
 
 BASE_PATH = os.getcwd()
 
@@ -29,7 +29,7 @@ DOCBOOK_CLEANUP_XSL = util.makeXsl('dbk-clean-whole.xsl')
 MODULES_XPATH = etree.XPath('//col:module/@document', namespaces=util.NAMESPACES)
 IMAGES_XPATH = etree.XPath('//c:*/@src[not(starts-with(.,"http:"))]', namespaces=util.NAMESPACES)
 
-def collection2mobi(collection_dir, print_style, output_mobi, kindlegen, temp_dir, verbose=False,reduce_quality=False):
+def collection2mobi(collection_dir, print_style, output_xhtml, kindlegen, temp_dir, verbose=False,reduce_quality=False):
 
   p = util.Progress()
 
@@ -49,28 +49,29 @@ def collection2mobi(collection_dir, print_style, output_mobi, kindlegen, temp_di
       modules[moduleId] = (cnxml, files)
 
   p.start(1, 'Converting collection to Docbook')
-  dbk, newFiles = collection2dbk.convert(p, collxml, modules, temp_dir, svg2png=False, math2svg=True, reduce_quality=reduce_quality)
+  dbk, newFiles = collection2dbk.convert(p, collxml, modules, temp_dir, svg2png=False, math2svg=True, reduce_quality=reduce_quality)#svg2png=false
+  #dbk, newFiles = collection2dbk.convert(p, collxml, modules, temp_dir, svg2png=True, math2svg=True, reduce_quality=reduce_quality)
   allFiles.update(newFiles)
   
   p.tick('Converting Docbook to MOBI')
-  stdErr = convert(p, dbk, allFiles, print_style, temp_dir, output_mobi, kindlegen, verbose)
+  stdErr = convert(p, dbk, allFiles, print_style, temp_dir, output_xhtml, kindlegen, verbose)
   
   p.finish()
   return stdErr
 
 def __doStuff(collection_dir, print_style):
 
-  output_mobi = '/dev/stdout'
+  output_xhtml = '/dev/stdout'
   
   kindlegen = _find_kindlegen()
   if not kindlegen:
     print >> sys.stderr, "No valid kindlegen script found. Specify one via the command line"
     return 1
 
-  temp_dir = mkdtemp(suffix='-xhtml2pdf')
+  temp_dir = mkdtemp(suffix='-xhtml2mobi')
   verbose = False
 
-  return collection2mobi(collection_dir, print_style, output_mobi, kindlegen, temp_dir, verbose)
+  return collection2mobi(collection_dir, print_style, output_xhtml, kindlegen, temp_dir, verbose)
 
 def __doStuffModule(moduleId, module_dir, printStyle):
 
@@ -79,7 +80,7 @@ def __doStuffModule(moduleId, module_dir, printStyle):
     print >> sys.stderr, "No valid kindlegen script found. Specify one via the command line"
     return 1
 
-  temp_dir = mkdtemp(suffix='-module-xhtml2pdf')
+  temp_dir = mkdtemp(suffix='-module-xhtml2mobi')
   cnxml, files = loadModule(module_dir)
   _, newFiles = module2dbk.convert(moduleId, cnxml, files, {}, temp_dir, svg2png=False, math2svg=True, reduce_quality=False) # Last arg is coll params
   dbkFile = open(os.path.join(temp_dir, 'index.standalone.dbk'))
@@ -116,26 +117,8 @@ def loadModule(moduleDir):
     files['index.included.dbk'] = dbkStr
   return (cnxml, files)
 
-def xhtml2pdf(xhtml_file, files, temp_dir, print_style, kindlegen, output_mobi, verbose=False):
-  """ Convert XHTML and assorted files to PDF using a XHTML+CSS to PDF script """
 
-  CSS_FILE = os.path.join(BASE_PATH, 'css/%s.css' % print_style)
-  
-  # Run Prince (or an Opensource) to generate an abstract tree 1st
-  strCmd = [kindlegen, '-v', '--style=%s' % CSS_FILE, '--output=%s' % output_mobi, xhtml_file]
-  if verbose:
-    print >> sys.stderr, "Executing PDF generation: " + ' '.join(strCmd)
-
-  env = { }
-
-  # run the program with subprocess and pipe the input and output to variables
-  p = subprocess.Popen(strCmd, close_fds=True, env=env)
-  # set STDIN and STDOUT and wait untill the program finishes
-  _, stdErr = p.communicate()
-
-  return stdErr
-
-def xhtml2mobi(xhtml, files, tempdir,output_mobi):
+def xhtml2mobi(xhtml, files, tempdir,output_xhtml):
    """ Convert XHTML and assorted files to mobi using a Kindlegen """
    # Write all of the files into tempdir
    for fname, content in files.items():
@@ -152,9 +135,11 @@ def xhtml2mobi(xhtml, files, tempdir,output_mobi):
 #     os.remove('tomobi.xhtml')
 #   open('test-mobi.xhtml','w').write(etree.tostring(xhtml))
  
-   strCmd = 'kindlegen %s -verbose -o resutlt.mobi' % xhtml
+#   time python epubcss.py  test_complete.xhtml -c css/ccap-sociology.css -o test_complete_styled_sociology.html
+   #strCmd = 'kindlegen %s -verbose -o %s' % (xhtml,output_xhtml)
+   strCmd = 'kindlegen %s -verbose -o result.mobi' % xhtml
  
-   print >>sys.stderr, "LOG: Writing to %s.mobi" % output_mobi
+   print >>sys.stderr, "LOG: Writing to %s.mobi" % output_xhtml
    (status, output) = commands.getstatusoutput(strCmd)
 
    if status:
@@ -172,8 +157,8 @@ def xhtml2mobi(xhtml, files, tempdir,output_mobi):
            os.rmdir(fdir)
      sys.exit(0)
 
-def convert(p, dbk1, files, print_style, temp_dir, output_mobi, kindlegen, verbose=False):
-  """ Converts a Docbook Element and a dictionary of files into a PDF. """
+def convert(p, dbk1, files, print_style, temp_dir, output_xhtml, kindlegen, verbose=False):
+  """ Converts a Docbook Element and a dictionary of files into a MOBI. """
   
   def transform(xslDoc, xmlDoc):
     """ Performs an XSLT transform and parses the <xsl:message /> text """
@@ -197,19 +182,21 @@ def convert(p, dbk1, files, print_style, temp_dir, output_mobi, kindlegen, verbo
   p.tick('Converting Docbook to HTML')
   # Step 2 (Docbook to XHTML)
   #xhtml_file = os.path.join(temp_dir, 'collection.xhtml')
-  xhtml_file = os.path.join(os.getcwd(), 'collection.xhtml')
+  #xhtml_file = os.path.join(os.getcwd(), 'collection.xhtml')
+  xhtml_file = os.path.join(os.getcwd(), output_xhtml)
   xhtml = transform(DOCBOOK2XHTML_XSL, dbk2)
   open(xhtml_file,'w').write(etree.tostring(xhtml))
 
-  p.tick('Converting HTML to MOBI')
+  #p.tick('#############Done.##############')
+  #p.tick('Converting HTML to MOBI')
   #import pdb; pdb.set_trace()
-  # Step 4 Converting XSL:FO to PDF (using Apache FOP)
+  # Step 4 Converting XSL:FO to MOBI (using Apache FOP)
   # Change to the collection dir so the relative paths to images work
-  #stdErr = xhtml2pdf(xhtml_file, files, temp_dir, print_style, kindlegen, output_mobi, verbose)
-  stdErr = xhtml2mobi(xhtml_file, files, temp_dir, output_mobi)
+  #stdErr = xhtml2pdf(xhtml_file, files, temp_dir, print_style, kindlegen, output_xhtml, verbose)
+  #stdErr = xhtml2mobi(xhtml_file, files, temp_dir, output_xhtml)
 
   p.finish()
-  return stdErr
+  #return stdErr
 
 def _find_kindlegen(kindlegen_file=None):
     kindlegen = None
@@ -229,21 +216,21 @@ def main():
       print "argparse is needed for commandline"
       return 2
 
-    parser = argparse.ArgumentParser(description='Convert an unzipped Collection to a PDF')
+    parser = argparse.ArgumentParser(description='Convert an unzipped Collection to a MOBI')
     parser.add_argument('-v', dest='verbose', help='Print detailed messages and output debug files', action='store_true')
     parser.add_argument('-d', dest='collection_dir', help='Path to an unzipped collection', required=True)
-    parser.add_argument('-s', dest='print_style', help='Print style to use (name of CSS file in css dir)', required=True)
-    parser.add_argument('-k', dest='kindlegen', help='Path to a PDF generation script', nargs='?', type=argparse.FileType('r'))
+    parser.add_argument('-s', dest='print_style', help='Print style to use (name of CSS file in css dir)')#,required=True)
+    parser.add_argument('-k', dest='kindlegen', help='Path to a MOBI generation script', nargs='?', type=argparse.FileType('r'))
     parser.add_argument('-t', dest='temp_dir', help='Path to store temporary files to (default is a temp dir that will be removed)', nargs='?')
     parser.add_argument('-r', dest='reduce_quality', help='Reduce image quality', action='store_true')
-    parser.add_argument('output_mobi', help='Path to write the PDF file', nargs='?', type=argparse.FileType('w'), default=sys.stdout)
+    parser.add_argument('-o', dest='output_xhtml', help='Path to write the xhtml file', nargs='?', type=argparse.FileType('w'), default=sys.stdout)
     args = parser.parse_args()
 
     if not os.path.isdir(args.collection_dir) or not os.path.isfile(os.path.join(args.collection_dir, 'collection.xml')):
       print >> sys.stderr, "collection_dir Must point to a directory containing a collection.xml file"
       return 1
     
-    # Determine the PDF generation script to run
+    # Determine the MOBI generation script to run
     kindlegen = _find_kindlegen(args.kindlegen)
     if not kindlegen:
       print >> sys.stderr, "No valid kindlegen script found. Specify one via the command line"
@@ -258,16 +245,16 @@ def main():
     delete_temp_dir = False
     temp_dir = args.temp_dir
     if not temp_dir:
-      temp_dir = mkdtemp(suffix='-xhtml2pdf')
+      temp_dir = mkdtemp(suffix='-xhtml2mobi')
       delete_temp_dir = True
     
     # Set the output file
-    if args.output_mobi == sys.stdout:
-      output_mobi = '/dev/stdout'
+    if args.output_xhtml == sys.stdout:
+      output_xhtml = '/dev/stdout'
     else:
-      output_mobi = os.path.abspath(args.output_mobi.name)
+      output_xhtml = os.path.abspath(args.output_xhtml.name)
 
-    stdErr = collection2mobi(args.collection_dir, args.print_style, output_mobi, kindlegen, temp_dir, args.verbose, args.reduce_quality)
+    stdErr = collection2mobi(args.collection_dir, args.print_style, output_xhtml, kindlegen, temp_dir, args.verbose, args.reduce_quality)
 
     if delete_temp_dir:
       shutil.rmtree(temp_dir)
