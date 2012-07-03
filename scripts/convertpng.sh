@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 #  This scritp is used to convert transparent png format image to non-transparent 
 #png format image Because Kindle does **not** support transparent png
 #  Scritp uses 'convert' to do the conversion, so you should install ImageMagick first.
