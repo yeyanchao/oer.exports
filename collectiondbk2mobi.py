@@ -16,11 +16,10 @@ import module2dbk
 import collection2dbk
 import util
 
-import commands
-
 DEFAULT_KINDLEGEN_PATHS = ['/usr/bin/kindlegen','/usr/local/bin/kindlegen','/home/yc/bin/kindlegen/kindlegen']
 
 BASE_PATH = os.getcwd()
+DEBUG=True
 
 # XSL files
 DOCBOOK2XHTML_XSL=util.makeXsl('dbk2xhtml.xsl')
@@ -49,8 +48,7 @@ def collection2mobi(collection_dir, print_style, output_xhtml, kindlegen, temp_d
       modules[moduleId] = (cnxml, files)
 
   p.start(1, 'Converting collection to Docbook')
-  dbk, newFiles = collection2dbk.convert(p, collxml, modules, temp_dir, svg2png=False, math2svg=True, reduce_quality=reduce_quality)#svg2png=false
-  #dbk, newFiles = collection2dbk.convert(p, collxml, modules, temp_dir, svg2png=True, math2svg=True, reduce_quality=reduce_quality)
+  dbk, newFiles = collection2dbk.convert(p, collxml, modules, temp_dir, svg2png=True, math2svg=True, reduce_quality=reduce_quality)#svg2png=false
   allFiles.update(newFiles)
   
   p.tick('Converting Docbook to MOBI')
@@ -117,48 +115,8 @@ def loadModule(moduleDir):
     files['index.included.dbk'] = dbkStr
   return (cnxml, files)
 
-
-def xhtml2mobi(xhtml, files, tempdir,output_xhtml):
-   """ Convert XHTML and assorted files to mobi using a Kindlegen """
-   # Write all of the files into tempdir
-   for fname, content in files.items():
-     fpath = os.path.join(tempdir, fname)
-     fdir = os.path.dirname(fpath)
-     if not os.path.isdir(fdir):
-       os.makedirs(fdir)
-     #print >> sys.stderr, "LOG: Writing to %s" % fpath
-     f = open(fpath, 'w')
-     f.write(content)
-     f.close()
- 
-#   if os.path.exists('tomobi.xhtml'):
-#     os.remove('tomobi.xhtml')
-#   open('test-mobi.xhtml','w').write(etree.tostring(xhtml))
- 
-#   time python epubcss.py  test_complete.xhtml -c css/ccap-sociology.css -o test_complete_styled_sociology.html
-   #strCmd = 'kindlegen %s -verbose -o %s' % (xhtml,output_xhtml)
-   strCmd = 'kindlegen %s -verbose -o result.mobi' % xhtml
- 
-   print >>sys.stderr, "LOG: Writing to %s.mobi" % output_xhtml
-   (status, output) = commands.getstatusoutput(strCmd)
-
-   if status:
-     sys.stderr.write(output)
-     sys.exit(1)
-   else:
-     # Clean up the tempdir
-     # Remove added files
-     if not DEBUG:
-       for fname in files:
-         fpath = os.path.join(tempdir, fname)
-         os.remove(fpath)
-         fdir = os.path.dirname(fpath)
-         if len(os.listdir(fdir)) == 0:
-           os.rmdir(fdir)
-     sys.exit(0)
-
 def convert(p, dbk1, files, print_style, temp_dir, output_xhtml, kindlegen, verbose=False):
-  """ Converts a Docbook Element and a dictionary of files into a MOBI. """
+  """ Converts a Docbook Element and a dictionary of files into a xhtml. """
   
   def transform(xslDoc, xmlDoc):
     """ Performs an XSLT transform and parses the <xsl:message /> text """
@@ -179,7 +137,7 @@ def convert(p, dbk1, files, print_style, temp_dir, output_xhtml, kindlegen, verb
   if verbose:
     open(os.path.join(temp_dir, 'temp-collection2.dbk'),'w').write(etree.tostring(dbk2,pretty_print=False))
 
-  p.tick('Converting Docbook to HTML')
+  p.tick('Converting Docbook to XHTML')
   # Step 2 (Docbook to XHTML)
   #xhtml_file = os.path.join(temp_dir, 'collection.xhtml')
   #xhtml_file = os.path.join(os.getcwd(), 'collection.xhtml')
@@ -187,16 +145,8 @@ def convert(p, dbk1, files, print_style, temp_dir, output_xhtml, kindlegen, verb
   xhtml = transform(DOCBOOK2XHTML_XSL, dbk2)
   open(xhtml_file,'w').write(etree.tostring(xhtml))
 
-  #p.tick('#############Done.##############')
-  #p.tick('Converting HTML to MOBI')
-  #import pdb; pdb.set_trace()
-  # Step 4 Converting XSL:FO to MOBI (using Apache FOP)
-  # Change to the collection dir so the relative paths to images work
-  #stdErr = xhtml2pdf(xhtml_file, files, temp_dir, print_style, kindlegen, output_xhtml, verbose)
-  #stdErr = xhtml2mobi(xhtml_file, files, temp_dir, output_xhtml)
 
   p.finish()
-  #return stdErr
 
 def _find_kindlegen(kindlegen_file=None):
     kindlegen = None
@@ -243,9 +193,11 @@ def main():
 
     # Choose a temp dir    
     delete_temp_dir = False
-    temp_dir = args.temp_dir
+    temp_dir = args.collection_dir
+    #temp_dir = args.temp_dir
     if not temp_dir:
       temp_dir = mkdtemp(suffix='-xhtml2mobi')
+      #delete_temp_dir = True
       delete_temp_dir = True
     
     # Set the output file

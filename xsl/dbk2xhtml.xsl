@@ -10,7 +10,7 @@
 <!-- ============================================== -->
 <!-- Customize docbook params for this style        -->
 <!-- ============================================== -->
-
+<xsl:param name="cnx.svg.compat">ONLY_USE_THE_RASTER_FIEL</xsl:param>
 <!-- Number the sections 1 level deep. See http://docbook.sourceforge.net/release/xsl/current/doc/html/ -->
 <xsl:param name="section.autolabel" select="1"/>
 <xsl:param name="section.autolabel.max.depth">1</xsl:param>
@@ -42,7 +42,14 @@ procedure before
   <xsl:message>INFO: Discarding simplemath in favor of MathML/SVG</xsl:message>
   <xsl:apply-templates select="db:inlinemediaobject"/>
 </xsl:template>
-
+<!-- simplified math generates a c:span[@class="simplemath"] or db:token[@class="simplemath"] with a mml:math in it. for epubs, discard the mml:math 
+<xsl:template match="db:token[@class='simplemath']/db:inlinemediaobject">
+  <xsl:message>INFO: Discarding MathML in favor of simplemath</xsl:message>
+</xsl:template>
+<xsl:template match="db:token[@class='simplemath']/db:inlinemediaobject">
+  <xsl:message>INFO: Discarding MathML SVG in favor of simplemath</xsl:message>
+</xsl:template>
+-->
 
 <!-- The PDF has a nice way of handling footnotes so override Docbook's method -->
 <xsl:template match="db:footnote">
