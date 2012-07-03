@@ -7,6 +7,10 @@
  * Styles used when generating a PDF from xhtml+css
  ***************************************************/
 /* Print-specific styles <style media="print"... */
+/* Squirrel away the collection URL so it shows up as the footer on every page */
+#title_page_url a[href] {
+  string-set: cnx-collection-url attr(href);
+}
 /* Don't print module asterix (link to attribution) */
 sup a {
   display: none;
@@ -111,6 +115,7 @@ a[href^="http"] {
   column-count: 3;
   columns: 3;
   column-fill: auto;
+  column-gap: 2.5em;
 }
 .index .title * {
   display: inline;
@@ -156,8 +161,7 @@ h6 {
 }
 /****************** Modern-Textbook classes ****************/
 .introduction {
-  /* page-break-after: always; */
-
+  page-break-after: always;
 }
 /* Hide the manual key-concepts table */
 .introduction table.simplelist {
@@ -1289,6 +1293,7 @@ h2::before {
   column-count: 2;
   columns: 2;
   column-fill: auto;
+  column-gap: 2.5em;
   page-break-before: always;
 }
 /* Allow sections in the 2-column problems-exercises to break */

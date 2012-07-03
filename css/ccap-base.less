@@ -18,6 +18,11 @@
   column-gap: 2.5em;            // Force gap between columns
 }
 
+/* Squirrel away the collection URL so it shows up as the footer on every page */
+#title_page_url a[href] {
+  string-set: cnx-collection-url attr(href);
+}
+
 /* Don't print module asterix (link to attribution) */
 sup a {
   display: none;

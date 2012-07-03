@@ -38,6 +38,13 @@ svg|g {
     content: string(cnx-header);
     text-transform: uppercase;
   }
+  @bottom-left {
+    font-weight: bold;
+    content: "This content is available for free at " string(cnx-collection-url);
+    // The following line doesn't work because prince-link can aonly take a attr() or url()
+    // Fortunately prince auto-detects the http://... and makes it a link
+    // prince-link: string(cnx-collection-url);
+  }
 }
 
 @page :right {
