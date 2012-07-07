@@ -26,4 +26,5 @@ To generate an EPUB:
 To generate a MOBI:
 
     - Install kindlegen
+    - Install ImageMagick
     $ ./scripts/module2mobi.sh test-ccap mobi-name ccap-physics.css
