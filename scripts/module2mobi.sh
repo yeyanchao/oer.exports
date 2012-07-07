@@ -46,7 +46,7 @@ XHTML_FILE=$WORKING_DIR/"$OUTPUT.xhtml"
 
   EXIT_STATUS=$EXIT_STATUS || $?
 
-  sed -i -f tagp2a.sed ${HTML_FILE}
+  sed -i -f scripts/tagp2a.sed ${HTML_FILE}
 
   EXIT_STATUS=$EXIT_STATUS || $?
 
