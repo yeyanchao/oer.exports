@@ -46,6 +46,10 @@ XHTML_FILE=$WORKING_DIR/"$OUTPUT.xhtml"
 
   EXIT_STATUS=$EXIT_STATUS || $?
 
+  sed -i -f tagp2a.sed ${HTML_FILE}
+
+  EXIT_STATUS=$EXIT_STATUS || $?
+
   MOBI_FILE="$OUTPUT.mobi"
  
   ${KINDLEGEN} ${HTML_FILE}  -o ${MOBI_FILE} #-verbose 
