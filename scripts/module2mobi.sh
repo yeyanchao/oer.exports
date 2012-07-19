@@ -36,7 +36,7 @@ XHTML_FILE=$WORKING_DIR/"$OUTPUT.xhtml"
 
   python epubcss.py ${XHTML_FILE} -c css/${CSS_FILE}.css -o ${HTML_FILE}
 
-  rm ${XHTML_FILE}
+  #rm ${XHTML_FILE}
 
   echo "Done styling xhtml to html"
 
@@ -58,6 +58,7 @@ XHTML_FILE=$WORKING_DIR/"$OUTPUT.xhtml"
   sed -i '/class="colophon"/i<mbp:pagebreak \/>' ${HTML_FILE}
   sed -i '/class="toc"/i<mbp:pagebreak \/>' ${HTML_FILE}
   sed -i 's/\(Table of Contents\)/<h3>\1<\/h3>/' ${HTML_FILE}
+  sed -i "s/title>\(.*\)<\/title/title>\1-${OUTPUT}<\/title/" ${HTML_FILE}
 
   EXIT_STATUS=$EXIT_STATUS || $?
 

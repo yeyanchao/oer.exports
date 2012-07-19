@@ -7,6 +7,7 @@ from lxml import etree
 from custom import premailer
 from custom import numbers
 from custom.util import PropertyParser, ContentPropertyParser, parse_style, ContentEvaluator, State, UnsupportedError
+import pdb
 
 __all__ = ['AddNumbering', 'UnsupportedError']
 
@@ -88,6 +89,7 @@ class AddNumbering(object):
             id = node.attrib.get(attr, None)
             if id[0] == '#':
               id = id[1:]
+            #pdb.set_trace();
             self.node_at[id] = None
 
     if self.verbose: print >> sys.stderr, "-------- Creating pseudo elements ( CSS :before and :after ) : %d" % len(nodes)
@@ -103,6 +105,7 @@ class AddNumbering(object):
       self.mutate_node(node)
 
     if self.verbose: print >> sys.stderr, "-------- Resolving link counters ( CSS3 target-counter ) : %d" % len(self.reprocess)
+    #pdb.set_trace()
     for (node, self.evaluator.state.countersAt) in self.reprocess:
       self.evaluator.state.counters = self.evaluator.state.countersAt
       d = PropertyParser().parse(node.attrib.get(STYLE_ATTRIBUTE, ''))
@@ -255,7 +258,7 @@ class AddNumbering(object):
               self.node_at[id] = None
             else:
               if self.verbose: print >> sys.stderr, "WARNING: Ignoring lookup to a non-internal id: '%s' on a %s" % (href, n.tag)
-    
+"""    
     if not class_ and ':before' in style:
       pseudo = etree.Element(self.pseudo_element_name)
       pseudo.attrib['class'] = 'pseudo-before'
@@ -270,6 +273,7 @@ class AddNumbering(object):
       pseudo.attrib['class'] = 'pseudo-after'
       node.append(pseudo)
       self.expand_pseudo(pseudo, style, ':after')
+"""
 
 
 def _style_to_string(style):
@@ -287,7 +291,7 @@ def main():
       parser.add_argument('-v', dest='verbose', help='Verbose printing to stderr', action='store_true')
       parser.add_argument('-c', dest='css', help='CSS File', type=argparse.FileType('r'), nargs='*')
       parser.add_argument('-o', dest='output', nargs='?', type=argparse.FileType('w'), default=sys.stdout)
-      # parser.add_argument('--no-pseudo', dest='no_pseudo', help='Do not Emulate pseudo elements', action='store_true')
+     # parser.add_argument('--no-pseudo', dest='no_pseudo', help='Do not Emulate pseudo elements', action='store_true')
       parser.add_argument('--no-counter', dest='no_counter', help='Do not Emulate counters', action='store_true')
       parser.add_argument('--no-target', dest='no_target', help='Do not Emulate target-text', action='store_true')
       parser.add_argument('--no-string', dest='no_string', help='Do not Emulate string-set', action='store_true')
