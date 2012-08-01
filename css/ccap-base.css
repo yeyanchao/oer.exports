@@ -1,129 +1,88 @@
+@import url('ccap-css3.css');
 /***************************************************
  * Styles used when generating a PDF from xhtml+css
  ***************************************************/
-
 /* Print-specific styles <style media="print"... */
-@import url('ccap-css3.css');
-
-
-.x-page-float(@float: bottom) {
-  float: @float;
-}
-
-.x-column-count(@num: 2) {
-  -webkit-column-count: @num; // Supported by webkit
-  column-count: @num;         // Not supported (but should be)
-  columns: @num;              // Supported by PrinceXML
-  column-fill: auto;          // Fill up the left column 1st, don't balance
-  column-gap: 2.5em;            // Force gap between columns
-   column-width: 3.50in;		   // max width of column /
-  //calculate width of a single column: total column width= column-width + column-gap/2 + padding + margin
-   text-align: justify;  //left/right justifies text in columns
-}
-
 /* Squirrel away the collection URL so it shows up as the footer on every page */
 #title_page_url a[href] {
   string-set: cnx-collection-url attr(href);
 }
-
 /* Don't print module asterix (link to attribution) */
 sup a {
   display: none;
 }
-
-
 /* General css for print/online */
-
-.book > .toc {
-  ul, li { list-style-type: none; padding-left: 0em; margin-left: 1em; }
+.book > .toc ul, .book > .toc li {
+  list-style-type: none;
+  padding-left: 0em;
+  margin-left: 1em;
 }
-.toc > ul, .toc > ul > li { margin-left: 0em; }
-
+.toc > ul, .toc > ul > li {
+  margin-left: 0em;
+}
 .introduction > .toc > ul {
   padding-left: 0em;
   margin-left: 1em;
 }
-
-
 .introduction > .toc .abstract {
   margin-left: 2.5em;
   padding-left: 0em;
 }
-
 .introduction > .toc .abstract ul {
   margin-left: 0em;
   padding-left: 1.5em;
-  & > li {
-    list-style-type: disc;
-  }
 }
-
-.introduction > .toc {
-  & > * {
-    padding-left: 0em;
-    margin-left: 1em;
-    & > li {
-      list-style-type: none;
-    }
-  }
+.introduction > .toc .abstract ul  > li {
+  list-style-type: disc;
 }
-
+.introduction > .toc  > * {
+  padding-left: 0em;
+  margin-left: 1em;
+}
+.introduction > .toc  > *  > li {
+  list-style-type: none;
+}
 .toc-section .toc-section {
   display: none;
 }
-
-
 /* Hide sub-sections from the book TOC */
-/*.book */ .toc .toc-section .toc-section { display: none; }
-
+/*.book */.toc .toc-section .toc-section {
+  display: none;
+}
 /* Hide the TOC for the Appendix */
 .appendix .toc {
   display: none;
 }
-
 /* Footnotes. remove margins */
 .footnote {
-  //font-size: 83%;
   text-align: left;
   margin-top: 0em;
   margin-bottom: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  * {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-  }
 }
-
+.footnote * {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
 /********************** Generic Elements ********************/
-
-@stix-fonts: STIXGeneral, STIXSizeOneSym, STIXSize1;
-@font-family: Liberation Sans, sans-serif, @stix-fonts;
-
 body {
   font-size: 8.2pt;
-  font-family: @font-family;
-  //prince-jpeg-quality: 20%;
+  font-family: Liberation Sans, sans-serif, STIXGeneral, STIXSizeOneSym, STIXSize1;
 }
-
-// BUGFIX: In princexml SVG in a table heading doesn't use the fonts set in the SVG
 /* This NEEDS to be on its own line (can't do "body, th * { ...") */
 th * {
-  font-family: @font-family;
+  font-family: Liberation Sans, sans-serif, STIXGeneral, STIXSizeOneSym, STIXSize1;
 }
-
-
 a[href^="http"] {
   content: content() " (" attr(href) ") ";
 }
-
 .chapter, .appendix, .colophon {
   page-break-before: right;
   page-break-after: left;
-}  
-
+}
 .equation {
   page-break-inside: avoid;
   text-align: center;
@@ -133,85 +92,80 @@ a[href^="http"] {
   float: right;
 }
 .figure {
-	font-size: xx-small;
-	padding-bottom: 0.5em;
-	margin-left: auto;
-	margin-right: auto;
-	page-break-inside: avoid;
+  font-size: xx-small;
+  padding-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  page-break-inside: avoid;
 }
 .mathml-mi {
   font-family: Liberation Serif, serif, STIXGeneral, STIXSizeOneSym, STIXSize1;
 }
-
 /**************************** Index **************************/
-
 .index[title=Index] {
   page-break-before: always;
   page-break-after: always;
   page-break-inside: auto;
   string-set: cnx-header "Index";
-  .x-column-count(3);
+  -webkit-column-count: 3;
+  column-count: 3;
+  columns: 3;
+  column-fill: auto;
+  column-gap: 2.5em;
+  column-width: 3.50in;
+  text-align: justify;
 }
-
 .index .title * {
   display: inline;
   string-set: cnx-header content();
 }
-
 .index .letter {
   font-weight: bold;
 }
-
 .indexdiv, .indexdiv dl {
   page-break-inside: auto;
 }
-
 .indexterm {
   content: target-counter(attr(href), page);
 }
-
-
 /********************* Glossary Section **************/
-
-.glossary dt {
-}
-em.glossterm {
-}
-
 #book.attribution, .colophon {
   font-size: x-small;
 }
-
 /*********************** Table of Contents ********************/
-
 .book > .toc {
   page-break-before: right;
   page-break-after: always;
 }
-
 .book > .toc > p {
   font-size: x-large;
   text-align: center;
 }
-
 /**************** Fix the PDF Outline *************/
-h1 { bookmark-level: 1; page-break-after: avoid; }
-h2 { bookmark-level: 2; page-break-after: avoid; }
-h3, h4, h5, h6 { bookmark-level: none; page-break-after: avoid; }
-
-
-/****************** Modern-Textbook classes ****************/
-
-.introduction {
- /*  page-break-after: always; */
+h1 {
+  bookmark-level: 1;
+  page-break-after: avoid;
 }
+h2 {
+  bookmark-level: 2;
+  page-break-after: avoid;
+}
+h3,
+h4,
+h5,
+h6 {
+  bookmark-level: none;
+  page-break-after: avoid;
+}
+/****************** Modern-Textbook classes ****************/
+.introduction {
+  /*  page-break-after: always; */
 
+}
 /* Hide the manual key-concepts table */
 .introduction table.simplelist {
   display: none;
 }
-
-
 /***************************************************************
  * Clean up padding and spacing
  ***************************************************************/
@@ -239,123 +193,100 @@ p {
   align: top;
   text-align: left;
 }
-//Reset the table caption because I was dumb and didn't wrap the Table title in a span
 .table-caption {
   font-weight: normal;
   color: black;
   display: inline;
   margin-left: 0.5em;
 }
-
 .itemizedlist .title {
   margin: 0px;
   float: none;
   max-width: inherit;
 }
-
-
 /***************************************************************
  * Styles originally from physics but used in Sociology
  ***************************************************************/
-
 /***************** Title page *****************/
-
 .book > .cnx-title h1 {
   text-align: center;
   font-size: xx-large;
   margin-top: 10em;
 }
-
-.cnx-title a,
-#book-attribution a
- {
+.cnx-title a, #book-attribution a {
   content: content();
 }
-
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
-
 /*********************** Table of Contents ********************/
-
 .book > .toc {
-  & > .title {
-    page-break-after: avoid;
-    text-align: center;
-    font-size: large;
-  }
-  
-  a {
-    font-weight: medium;
-    text-decoration: none;
-    
-    /* Chapter 3 : Type Systems ........................ 213 */
-    &::after {
-      content: leader(' . ') target-counter(attr(href), page);
-    }
-  }
-  
   /* TOC Chapter */
-  & > li > ul a {
-    font-size: 12pt;
-  }
-  
-  // Don't make TOC entries for sections in a  Preface or Appendix
-  & > ul > li.toc-preface ul { display: none; }
-  & > ul > li.toc-appendix ul { display: none; }
 
 }
+.book > .toc  > .title {
+  page-break-after: avoid;
+  text-align: center;
+  font-size: large;
+}
+.book > .toc a {
+  font-weight: medium;
+  text-decoration: none;
+  /* Chapter 3 : Type Systems ........................ 213 */
 
+}
+.book > .toc a::after {
+  content: leader(' . ') target-counter(attr(href), page);
+}
+.book > .toc  > li > ul a {
+  font-size: 12pt;
+}
+.book > .toc  > ul > li.toc-preface ul {
+  display: none;
+}
+.book > .toc  > ul > li.toc-appendix ul {
+  display: none;
+}
 /* TOC Section */
 /* .toc > ul > li > ul > li */
 .toc li li a {
   color: black;
   font-weight: normal;
 }
-
 .introduction .splash img {
   width: 100% !important;
   max-width: none !important;
 }
-
-
 /* "Key Concepts" Introduction table */
 .chapter .toc {
   display: table;
-	margin: auto;
-	margin-bottom: 1em;
-	border-spacing: 0px;
+  margin: auto;
+  margin-bottom: 1em;
+  border-spacing: 0px;
   page-break-inside: avoid;
 }
-
-
 .chapter .toc > .title {
   content: "Learning Objectives";
-	color: white;
-	font-size: large;
-	text-align: center;
-   padding: 0.25em;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 0.25em;
   margin: 0em;
 }
-
-
 .chapter .toc a {
   color: inherit;
   font-weight: bold;
-	display-align: after;
-	padding-bottom: 0.25em;
-	padding-top: 0.25em;
-	text-align: start;
+  display-align: after;
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  text-align: start;
   margin-left: 0.5em;
   margin-right: 1em;
 }
-
-
 .problems-exercises img {
   max-width: 3in;
   height: auto;
 }
-
 /***************************************************************
  * Clean up padding and spacing
  ***************************************************************/
@@ -375,7 +306,6 @@ h3 {
 h4, h5, h6 {
   font-size: 1em;
 }
-
 .table table {
   margin: 1.5em auto;
 }
@@ -387,25 +317,24 @@ h4, h5, h6 {
   padding-left: 1em;
   padding-right: 1em;
   /* To fully support row/col spans in CALS tables borders are calculated for each cell and inherit the color of the text in the cell */
+
   /* By default the color in the PDF is the same color as the text so set it to black. */
+
   border-color: black !important;
 }
 .table caption {
   caption-side: top;
   font-weight: bold;
 }
-
 /***************** Chapter Title page *****************/
-
-
 /* Introduction banner */
-h1.title { //ccap-chapter
+h1.title {
   margin-bottom: 0em;
   padding: 0.25em 0.5em;
-  font-size: 2.5em; // xx-large;
+  font-size: 2.5em;
   font-weight: normal;
   text-transform: uppercase;
-/*
+  /*
   background-color: @orange;
   padding: .15em 20px; 
   font-size: 4em; 
@@ -413,40 +342,36 @@ h1.title { //ccap-chapter
   line-height: 1em;
   text-transform: uppercase;
 */
+
 }
 /* Used for page headers */
 /* The 1st span contains the chapter number */
 h1.title .cnx-gentext-autogenerated {
   display: none;
 }
-
-h1.title .cnx-gentext-n { //ccap-chapter-number
+h1.title .cnx-gentext-n {
   color: black;
   padding-right: 1em;
 }
 /* The 2nd span contains the chapter title */
 h1.title {
- color: white;
+  color: white;
 }
-
-.chapter .introduction > .title span { //.ccap-intro-title
+.chapter .introduction > .title span {
   padding-right: 3em;
   font-weight: bold;
   font-size: normal;
 }
-
-
-
-
 /**************** CNXML ELements ***********/
-.note { //.ccap-note
-	/* page-break-inside: avoid; Per David's request, less whitespace is better. */
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+.note {
+  /* page-break-inside: avoid; Per David's request, less whitespace is better. */
+
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 .note h3 {
   margin-top: 0.5em;
@@ -463,17 +388,17 @@ h1.title {
   margin-bottom: 1.5em;
 }
 .figure {
-	font-size: xx-small;
-	padding-bottom: 0.5em;
-	margin-left: auto;
-	margin-right: auto;
+  font-size: xx-small;
+  padding-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
 }
-.figure > .caption:before,
-.figure > .title {
+.figure > .caption:before, .figure > .title {
   display: inline;
-	/* hyphenate: false; */
-	margin-bottom: 0.25em;
-	margin-top: 0.25em;
+  /* hyphenate: false; */
+
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
 }
 .figure > .caption {
   display: inline;
@@ -481,17 +406,13 @@ h1.title {
 .figure > .body {
   text-align: center;
 }
-
-
 /************** Generic Elements ************/
-
 table.cnx-figure-horizontal {
-	margin: auto; /* center the table */
+  margin: auto;
+  /* center the table */
+
 }
 /* Images (unless they're horizontal subfigures) should be scaled to 1/3 */
-*:not(.cnx-figure-horizontal) img {
-  //width: 33%;
-}
 table.cnx-figure-horizontal td img {
   max-width: 2in;
 }
@@ -501,133 +422,97 @@ table.cnx-figure-horizontal td img[height] {
 img[height] {
   width: auto;
   /* height: auto; */
+
 }
 img {
   max-width: 7in;
 }
-
-
-
-
-
 /********************* Glossary Section **************/
-
 .glossary dt {
   float: left;
   font-weight: bold;
-
-  &::after {
-    content: ":";
-    padding-right: 0.5em;
-    display: inline !important; //Important because the pseudo's are hidden by default in a glossary
-  }
 }
-
+.glossary dt::after {
+  content: ":";
+  padding-right: 0.5em;
+  display: inline !important;
+}
 em.glossterm {
   font-weight: bold;
   font-style: normal;
 }
-
-
 /******************************************************
  * End of chapter customizations
  ******************************************************/
-.cnx-eoc {
-  & > .title {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-  .section {
-    .title {
-      padding-top: 1em;
-  
-      a {
-        //color: @blue;
-        font-size: small;
-        font-weight: bold;
-      }
-    }
-    
-    .problem {
-      page-break-inside: avoid;
-    }
-  }
+.cnx-eoc  > .title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
-
+.cnx-eoc .section .title {
+  padding-top: 1em;
+}
+.cnx-eoc .section .title a {
+  font-size: small;
+  font-weight: bold;
+}
+.cnx-eoc .section .problem {
+  page-break-inside: avoid;
+}
 .example > .title > *,
 .cnx-eoc > .title > *,
 .index > .title > *,
 .glossary > .titlepage > div > div > * {
-  //.ccap-block-title;
-  //.ccap-block-title-link;
   padding: .1em 1em;
   margin-top: 1em;
   display: inline;
-
-	font-size: small;
-	font-weight: bold;
-	page-break-after: avoid;
+  font-size: small;
+  font-weight: bold;
+  page-break-after: avoid;
 }
-
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
  * End-of-chapter exercises require a LOT of custom formatting
  * Moving from Docbook will fix this
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
- 
 /* Exercises have the number in bold, followed by the 1st paragraph inline, not "Exercise 3 \n sldkfj" */
-
 .cnx-eoc .exercise {
-
   /*** Exercises normally have more margins around them ***/
+
   margin-top: 0.5em;
   margin-bottom: 0.0em;
-
-  div, p:first-of-type {
-    display: initial;
-  }
-
-  div .figure {
-    .body {
-      display: block;
-      text-align: center;
-    }
-    .title {
-      //display: none;
-    }
-  }
-
   /* Hide the "Exercise " prefix */
-  & > .title .cnx-gentext-autogenerated {
-    display: none;
-  }
-  & > .title .cnx-gentext-n {
-    font-weight: bold;
-    font-size: 8.2pt;
-    color: black;
-  }
-  & > .title {
-    border-bottom: 0px;
-  }
 
   /*** Make sure the default background colors for things like exercise body don't seep through ***/
-  p, .body {
-    background-color: inherit !important;
-    padding: 0px !important;
-  }
-  
-
-  .solution {
-    display: none;  
-  }
-  
-  .problem > .title {
-    font-weight: bold;
-    margin-right: 0.5em;
-  }
 
 }
-
+.cnx-eoc .exercise div, .cnx-eoc .exercise p:first-of-type {
+  display: initial;
+}
+.cnx-eoc .exercise div .figure .body {
+  display: block;
+  text-align: center;
+}
+.cnx-eoc .exercise  > .title .cnx-gentext-autogenerated {
+  display: none;
+}
+.cnx-eoc .exercise  > .title .cnx-gentext-n {
+  font-weight: bold;
+  font-size: 8.2pt;
+  color: black;
+}
+.cnx-eoc .exercise  > .title {
+  border-bottom: 0px;
+}
+.cnx-eoc .exercise p, .cnx-eoc .exercise .body {
+  background-color: inherit !important;
+  padding: 0px !important;
+}
+.cnx-eoc .exercise .solution {
+  display: none;
+}
+.cnx-eoc .exercise .problem > .title {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
 .exercise .solution::before {
   content: "Solution";
   font-weight: bold;
