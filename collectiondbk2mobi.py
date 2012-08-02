@@ -25,6 +25,8 @@ DEBUG=True
 DOCBOOK2XHTML_XSL=util.makeXsl('dbk2xhtml.xsl')
 DOCBOOK_CLEANUP_XSL = util.makeXsl('dbk-clean-whole.xsl')
 
+DOCBOOK2OPF = util.makeXsl('dbk2mobiopf.xsl')
+
 MODULES_XPATH = etree.XPath('//col:module/@document', namespaces=util.NAMESPACES)
 IMAGES_XPATH = etree.XPath('//c:*/@src[not(starts-with(.,"http:"))]', namespaces=util.NAMESPACES)
 
@@ -52,8 +54,8 @@ def collection2mobi(collection_dir, print_style, output_xhtml, kindlegen, temp_d
   allFiles.update(newFiles)
   
   p.tick('Converting Docbook to MOBI')
-  stdErr = convert(p, dbk, allFiles, print_style, temp_dir, output_xhtml, kindlegen, verbose)
-  
+  stdErr = convert(p, dbk, allFiles, print_style, collection_dir, output_xhtml, kindlegen, verbose)
+  #hack: replace temp_dir with collection_dir for saving opf file
   p.finish()
   return stdErr
 
@@ -125,6 +127,13 @@ def convert(p, dbk1, files, print_style, temp_dir, output_xhtml, kindlegen, verb
       # TODO: Log the errors (and convert JSON to python) instead of just printing
       print >> sys.stderr, entry.message.encode('utf-8')
     return ret
+  def transformopf(xslDoc, xmlDoc,colpath):
+    """ Performs an XSLT transform (SPECIFICALLY FOR OPF)and parses the <xsl:message /> text """
+    ret = xslDoc(xmlDoc,opfpath="'%s'" % colpath) 
+    for entry in xslDoc.error_log:
+      # TODO: Log the errors (and convert JSON to python) instead of just printing
+      print >> sys.stderr, entry.message.encode('utf-8')
+    return ret
 
   # Step 0 (Sprinkle in some index hints whenever terms are used)
   # termsprinkler.py $DOCBOOK > $DOCBOOK2
@@ -145,6 +154,9 @@ def convert(p, dbk1, files, print_style, temp_dir, output_xhtml, kindlegen, verb
   xhtml = transform(DOCBOOK2XHTML_XSL, dbk2)
   open(xhtml_file,'w').write(etree.tostring(xhtml))
 
+  #Pass the current working dir to xsl template to save opf file into that folder
+  colpath = os.path.abspath(temp_dir)+"/"
+  transformopf(DOCBOOK2OPF, dbk2, colpath)
 
   p.finish()
 

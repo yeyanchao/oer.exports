@@ -21,9 +21,6 @@ CWD=$(pwd)
 
 EXIT_STATUS=0
 
-#str1= "<x-metadata><EmbeddedCover>cover.png</EmbeddedCover></x-metadata>"
-#str2= "<manifest><item id="item1" media-type="text/x-oeb1-document" href="${HTML_FILE}"></item></manifest><spine><itemref idref="item1"/></spine><guide><reference href="${HTML_FILE}#toc" type="toc" title="Table of Contents"/></guide>"
-
 cd ${ROOT}
 
 if [ -s $WORKING_DIR/collection.xml ]; then
@@ -64,11 +61,6 @@ XHTML_FILE=$WORKING_DIR/"$OUTPUT.xhtml"
   sed -i "s/title>\(.*\)<\/title/title>\1-${OUTPUT}<\/title/" ${HTML_FILE}
 
   EXIT_STATUS=$EXIT_STATUS || $?
-
-
-  /usr/bin/ruby /home/yc/workspace/github/oer.exports/docbook-xsl/epub/bin/dbtoepub --stylesheet xsl/dbk2mobiopf.xsl -o tmp.epub -d ${WORKING_DIR}/collection.dbk
-
-  rm tmp.epub
 
   #Insert the toc mark,only to the first match(because there are othere tocs)
   sed -i '1,/<div class="toc">/s/<div class="toc">/<a name="toc"\/><div class="toc">/' ${HTML_FILE}

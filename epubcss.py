@@ -258,7 +258,6 @@ class AddNumbering(object):
               self.node_at[id] = None
             else:
               if self.verbose: print >> sys.stderr, "WARNING: Ignoring lookup to a non-internal id: '%s' on a %s" % (href, n.tag)
-"""    
     if not class_ and ':before' in style:
       pseudo = etree.Element(self.pseudo_element_name)
       pseudo.attrib['class'] = 'pseudo-before'
@@ -273,7 +272,6 @@ class AddNumbering(object):
       pseudo.attrib['class'] = 'pseudo-after'
       node.append(pseudo)
       self.expand_pseudo(pseudo, style, ':after')
-"""
 
 
 def _style_to_string(style):

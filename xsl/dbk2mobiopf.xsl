@@ -11,11 +11,10 @@
 <!--Customize the docbook.xsl to generate opf file for kindle -->
 <xsl:import href="../docbook-xsl/epub/docbook-opf.xsl"/>
 <xsl:import href="dbk2xhtml-core.xsl"/>
-<!--where to store content.opf file?-->
-<xsl:param name="epub.oebps.dir" select="'content/'"/>
 
+  <xsl:param name="opfpath" />
   <xsl:template match="/">
-
+    <xsl:message>Generating opf file for mobi!</xsl:message>
     <xsl:call-template name="opf" />      
 
   </xsl:template>
