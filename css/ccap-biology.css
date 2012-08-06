@@ -128,7 +128,7 @@ a[href^="http"] {
 .indexdiv, .indexdiv dl {
   page-break-inside: auto;
 }
-.indexterm {
+.indexterm[href] {
   content: target-counter(attr(href), page);
 }
 /********************* Glossary Section **************/
