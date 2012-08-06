@@ -178,12 +178,12 @@ def main():
       print "argparse is needed for commandline"
       return 2
 
-    parser = argparse.ArgumentParser(description='Convert an unzipped Collection to a MOBI')
+    parser = argparse.ArgumentParser(description='Convert an unzipped Collection to a .xhtml')
     parser.add_argument('-v', dest='verbose', help='Print detailed messages and output debug files', action='store_true')
     parser.add_argument('-d', dest='collection_dir', help='Path to an unzipped collection', required=True)
     parser.add_argument('-s', dest='print_style', help='Print style to use (name of CSS file in css dir)')#,required=True)
     parser.add_argument('-k', dest='kindlegen', help='Path to a MOBI generation script', nargs='?', type=argparse.FileType('r'))
-    parser.add_argument('-t', dest='temp_dir', help='Path to store temporary files to (default is a temp dir that will be removed)', nargs='?')
+    #parser.add_argument('-t', dest='temp_dir', help='Path to store temporary files to (default is a temp dir that will be removed)', nargs='?')
     parser.add_argument('-r', dest='reduce_quality', help='Reduce image quality', action='store_true')
     parser.add_argument('-o', dest='output_xhtml', help='Path to write the xhtml file', nargs='?', type=argparse.FileType('w'), default=sys.stdout)
     args = parser.parse_args()

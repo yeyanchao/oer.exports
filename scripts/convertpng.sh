@@ -20,7 +20,7 @@ do
     if ls *.png >/dev/null 2>&1;then #Some modules don't contain any png file
       for f in $(ls *.png)
       do
-        echo "LOG: Convert transparent png to non-transparent png" 1>&2
+        #echo "LOG: Convert transparent png to non-transparent png" 1>&2
         ${CONVERT} $f -background white $f
       done
     fi
@@ -30,4 +30,3 @@ done
 
 cd ${CWD}
 exit 0
-

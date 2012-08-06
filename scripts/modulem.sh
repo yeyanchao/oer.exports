@@ -1,6 +1,8 @@
 #!/bin/sh
 
-# This script is used to generate mobi file out of a unzipped collection using kindlegen
+# This script is used to generate mobi file out of a collection using kindlegen
+#eg:./module2mobi.sh test-ccap outputfile-name ccap-physics.css
+
 # 1st arg is the path to the collection
 # 2nd arg is the name of the mobi file
 # 3rd arg is the css file eg:ccap-physics 
@@ -21,16 +23,26 @@ HTML_FILE=$WORKING_DIR/"$OUTPUT.html"
 MOBI_FILE="$OUTPUT.mobi"
 EXIT_STATUS=0
 
+#if [ ${MUTE} = 'm' ]; then
+#  mute="1>/dev/null 2>&1"
+#else 
+#  mute=""
+#fi
+
 cd ${ROOT}
 
 if [ -s $WORKING_DIR/collection.xml ]; then
-  echo "P1: Building xhtml content..."
-  #python collectiondbk2mobi.py -d ${WORKING_DIR} -o ${XHTML_FILE} #2>/dev/null
-  python cm.py -d ${WORKING_DIR} -o ${XHTML_FILE} #2>/dev/null
 
-  echo "P2: Generating opf..."
-  #Generate the opf file for mobi
-  ./scripts/gen-mobi-opf.sh "$OUTPUT.html" ${WORKING_DIR}
+  if [ -s ${XHTML_FILE} ]; then
+    echo "P1/P2: Use existing xhtml content and opf..." #to save some time when developing
+  else
+    echo "P1: Building xhtml content..."
+    #python collectiondbk2mobi.py -d ${WORKING_DIR} -o ${XHTML_FILE} #2>/dev/null
+    python cm.py -d ${WORKING_DIR} -o ${XHTML_FILE} #2>/dev/null
+    echo "P2: Generating opf..."
+    #Generate the opf file for mobi
+    ./scripts/gen-mobi-opf.sh "$OUTPUT.html" ${WORKING_DIR}
+  fi
 
   EXIT_STATUS=$EXIT_STATUS || $?
 
@@ -70,8 +82,6 @@ if [ -s $WORKING_DIR/collection.xml ]; then
   echo "P7: Generating .mobi..."
   #Build the mobi from the .opf file
   ${KINDLEGEN} ${WORKING_DIR}/content.opf -o ${MOBI_FILE} 1>&2 #-verbose
-
-  rm ${WORKING_DIR}/content.opf
   
   if [ -s ${WORKING_DIR}/${MOBI_FILE} ];then
     echo "MOBI built succiessfully."
