@@ -90,7 +90,7 @@ def main():
   parser.add_argument('directory')
   parser.add_argument('-i', dest='module_id', help='Published Module id')
   parser.add_argument('-c', dest='css_file', help='CSS File to include')# , type=argparse.FileType('r'))
-  parser.add_argument('-e', dest='epub_script', help='Path to script that generates an epub from a dbk file and temporary directory', action='store_true')
+  parser.add_argument('-e', dest='epub_script', help='Path to XSL file that generates an epub from a dbk file')
   parser.add_argument('-r', dest='reduce_quality', help='Reduce image quality', action='store_true')
   # parser.add_argument('-t', dest='temp_dir', help='Path to store temporary files to (default is a temp dir that will be removed)', nargs='?')
   parser.add_argument('-o', dest='output', nargs='?') # , type=argparse.FileType('w'), default=sys.stdout)
