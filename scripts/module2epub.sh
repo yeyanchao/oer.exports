@@ -33,7 +33,7 @@ if [ -s $WORKING_DIR/index.cnxml ]; then
 
 
   cd ${ROOT}
-  python module2epub.py -i ${MODULE} -c ${CSS_FILE} -e ${DBK_TO_HTML_XSL} -o ${EPUB_FILE} ${WORKING_DIR}
+  python content2epub.py -t "module" -i ${MODULE} -c ${CSS_FILE} -e ${DBK_TO_HTML_XSL} -o ${EPUB_FILE} ${WORKING_DIR}
   EXIT_STATUS=$EXIT_STATUS || $?
   cd ${CWD}
 
@@ -41,18 +41,10 @@ elif [ -s $WORKING_DIR/collection.xml ]; then
   DBK_FILE=$WORKING_DIR/collection.dbk
   
   cd ${ROOT}
-  python collection2epub.py -r ${WORKING_DIR} -o ${DBK_FILE}
-  cd ${CWD}
+  python content2epub.py -t "collection" -c ${CSS_FILE} -e ${DBK_TO_HTML_XSL} -o ${EPUB_FILE} ${WORKING_DIR}
   EXIT_STATUS=$EXIT_STATUS || $?
+  cd ${CWD}
 
-  # Include the STIX fonts
-  EMBEDDED_FONTS_ARGS=""
-  for FONT_FILENAME in $(ls $ROOT/fonts/stix/*.ttf)
-  do
-    EMBEDDED_FONTS_ARGS="$EMBEDDED_FONTS_ARGS --font $FONT_FILENAME"
-  done
-  
-  $RUBY $ROOT/docbook-xsl/epub/bin/dbtoepub --stylesheet $DBK_TO_HTML_XSL -c $CSS_FILE $EMBEDDED_FONTS_ARGS -o $EPUB_FILE -d $DBK_FILE
   EXIT_STATUS=$EXIT_STATUS || $?
   
 else

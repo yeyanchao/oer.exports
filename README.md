@@ -22,3 +22,11 @@ To generate a PDF:
 To generate an EPUB:
 
     ./scripts/module2epub.sh "Connexions" test-ccap test-ccap.epub col12345 xsl/dbk2epub.xsl static/content.css
+
+Alternative script for EPUB:
+
+    # For a collection:
+    python content2epub.py -c ./static/content.css -e ./xsl/dbk2epub.xsl -t "collection" -o ./test-ccap.epub ./test-ccap/
+    
+    # For just a module:
+    python content2epub.py -c ./static/content.css -e ./xsl/dbk2epub.xsl -t "module" -o ./m123.epub -i "m123" ./test-ccap/m-section/
