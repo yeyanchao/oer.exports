@@ -22,10 +22,6 @@ do
     if ls *.png >/dev/null 2>&1;then #Some modules don't contain any png file
       for f in $(ls *.png)
       do
-        #echo "LOG: Convert transparent png to non-transparent png" 1>&2
-        #${CONVERT} -resize x25 $f $f
-        #${CONVERT} -sharpen 300,0% $f $f
-        #${CONVERT} -sigmoidal-contrast 50,0% $f $f
         ${CONVERT} $f -background white $f
       done
     fi
