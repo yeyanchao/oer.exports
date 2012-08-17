@@ -1,4 +1,6 @@
-# python collectiondbk2mobi.py -d test-ccap -o  result.html
+# python cm.py -d test-ccap -o  result.html
+# This script is to generate xhtml content for mobi-converter
+# and the opf file by the way.
 
 import sys
 import os
@@ -27,7 +29,7 @@ DOCBOOK2OPF = util.makeXsl('dbk2mobiopf.xsl')
 MODULES_XPATH = etree.XPath('//col:module/@document', namespaces=util.NAMESPACES)
 IMAGES_XPATH = etree.XPath('//c:*/@src[not(starts-with(.,"http:"))]', namespaces=util.NAMESPACES)
 
-def collection2mobi(collection_dir, output_xhtml, reduce_quality=False):
+def collection2xhtml(collection_dir, output_xhtml, reduce_quality=False):
 
   p = util.Progress()
 
@@ -138,7 +140,7 @@ def main():
     else:
       output_xhtml = os.path.abspath(args.output_xhtml.name)
 
-    stdErr = collection2mobi(args.collection_dir, output_xhtml, args.reduce_quality)
+    stdErr = collection2xhtml(args.collection_dir, output_xhtml, args.reduce_quality)
 
 if __name__ == '__main__':
     sys.exit(main())
