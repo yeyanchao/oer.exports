@@ -1,11 +1,12 @@
 #!/bin/sh
 
 # This script is used to generate mobi file from a unzipped collection.
-# 
+# in this script, a beta frature autogenerateClasses is used to inject all 
+# the css attribute into the html content.
 
 # 1st arg is the path to the collection
 # 2nd arg is the name of the mobi file
-# 3rd arg is the css file eg:ccap-physics 
+# 3rd arg is the css file eg:ccap-physics.css
 
 WORKING_DIR=$1
 OUTPUT=$2
@@ -40,10 +41,9 @@ if [ -s $WORKING_DIR/collection.xml ]; then
   EXIT_STATUS=$EXIT_STATUS || $?
 
   echo "P3: Styling xhtml..."
-  ${PHANTOMJS} epubcss/phantom-harness.coffee css/${CSS_FILE} ${ROOT}/${XHTML_FILE} ./output1.html ./output.css 1>&2
+  ${PHANTOMJS} epubcss/phantom-harness.coffee css/${CSS_FILE} ${ROOT}/${XHTML_FILE} ./output1.html ./output.css autogenerateClasses=false 1>&2
   EXIT_STATUS=$EXIT_STATUS || $?
 
-  #Change the encoding
   xsltproc xsl/utf82ascii.xsl output1.html > ${HTML_FILE}
 
   echo "P4: Coverting transparent png to non-transparent png..."
@@ -52,25 +52,27 @@ if [ -s $WORKING_DIR/collection.xml ]; then
 
   #Replace <p>,</p> in listitem/abstract to <a>,</a>
   echo "P5: Replacing <p></p>..."
-  sed -i -f scripts/tagp2a-listitem.sed ${HTML_FILE}
-  sed -i -f scripts/tagp2a-abstract.sed ${HTML_FILE}
+  #sed -i -f scripts/tagp2a-listitem.#sed ${HTML_FILE}
+  #sed -i -f scripts/tagp2a-abstract.#sed ${HTML_FILE}
 
   #Insert pagebreaks between chapters,before toc and other sections
   echo "P6: Inserting pagebreaks..."
-  #sed -i 's/\(<h1\)\( class="title autogen\)/\1 style="page-break-before:always;text-align:center;"\2/g' ${HTML_FILE}
-  sed -i 's/\(<h1\)/\1 style="page-break-before:always;text-align:center;"/g' ${HTML_FILE}
-  sed -i 's/\(<h2\)\( class="title autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  sed -i 's/\(<h3\)\( class="title autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  sed -i 's/\(<div\)\( class="titlepage autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  sed -i 's/\(<div\)\( class="toc\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  #Equations centered
-  sed -i 's/\(<div\)\( class="mediaobject"\)/\1 style="text-align:center;"\2/g' ${HTML_FILE}
-  #sed -i 's/\(<h1\)/\1 style="text-align:center;"/' ${HTML_FILE}
-  sed -i 's/\(Table of Contents\)/<h3 style="text-align:center;">\1<\/h3>/' ${HTML_FILE}
+  ##sed -i 's/\(<h1 class="title autogen\)/<mbp:pagebreak \/>\1/g' ${HTML_FILE}
+  #sed -i 's/\(<h1\)\( class="title autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
+  ##sed -i 's/\(<h2 class="title autogen\)/<mbp:pagebreak \/>\1/g' ${HTML_FILE}
+  #sed -i 's/\(<h2\)\( class="title autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
+  ##sed -i 's/\(<h3 class="title autogen\)/<mbp:pagebreak \/>\1/g' ${HTML_FILE}
+  #sed -i 's/\(<h3\)\( class="title autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
+  ##sed -i 's/\(Table of Contents\)/<mbp:pagebreak \/><h3>\1<\/h3>/' ${HTML_FILE}
+  #sed -i 's/\(Table of Contents\)/<h3>\1<\/h3>/' ${HTML_FILE}
+  #sed -i 's/\(<div\)\( class="toc\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
+  ##sed -i 's/\(<div class="titlepage autogen\)/<mbp:pagebreak \/>\1/g' ${HTML_FILE}
+  #sed -i 's/\(<div\)\( class="titlepage autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
 
   #Insert the toc mark,only to the first match(because there are othere tocs)
   echo "P5: Inserting toc mark..."
-  sed -i '1,/<div style="page-break-before:always;" class="toc/s/\(<div style="page-break-before:always;" class="toc\)/<a name="toc"\/>\1/' ${HTML_FILE}
+  sed -i '1,/<div class="toc"/s/<div class="toc"/<a name="toc"\/><div class="toc"/' ${HTML_FILE}
+  #sed -i '1,/<div style="page-break-before:always;" class="toc/s/\(<div style="page-break-before:always;" class="toc\)/<a name="toc"\/>\1/' ${HTML_FILE}
 
   #Build the mobi from the .opf file
   echo "P7: Generating .mobi..."
