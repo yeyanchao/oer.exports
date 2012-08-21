@@ -72,6 +72,9 @@ if [ -s $WORKING_DIR/collection.xml ]; then
   echo "P5: Inserting toc mark..."
   sed -i '1,/<div style="page-break-before:always;" class="toc/s/\(<div style="page-break-before:always;" class="toc\)/<a name="toc"\/>\1/' ${HTML_FILE}
 
+  #remove the extra 0
+  sed -i 's/\(<span class="pseudo-element after debug-epubcss">\) . 0\(<\/span>\)/\1#\2/g' ${HTML_FILE}
+
   #Build the mobi from the .opf file
   echo "P7: Generating .mobi..."
   ${KINDLEGEN} ${WORKING_DIR}/content.opf -o ${MOBI_FILE} 1>&2 #-verbose

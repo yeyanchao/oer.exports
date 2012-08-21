@@ -28,4 +28,5 @@ To generate a MOBI:
     - Install kindlegen
     - Install ImageMagick
     - Install phantomjs
-    $ ./scripts/module2mobi.sh test-ccap mobi-name ccap-physics.css
+    - Install xsltproc
+    $ ./scripts/mobibuilder.sh test-ccap mobi-name ccap-physics.css
