@@ -31,7 +31,7 @@ cd ${ROOT}
 if [ -s $WORKING_DIR/collection.xml ]; then
 
   echo "P1: Building xhtml content and opf file..."
-  python cm.py -d ${WORKING_DIR} -o ${XHTML_FILE} 
+  python collection2mobixhtml.py -d ${WORKING_DIR} -o ${XHTML_FILE} 
   EXIT_STATUS=$EXIT_STATUS || $?
 
   #Modify the opf file to add cover and "toc" entry...
