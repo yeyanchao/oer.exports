@@ -29,4 +29,9 @@ To generate a MOBI:
     - Install ImageMagick
     - Install phantomjs
     - Install xsltproc
+    A basic version:
     $ ./scripts/mobibuilder.sh test-ccap mobi-name ccap-physics.css
+
+    A beta version of mobibuilder-plus:
+    $ ./scripts/mobibuilder-plus.sh test-ccap mobi-name ccap-physics.css
+    PS: Use 2>/dev/null to mute the detailed log messages

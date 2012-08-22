@@ -24,8 +24,8 @@ HTML_FILE=$WORKING_DIR/"$OUTPUT.html"
 MOBI_FILE="$OUTPUT.mobi"
 EXIT_STATUS=0
 
-#DEBUG=false
-DEBUG=true
+DEBUG=false
+#DEBUG=true
 
 cd ${ROOT}
 
@@ -85,19 +85,3 @@ else
   exit 1
 fi
 exit $EXIT_STATUS
-  ##sed -i 's/\(<h1 class="title autogen\)/<mbp:pagebreak \/>\1/g' ${HTML_FILE}
-  #sed -i 's/\(<h1\)\( class="title autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  ##sed -i 's/\(<h2 class="title autogen\)/<mbp:pagebreak \/>\1/g' ${HTML_FILE}
-  #sed -i 's/\(<h2\)\( class="title autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  ##sed -i 's/\(<h3 class="title autogen\)/<mbp:pagebreak \/>\1/g' ${HTML_FILE}
-  #sed -i 's/\(<h3\)\( class="title autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  ##sed -i 's/\(Table of Contents\)/<mbp:pagebreak \/><h3>\1<\/h3>/' ${HTML_FILE}
-  #sed -i 's/\(Table of Contents\)/<h3>\1<\/h3>/' ${HTML_FILE}
-  #sed -i 's/\(<div\)\( class="toc\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  ##sed -i 's/\(<div class="titlepage autogen\)/<mbp:pagebreak \/>\1/g' ${HTML_FILE}
-  #sed -i 's/\(<div\)\( class="titlepage autogen\)/\1 style="page-break-before:always;"\2/g' ${HTML_FILE}
-  #sed -i -f scripts/tagp2a-listitem.#sed ${HTML_FILE}
-  #sed -i -f scripts/tagp2a-abstract.#sed ${HTML_FILE}
-  #sed -i '1,/<div style="page-break-before:always;" class="toc/s/\(<div style="page-break-before:always;" class="toc\)/<a name="toc"\/>\1/' ${HTML_FILE}
-
-
