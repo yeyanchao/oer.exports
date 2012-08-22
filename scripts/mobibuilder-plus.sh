@@ -71,7 +71,7 @@ if [ -s $WORKING_DIR/collection.xml ]; then
     rm ${HTML_FILE}
     rm ${WORKING_DIR}/content.opf
     rm ./output.css
-    rm ./output1.css
+    rm ./output1.html
   fi
 
   cd ${CWD}
