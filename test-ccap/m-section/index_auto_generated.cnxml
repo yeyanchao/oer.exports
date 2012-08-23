@@ -716,7 +716,7 @@ size 12{ { {I}} sup { ' }=1 "." "40" times "10" rSup { size 8{5} } `"W/m" rSup {
     <exercise id="fs-id1818055" type="problems-exercises"><problem id="fs-id2422537">
       <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="import-auto-id2677330"><emphasis effect="bold">Medical Application</emphasis> Ultrasound of intensity <m:math><m:semantics><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mrow><m:mtext>50</m:mtext><m:mo stretchy="false">&#215;</m:mo><m:msup><m:mtext>10</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mspace width="0.25em"/><m:msup><m:mtext>W/m</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mrow><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." "50" times "10" rSup { size 8{2} } `"W/m" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> is produced by the rectangular head of a medical imaging device measuring 3.00 by 5.00 cm. What is its power output?</para>
       <para>and a Table (for formatting)</para>
-<table summary="Table Description">
+<table class="span-all" summary="Table Description">
 <title>Table Title</title>
 <tgroup cols="3"><thead>
   <row>

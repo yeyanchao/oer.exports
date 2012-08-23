@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x -v
 
 # 1st arg is either "Connexions" or any other string indicating if this is a cnx site or a rhaptos site
 # 2nd arg is the path to the collection
@@ -30,22 +30,21 @@ if [ -s $WORKING_DIR/index.cnxml ]; then
   DBK_FILE=$WORKING_DIR/index.dbk
   MODULE=$CONTENT_ID_AND_VERSION
   MODULE=${MODULE%%_*}
-  
-  if [ ".$SKIP_DBK_GENERATION" == "." ]; then
-    bash $ROOT/scripts/module2dbk.sh $CNX_OR_RHAPTOS $WORKING_DIR $MODULE
-    EXIT_STATUS=$EXIT_STATUS || $?
 
-    # Generate a cover image for the book version of the module
-    bash $ROOT/scripts/dbk2cover.sh $CNX_OR_RHAPTOS $DBK_FILE
-    EXIT_STATUS=$EXIT_STATUS || $?
-  fi
+
+  cd ${ROOT}
+  python content2epub.py -t "module" -i ${MODULE} -c ${CSS_FILE} -e ${DBK_TO_HTML_XSL} -o ${EPUB_FILE} ${WORKING_DIR}
+  EXIT_STATUS=$EXIT_STATUS || $?
+  cd ${CWD}
 
 elif [ -s $WORKING_DIR/collection.xml ]; then
   DBK_FILE=$WORKING_DIR/collection.dbk
   
   cd ${ROOT}
-  python collection2epub.py -r ${WORKING_DIR} -o ${DBK_FILE}
+  python content2epub.py -t "collection" -c ${CSS_FILE} -e ${DBK_TO_HTML_XSL} -o ${EPUB_FILE} ${WORKING_DIR}
+  EXIT_STATUS=$EXIT_STATUS || $?
   cd ${CWD}
+
   EXIT_STATUS=$EXIT_STATUS || $?
   
 else
@@ -53,14 +52,5 @@ else
   exit 1
 fi
 
-# Include the STIX fonts
-EMBEDDED_FONTS_ARGS=""
-for FONT_FILENAME in $(ls $ROOT/fonts/stix/*.ttf)
-do
-  EMBEDDED_FONTS_ARGS="$EMBEDDED_FONTS_ARGS --font $FONT_FILENAME"
-done
-
-$RUBY $ROOT/docbook-xsl/epub/bin/dbtoepub --stylesheet $DBK_TO_HTML_XSL -c $CSS_FILE $EMBEDDED_FONTS_ARGS -o $EPUB_FILE -d $DBK_FILE
-EXIT_STATUS=$EXIT_STATUS || $?
 
 exit $EXIT_STATUS
