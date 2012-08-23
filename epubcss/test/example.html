@@ -1,0 +1,36 @@
+<html>
+<head>
+  <script src="../lib/jquery.js"></script>
+  <script src="../custom.js"></script>
+  <script src="../lib/less-1.3.0.js"></script>
+  <script src="../epubcss.js"></script>
+
+  <script>
+  $().ready(function() {
+    return $('.lesscss').on('change', function() {
+      var newCSS = (new EpubCSS()).emulate($('.lesscss').val());
+      $('<style type="text/css"></style>').append(newCSS).appendTo('body')
+    });
+  });
+  </script>
+
+  <style type="text/css">
+    .debug-epubcss { background-color: #ff3; }
+  </style>
+</head>
+
+<body>
+
+<textarea style="height: 20em; width: 100em;" class="lesscss"></textarea>
+
+
+<div class="book">
+  <a href="#ch1"></a>
+  <div class="chapter" id="ch1">
+    <h1 id="ch1-title">Titul</h1>
+  </div>
+  
+</div>
+
+</body>
+</html>

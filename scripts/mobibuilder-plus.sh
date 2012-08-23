@@ -18,6 +18,7 @@ CWD=$(pwd)
 
 KINDLEGEN=$(which kindlegen)
 PHANTOMJS=$(which phantomjs)
+XSLTPROC=$(which xsltproc)
 
 XHTML_FILE=$WORKING_DIR/"$OUTPUT.xhtml"
 HTML_FILE=$WORKING_DIR/"$OUTPUT.html"
@@ -31,39 +32,39 @@ cd ${ROOT}
 
 if [ -s $WORKING_DIR/collection.xml ]; then
 
-  echo "P1: Building xhtml content and opf file..."
+  echo "Building xhtml content and opf file..."
   python collection2mobixhtml.py -d ${WORKING_DIR} -o ${XHTML_FILE} 
   EXIT_STATUS=$EXIT_STATUS || $?
 
   #Modify the opf file to add cover and "toc" entry...
-  echo "P2: Modifing opf..."
+  echo "Modifing opf..."
   ./scripts/opf-modifier.sh "$OUTPUT.html" ${WORKING_DIR}
   EXIT_STATUS=$EXIT_STATUS || $?
 
-  echo "P3: Styling xhtml..."
-  ${PHANTOMJS} epubcss/phantom-harness.coffee css/${CSS_FILE} ${ROOT}/${XHTML_FILE} ./output1.html ./output.css autogenerateClasses=false 1>&2
+  echo "Styling xhtml..."
+  ${PHANTOMJS} epubcss/phantom-harness.coffee css/${CSS_FILE} ${ROOT}/${XHTML_FILE} ./_temp.html ./output.css autogenerateClasses=false 1>&2
   EXIT_STATUS=$EXIT_STATUS || $?
 
-  xsltproc xsl/utf82ascii.xsl output1.html > ${HTML_FILE}
+  ${XSLTPROC} xsl/utf82ascii.xsl _temp.html > ${HTML_FILE}
 
-  echo "P4: Coverting transparent png to non-transparent png..."
+  echo "Coverting transparent png to non-transparent png..."
   ./scripts/convertpng.sh ${WORKING_DIR}
   EXIT_STATUS=$EXIT_STATUS || $?
   #remove the extra 0
   sed -i 's/\(<span class="pseudo-element after debug-epubcss">\) . 0\(<\/span>\)/\1#\2/g' ${HTML_FILE}
   #Insert the toc mark,only to the first match(because there are othere tocs)
-  echo "P5: Inserting toc mark..."
+  echo "Inserting toc mark..."
   sed -i '1,/<div class="toc"/s/<div class="toc"/<a name="toc"\/><div class="toc"/' ${HTML_FILE}
 
   #Build the mobi from the .opf file
-  echo "P7: Generating .mobi..."
+  echo "Generating .mobi..."
   ${KINDLEGEN} ${WORKING_DIR}/content.opf -o ${MOBI_FILE} 1>&2 #-verbose
   EXIT_STATUS=$EXIT_STATUS || $?
 
   if [ -s ${WORKING_DIR}/${MOBI_FILE} ];then
-    echo "END: MOBI built succiessfully."
+    echo "DONE: MOBI built succiessfully."
   else
-    echo "END: MOBI built Failed."
+    echo "DONE: MOBI built Failed."
   fi
 
   if ! $DEBUG; then
@@ -71,7 +72,7 @@ if [ -s $WORKING_DIR/collection.xml ]; then
     rm ${HTML_FILE}
     rm ${WORKING_DIR}/content.opf
     rm ./output.css
-    rm ./output1.html
+    rm ./_temp.html
   fi
 
   cd ${CWD}
